@@ -1,0 +1,13 @@
+/* pages/case/case.wxss */
+.scroll-view_H{width:100%;height:60rpx;white-space:nowrap;border-bottom:1rpx solid #e5e5e5;font-size:0;margin-bottom:40rpx;padding:0 30rpx}
+.scrollItem{font-size:30rpx;display:inline-block;text-align:center;height:57rpx;margin-right:100rpx;}
+.scrollItem.on{border-bottom:5rpx solid #2280f0;}
+::-webkit-scrollbar{width: 0;height: 0;color: transparent;}
+.case{display:flex;flex-flow: row wrap;justify-content: space-between;padding:0 30rpx;}
+.caseItem{width:335rpx;margin-bottom:40rpx;}
+.caseItem image{display:block;width:335rpx;height:335rpx;}
+.caseTitle{line-height:85rpx;font-size:30rpx;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.caseMoney{overflow:hidden;font-size:30rpx;color:#2280f0;}
+.caseMoney::first-letter{font-size:24rpx;}
+.caseMoney text{font-size:24rpx;color:#999999;text-decoration:line-through;}
+.nowAppoint{float:right;width:130rpx;line-height:40rpx;font-size:24rpx;color:#2280f0;border:2rpx solid #2280f0;text-align:center;border-radius:22rpx;}

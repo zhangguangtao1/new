@@ -1,0 +1,23 @@
+<!--pages/caseDetail/caseDetail.wxml-->
+<image class='detailImg' src='../../images/test05.png'></image>
+<view class='detailName'>
+  <text>¥ 200</text>
+  <view class='detailLeft'>抽油烟机深度清洁服务</view>
+</view>
+<!-- 服务介绍 -->
+<view class='serverExplain'>
+  <view class='serverTitle'>服务介绍</view>
+  <view class='editorCon'>
+    <view>烟灶等全方位深层清洁，纯物理方式高温熏蒸消毒，对婴儿孕妇无害。烟灶等全方位深层清洁，纯物理方式高温熏蒸消毒，对婴儿孕妇无害。</view>
+    <view>烟灶等全方位深层清洁，纯物理方式高温熏蒸消毒，对婴儿孕妇无害。烟灶等全方位深层清洁，纯物理方式高温熏蒸消毒，对婴儿孕妇无害。</view>
+  </view>
+</view>
+<!-- 底部 -->
+<view class='serverFooter'>
+  <view class='left'>
+    <text class='iconfont icon-shouye'></text>
+    首页
+  </view>
+  <view class='right'>立即预约</view>
+</view>
+

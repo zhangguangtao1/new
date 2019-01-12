@@ -1,0 +1,180 @@
+<!--index.wxml-->
+<import src="../foot/foot" />
+<!-- 轮播图 -->
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular>
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="355" height="150" />
+    </swiper-item>
+  </block>
+</swiper>
+<view class='myCase'>
+  <view class='caseItem'>
+    <view class='iconfont icon-shafa'></view>
+    <view class='caseText'>厨房</view>
+  </view>
+  <view class='caseItem'>
+    <view class='iconfont icon-shafa'></view>
+    <view class='caseText'>客厅</view>
+  </view>
+  <view class='caseItem'>
+    <view class='iconfont icon-chuang-copy'></view>
+    <view class='caseText'>卧室</view>
+  </view>
+  <view class='caseItem'>
+    <view class='iconfont icon-xiyiji-f'></view>
+    <view class='caseText'>家电</view>
+  </view>
+</view>
+<!-- 最新优惠 -->
+<view class='section'>
+  <image src='../../images/index01.png'></image>
+  <view class='sectionList'>
+    <view class='sectionItem'>
+      <image src='../../images/test.png'></image>
+      <view class='sectionText'>家庭清洁包年服务家庭清洁包年服务</view>
+      <view class='sectionMoney'>
+        ¥3200
+        <text>4200</text>
+      </view>
+    </view>
+    <view class='sectionItem'>
+      <image src='../../images/test.png'></image>
+      <view class='sectionText'>家庭清洁包年服务家庭清洁包年服务</view>
+      <view class='sectionMoney'>
+        ¥3200
+        <text>4200</text>
+      </view>
+    </view>
+    <view class='sectionItem'>
+      <image src='../../images/test.png'></image>
+      <view class='sectionText'>家庭清洁包年服务家庭清洁包年服务</view>
+      <view class='sectionMoney'>
+        ¥3200
+        <text>4200</text>
+      </view>
+    </view>
+    <view class='sectionItem'>
+      <image src='../../images/test.png'></image>
+      <view class='sectionText'>家庭清洁包年服务家庭清洁包年服务</view>
+      <view class='sectionMoney'>
+        ¥3200
+        <text>4200</text>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 优先推荐 -->
+<view class='section mt-25 recommend pt-40'>
+  <image src='../../images/index02.png'></image>
+  <view class='recommendList'>
+    <view class='recommendItem'>
+      <image src='../../images/test02.png'></image>
+      <view class='recommendDetail'>
+        <view class='recodBox'>
+          <view class='recodTitle'>厨房抽油烟机清洗</view>
+          <view class='recodMoney'>¥200
+            <text>320</text> </view>
+          <view class='recodApoint'>立即预约</view>
+        </view>
+      </view>
+    </view>
+    <view class='recommendItem'>
+      <image src='../../images/test02.png'></image>
+      <view class='recommendDetail'>
+        <view class='recodBox'>
+          <view class='recodTitle'>厨房抽油烟机清洗</view>
+          <view class='recodMoney'>¥200
+            <text>320</text> </view>
+          <view class='recodApoint'>立即预约</view>
+        </view>
+      </view>
+    </view>
+    <view class='recommendItem'>
+      <image src='../../images/test02.png'></image>
+      <view class='recommendDetail'>
+        <view class='recodBox'>
+          <view class='recodTitle'>厨房抽油烟机清洗</view>
+          <view class='recodMoney'>¥200
+            <text>320</text> </view>
+          <view class='recodApoint'>立即预约</view>
+        </view>
+      </view>
+    </view>
+    <view class='recommendItem'>
+      <image src='../../images/test02.png'></image>
+      <view class='recommendDetail'>
+        <view class='recodBox'>
+          <view class='recodTitle'>厨房抽油烟机清洗</view>
+          <view class='recodMoney'>¥200
+            <text>320</text> </view>
+          <view class='recodApoint'>立即预约</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 金牌口碑 -->
+<view class='goldMedle section mt-25 pt-40'>
+  <image src='../../images/index03.png'></image>
+  <view class='goleList'>
+    <view class='goleItem'>
+      <image src='../../images/test03.png'></image>
+      <text>李书琳</text>
+      <text>家电清洗</text>
+    </view>
+    <view class='goleItem'>
+      <image src='../../images/test03.png'></image>
+      <text>李书琳</text>
+      <text>家电清洗</text>
+    </view>
+    <view class='goleItem'>
+      <image src='../../images/test03.png'></image>
+      <text>李书琳</text>
+      <text>家电清洗</text>
+    </view>
+  </view>
+</view>
+<!-- 风采展示 -->
+<view class='section mt-25 mien pt-40'>
+  <image src='../../images/index04.png'></image>
+
+  <scroll-view class="mienList" scroll-x>
+    <image src='../../images/test02.png'></image>
+    <image src='../../images/test02.png'></image>
+    <image src='../../images/test02.png'></image>
+    <image src='../../images/test02.png'></image>
+    <image src='../../images/test02.png'></image>
+  </scroll-view>
+
+
+
+</view>
+<!-- 新闻资讯 -->
+<view class='section mt-25 news pt-40'>
+  <image src='../../images/index05.png'></image>
+  <view class='newsList'>
+    <view class='newsItem'>
+      <text>2017-07-19</text>
+      <view class='newsTitle'>家政公司又称保姆公司，提供月子家政公司又称</view>
+    </view>
+    <view class='newsItem'>
+      <text>2017-07-19</text>
+      <view class='newsTitle'>家政公司又称保姆公司，提供月子家政公司又称</view>
+    </view>
+    <view class='newsItem'>
+      <text>2017-07-19</text>
+      <view class='newsTitle'>家政公司又称保姆公司，提供月子家政公司又称</view>
+    </view>
+    <view class='newsItem'>
+      <text>2017-07-19</text>
+      <view class='newsTitle'>家政公司又称保姆公司，提供月子家政公司又称</view>
+    </view>
+    <view class='newsItem'>
+      <text>2017-07-19</text>
+      <view class='newsTitle'>家政公司又称保姆公司，提供月子家政公司又称</view>
+    </view>
+  </view>
+</view>
+<template is="technical" />
+<template is="foot" />

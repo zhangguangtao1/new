@@ -1,0 +1,19 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/case/case",
+    "pages/anotherStore/anotherStore",
+    "pages/caseDetail/caseDetail",
+    "pages/anotherAppoint/anotherAppoint",
+    "pages/appoint/appoint",
+    "pages/myAppoint/myAppoint",
+    "pages/newsDetail/newsDetail",
+    "pages/store/store"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "首页",
+    "navigationBarTextStyle": "black"
+  }
+}

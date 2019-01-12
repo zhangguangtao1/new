@@ -1,0 +1,9 @@
+/* pages/appoint/appoint.wxss */
+.appointImg{display:block;width:100%;height:230rpx;}
+.form{padding:0 30rpx;display:block}
+.formItem{padding:50rpx 0;border-bottom:1rpx solid #e5e5e5;overflow:hidden}
+.formItem text{float:left;margin-right:20rpx;}
+.formItem input{color:#bbbbbb;}
+.formItem textarea{display:block;overflow:hidden;width:auto;height:140rpx;}
+.submitBtn{display:block;width:100%;margin-top:30rpx;height:90rpx;background-color:#2280f0;color:#ffffff;font-size:34rpx;}
+.picker{color:#666;}

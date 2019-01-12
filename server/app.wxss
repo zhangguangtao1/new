@@ -1,0 +1,41 @@
+@font-face {
+  font-family: 'iconfont';  /* project id 744286 */
+  src: url('//at.alicdn.com/t/font_744286_m1lwp4rj49g.eot');
+  src: url('//at.alicdn.com/t/font_744286_m1lwp4rj49g.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_744286_m1lwp4rj49g.woff') format('woff'),
+  url('//at.alicdn.com/t/font_744286_m1lwp4rj49g.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_744286_m1lwp4rj49g.svg#iconfont') format('svg');
+}
+.iconfont {
+  font-family:"iconfont" !important;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-chuang:before { content: "\e600"; }
+.icon-dizhi:before { content: "\e61f"; }
+.icon-stores:before { content: "\e6b2"; }
+.icon-yuyue:before { content: "\e60b"; }
+.icon-naozhong:before { content: "\e661"; }
+.icon-shouye:before { content: "\e606"; }
+.icon-phone-channel:before { content: "\e686"; }
+.icon-shangyiye:before { content: "\e63a"; }
+.icon-dizhi1:before { content: "\e610"; }
+.icon-dianhua:before { content: "\e615"; }
+.icon-shafa:before { content: "\e67d"; }
+.icon-xiyiji-f:before { content: "\e6a8"; }
+.icon-fenlei3:before { content: "\e65e"; }
+.icon-lvguo:before { content: "\e623"; }
+.icon-chuang-copy:before { content: "\e6b3"; }
+/* 技术支持 */
+.technical{padding:100rpx 0;padding-bottom:182rpx;background-color:#ffffff;text-align:center}
+.technical image{width:103rpx;height:37rpx;}
+.technical text{display:block;font-size:24rpx;color:#888888;}
+/* 底部 */
+.footNav{position:fixed;bottom:0;left:0;right:0;height:114rpx;border-top:2rpx solid #e1e1e1;background-color:#fbfbfb;}
+.footItem{float:left;width:25%;text-align:center;color:#999999;margin-top:10rpx;}
+.commonIcon{font-size:40rpx;}
+.footItem text{font-size:26rpx;}
+
+
+

@@ -1,0 +1,36 @@
+<!--pages/myAppoint/myAppoint.wxml-->
+<view class='appointList'>
+  <view class='appointItem'>
+    <view class='appointPeople'>张甜甜       15981990216</view>
+    <text>项目：电热水器除垢</text>
+    <view class='myWord'>
+      <text>留言：</text>
+      <view class='talk'>
+        请师傅来的时候带上一根粗麻绳！借用一下！谢谢
+          麻烦师傅！辛苦！
+      </view>
+    </view>
+  </view>
+  <view class='appointItem'>
+    <view class='appointPeople'>张甜甜       15981990216</view>
+    <text>项目：电热水器除垢</text>
+    <view class='myWord'>
+      <text>留言：</text>
+      <view class='talk'>
+        请师傅来的时候带上一根粗麻绳！借用一下！谢谢
+          麻烦师傅！辛苦！
+      </view>
+    </view>
+  </view>
+  <view class='appointItem'>
+    <view class='appointPeople'>张甜甜       15981990216</view>
+    <text>项目：电热水器除垢</text>
+    <view class='myWord'>
+      <text>留言：</text>
+      <view class='talk'>
+        请师傅来的时候带上一根粗麻绳！借用一下！谢谢
+          麻烦师傅！辛苦！
+      </view>
+    </view>
+  </view>
+</view>
