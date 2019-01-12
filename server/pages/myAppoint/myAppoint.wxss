@@ -1,8 +1,0 @@
-/* pages/myAppoint/myAppoint.wxss */
-.appointList{padding:0 30rpx;}
-.appointItem{padding:30rpx 0;border-bottom:1rpx solid #e5e5e5;}
-.appointPeople{font-size:32rpx;color:#333333;white-space:pre-wrap;}
-.appointItem>text{line-height:84rpx;font-size:32rpx;color:#666666;display:inline-block;}
-.myWord{overflow:hidden;color:#666666}
-.myWord text{float:left;font-size:32rpx;}
-.talk{overflow:hidden;font-size:32rpx;}

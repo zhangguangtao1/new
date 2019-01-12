@@ -1,0 +1,33 @@
+﻿@charset "utf-8";
+*{word-break:break-word;font-family:"\5FAE\8F6F\96C5\9ED1";}
+.clearfix:after{content:"";overflow:hidden;display:block;height:0px;clear:both;}
+body,dd,dl,dt,h1,h2,h3,h4,h5,h6,li,ol,p,ul{margin:0;padding:0}
+li,ul{list-style:none}
+body{font-family:"Microsoft YaHei";color:#333;font-size:9pt;margin:0 auto;-webkit-user-select:text;-moz-user-select:text;-ms-user-select:text;user-select:text}
+img{border:0;-webkit-touch-callout:none;touch-callout:none}
+html,img{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}
+:focus{outline:0}
+:link,:visited,a{text-decoration:none}
+a{cursor:pointer;color:#333}
+a,a:active,a:hover{outline:0}
+b,code,em,i,strong{font-style:normal;}
+img{border:0}
+b,em,h2,h3,h4{font-weight:400}
+table{border-collapse:collapse;border-spacing:0}
+a:hover{text-decoration:none;outline:0}
+button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}
+input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}
+button{overflow:visible}
+button,select{text-transform:none}
+input{line-height:normal;vertical-align:top;}
+input::-webkit-input-placeholder{color:#999!important;font-family:"Microsoft YaHei"}
+.inputAlign{vertical-align:middle; margin-top:-2px; margin-bottom:1px;}
+/*主体部分通用样式*/
+.l{float:left}
+.r{float:right;}
+.bfc{overflow:hidden;}
+.ellipsis{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.jusitify{text-align:justify;text-justify:inter-ideograph;font-size:0;}
+.jusitify .jusitifyItem{display:inline-block;font-size:14px;vertical-align:top;} 
+.left_fix{display:inline-block;vertical-align:top;height:0;padding:0;margin:0;}

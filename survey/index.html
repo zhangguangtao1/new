@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>易调查</title>
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="Description" content="网页描述" />
+		<meta name="Keywords" content="网页关键词" />
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+	</head>
+	<body>
+		<!--所有内容-->
+		<div class="box">
+			<div class="left">
+				<div class="login indexCenter">
+					<h3>欢迎登录</h3>
+					<p>开启网赚生活</p>
+					<form action="" method="post" class="loginForm">
+						<label>
+							<img src="images/icon/icon01.png"/>
+							<input type="text" placeholder="请输入用户名" />
+							<em>用户名为空</em>
+						</label>
+						<label>
+							<img src="images/icon/icon02.png"/>
+							<input type="password" placeholder="请输入密码" />
+							<em>密码错误</em>
+						</label>
+						<div class="code">
+							<input type="text" placeholder="请输入验证码" />
+							<img src="images/test/code.jpg"/>
+							<a href="">看不清？换图片</a>
+							<em>验证码错误</em>
+						</div>
+						<label>
+							<input type="checkbox" name="" id="" value="" />
+							<span>下次自动登录</span>
+						</label>
+						<input type="submit" value="登录"/>
+						<div class="aBtnGro">
+							<a href="">注册账户</a>
+							<a href="">忘记密码</a>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="right">
+				<div class="indexCenter carousel">
+					<h3>7大优势</h3>
+					<p>易调查平台实力强劲</p>
+					<div id="da-vinci-carousel" class="da-vinci-carousel">
+						<a href="images/382px-Leonardo_self.jpg" rel='lightbox' title="Leonardo Da Vinci">
+							<img class="cloudcarousel img1" src="images/cloud01.jpg" width="200" height="330" alt="" />
+						</a>  
+						<a href="images/382px-Leonardo_self.jpg" rel='lightbox' title="Leonardo Da Vinci">
+							<img class="cloudcarousel img2" src="images/cloud02.jpg" width="200" height="330" alt="" />
+						</a> 
+						<a href="images/382px-Leonardo_self.jpg" rel='lightbox' title="Leonardo Da Vinci">
+							<img class="cloudcarousel img3" src="images/cloud03.jpg" width="200" height="330" alt="" />
+						</a> 
+						<a href="images/382px-Leonardo_self.jpg" rel='lightbox' title="Leonardo Da Vinci">
+							<img class="cloudcarousel img4" src="images/cloud04.jpg" width="200" height="330" alt="" />
+						</a> 
+						<a href="images/382px-Leonardo_self.jpg" rel='lightbox' title="Leonardo Da Vinci">
+							<img class="cloudcarousel img5" src="images/cloud05.jpg" width="200" height="330" alt="" />
+						</a> 
+						<a href="images/382px-Leonardo_self.jpg" rel='lightbox' title="Leonardo Da Vinci">
+							<img class="cloudcarousel img6" src="images/cloud06.jpg" width="200" height="330" alt="" />
+						</a> 
+						<a href="images/382px-Leonardo_self.jpg" rel='lightbox' title="Leonardo Da Vinci">
+							<img class="cloudcarousel img7" src="images/cloud07.jpg" width="200" height="330" alt="" />
+						</a>   
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<!--底部信息-->
+		<div class="fixFoot">
+			<span>© 2019 易调查</span>
+			<a href="">豫ICP备19092200号-1</a>
+			<a href="">隐私条款</a>
+			<a href="">法律声明</a>
+			<a href="">团长申请流程</a>
+			<span>QQ群: 78657100</span>
+			<span>QQ客服: 8120995</span>
+		</div>
+		<script src="js/jquery1.8.3.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/cloud-carousel.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$("#da-vinci-carousel").CloudCarousel( { 
+				reflHeight: 56,
+				reflGap:2,
+				yRadius:40,
+				xPos: 285,
+				yPos: 120,
+				speed:0.15,
+				autoRotate:"yes"
+			});
+
+		</script>
+	</body>
+</html>
