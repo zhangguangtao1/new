@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>手机端-创作</title>
+    <link rel="stylesheet" href="./plugin/jquery-weui/weui.min.css">
+    <link rel="stylesheet" href="./plugin/jquery-weui/css/jquery-weui.min.css">
+    <link rel="stylesheet" href="./fonts/iconfont/iconfont.css">
+		<link rel="stylesheet" href="./css/common.css">
+		<link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/manage.css">
+</head>
+<body>
+    <div class="manage-box">
+		<!-- 头部 -->
+		<div class="header flex-header">
+			<i class="iconfont icon-arrow_left go-back"></i>
+			<h3>创建文章</h3>
+		</div>
+		<div class="create-article">
+			<textarea class="weui-textarea" rows="3" placeholder="请输入文章标题"></textarea>
+			<div class="btn-box">
+				<a href="javascript:;">预览</a>
+				<a href="javascript:;">保存</a>
+			</div>
+		</div>
+		<!-- 添加 -->
+		<ul class="article-list" id="foo">
+			<li class="article-list-item">
+				<div class="add-article-box">
+					<a href="javascript:;" class="open-popup" data-target="#article-pop"><i class="iconfont icon-jiahao3 green"></i>添加</a>
+				</div>
+				<div class="article-item" draggable="true" id="drag-btn">
+					<div class="article-img">
+						<img src="./image/article-img.png" alt="">
+					</div>
+					<div class="article-text">
+						<p class="article-title">这是一条很长很长很长很长的文章标题</p>
+						<div class="article-action">
+							<i class="iconfont icon-delete"></i>
+							<i class="iconfont icon-tuozhuai tuozhuai-btn"></i>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="article-list-item">
+				<div class="add-article-box">
+					<a href="javascript:;"><i class="iconfont icon-jiahao3 green"></i>添加</a>
+				</div>
+				<div class="article-item">
+					<div class="article-img">
+						<img src="./image/article-img.png" alt="">
+					</div>
+					<div class="article-text">
+						<p class="article-title">这是一条很长很长很长很长的文章标题</p>
+						<div class="article-action">
+							<i class="iconfont icon-delete"></i>
+							<i class="iconfont icon-tuozhuai"></i>
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<!-- 底部按钮 -->
+	<div class="footer article-footer">
+		<a href="javascript:;" class="green-btn">完成</a>
+	</div>
+	<!-- 弹窗 -->
+	<div id="article-pop" class="weui-popup__container popup-bottom">
+        <div class="weui-popup__overlay"></div>
+        <div class="weui-popup__modal">
+          <div class="pop-header">
+            <a href="javascript:;" class="close-popup close-btn"><i class="iconfont icon-arrowdown"></i></a>
+            <h3>选择操作</h3>
+          </div>
+          <div class="pop-content article-pop-content">
+			<div class="flex-group ">
+				<div class="flex-single">
+					<label class="upload-box">
+						<div class="upload-img">
+							<input type="file">
+							<i class="iconfont icon-tupian1 green"></i>
+						</div>
+						<span>添加图片</span>
+					</label>
+				</div>
+				<div class="flex-single">
+					<a href="javascript:;" class="left-box">
+						<i class="iconfont icon-wenzi green"></i>
+						<span>添加文字</span>
+					</a>
+				</div>
+			</div>
+		  </div>
+        </div>
+    </div>
+	<script src="./plugin/jquery-weui/jquery-2.1.4.js"></script>
+    <script src="./plugin/jquery-weui/fastclick.js"></script>
+    <script src="./js/common.js"></script>
+    <script>
+        $(function() {
+            FastClick.attach(document.body);
+        });
+    </script>
+	<script src="./plugin/jquery-weui/js/jquery-weui.min.js"></script>
+	<script src="./plugin/jquery-weui/js/swiper.min.js"></script>
+	<!-- 拖拽插件 -->
+	<script src="./plugin/Js-Jquery-master/Sortable.js"></script>
+	<script src="./plugin/Js-Jquery-master/app.js"></script>
+</body>
+</html>

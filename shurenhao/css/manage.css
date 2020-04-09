@@ -1,0 +1,539 @@
+/* 管理页面 */
+.manage-box {
+  background-color: #f6f6f6;
+  padding: 11.73333333vw 4vw 16vw;
+  min-height: 100vh;
+  overflow-y: auto;
+}
+/* 管理页面内容部分 */
+.manage-content {
+  /* 部门列表 */
+  /* 人员列表 */
+  /* 添加成员 */
+  /* 邀请 */
+}
+.manage-content .title {
+  line-height: 11.33333333vw;
+  font-size: 4.26666667vw;
+  color: #000;
+}
+.manage-content .department-list .left-box .num {
+  font-style: normal;
+  color: #ff5000;
+}
+.manage-content .man-list {
+  background-color: #fff;
+}
+.manage-content .man-list .man-item {
+  height: 13.33333333vw;
+  padding: 0 2.66666667vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.manage-content .man-list .man-item:last-child .flex-single {
+  border: 0;
+}
+.manage-content .man-list .man-item .checked-box {
+  margin-right: 2.66666667vw;
+}
+.manage-content .man-list .man-item .flex-single {
+  height: 13.33333333vw;
+  padding-left: 0;
+  border-bottom: 0.13333333vw solid #e8e8e8;
+}
+.manage-content .man-list .man-item .flex-single .left-box {
+  display: flex;
+  align-items: center;
+}
+.manage-content .invite-box {
+  margin-bottom: 0;
+}
+.manage-content .invite-box .flex-single {
+  height: 15.46666667vw;
+}
+.manage-content .invite-box .flex-single .left-box {
+  display: flex;
+  align-items: center;
+}
+.manage-content .invite-box .flex-single .left-box .text-box p {
+  font-size: 4vw;
+  color: #000;
+}
+.manage-content .invite-box .flex-single .left-box .text-box span {
+  font-size: 3.2vw;
+  color: #999;
+}
+/* 二维码 */
+.code-box {
+  position: relative;
+  margin-top: 4vw;
+}
+.code-box .code {
+  display: block;
+  width: 100%;
+  margin-top: 4vw;
+}
+.code-box .code-title {
+  position: absolute;
+  top: 8vw;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+.code-box .code-title h3 {
+  font-size: 5.33333333vw;
+  color: #000;
+}
+.code-box .code-title p {
+  font-size: 3.46666667vw;
+  color: #696969;
+}
+.code-box .code-text {
+  position: absolute;
+  left: 0;
+  bottom: 6.66666667vw;
+  width: 100%;
+  text-align: center;
+  font-size: 3.46666667vw;
+  color: #999;
+}
+/* 二维码底部 */
+.code-footer {
+  position: fixed;
+  bottom: 8vw;
+  left: 0;
+  width: 100%;
+  padding: 0 12.66666667vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+.code-footer i {
+  margin-right: 2.66666667vw;
+}
+.code-footer a {
+  display: flex;
+  align-items: center;
+  font-size: 3.73333333vw;
+  color: #333;
+}
+/* 家校通讯录 */
+.address-group {
+  border-radius: 1.33333333vw;
+  background-color: #fff;
+  overflow: hidden;
+}
+.address-group .address-group-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 16vw;
+  padding: 0 2.66666667vw;
+  border-bottom: 0.13333333vw solid #e8e8e8;
+}
+.address-group .address-group-title .left-box p {
+  font-size: 4vw;
+  color: #000;
+}
+.address-group .address-group-title .left-box span {
+  font-size: 3.2vw;
+  color: #696969;
+}
+.address-group .address-group-title .left-box span > em {
+  color: #ff5000;
+  font-style: normal;
+}
+.address-group .address-group-title .right-box a {
+  font-style: 3.46666667vw;
+  color: #007d57;
+}
+.address-group .flex-group {
+  padding-left: 4vw;
+  border-radius: 0;
+}
+.address-group .flex-group .flex-single {
+  height: 16vw;
+}
+.address-group .flex-group .flex-single .left-box .text p {
+  font-size: 4vw;
+  color: #000;
+}
+.address-group .flex-group .flex-single .left-box .text span {
+  font-size: 3.2vw;
+  color: #696969;
+}
+/* 新建校区 */
+.set-class {
+  margin-bottom: 2.66666667vw;
+  background-color: #fff;
+  border-radius: 1.33333333vw;
+  overflow: hidden;
+}
+.set-class .title {
+  padding: 0 2.66666667vw;
+  height: 12vw;
+  line-height: 12vw;
+  color: #000;
+  font-size: 4vw;
+  border-bottom: 0.13333333vw solid #e8e8e8;
+}
+.set-class .flex-group {
+  padding: 0 2.66666667vw;
+}
+.set-class .flex-group .flex-single {
+  padding: 0;
+  height: 13.33333333vw;
+}
+.set-class .flex-group .flex-single .right-box .weui-count .count-empty {
+  display: inline-block;
+}
+.set-class .flex-group .flex-single .right-box .weui-count span {
+  font-size: 3.73333333vw;
+  color: #696969;
+}
+.set-class .flex-group .flex-single .right-box .count-hide {
+  opacity: 0;
+}
+/* 设置教师 */
+.set-teacher {
+  margin-bottom: 2.66666667vw;
+  border-radius: 1.33333333vw;
+  background-color: #fff;
+}
+.set-teacher .title {
+  height: 10.66666667vw;
+  line-height: 10.66666667vw;
+  padding: 0 2.66666667vw;
+  border-bottom: 0.13333333vw solid #e8e8e8;
+  font-size: 3.46666667vw;
+  color: #333;
+}
+.set-teacher .title i {
+  padding: 0 1.06666667vw;
+  color: #999;
+}
+.set-teacher .title span {
+  color: #999;
+}
+.set-teacher .flex-group {
+  padding: 0 2.66666667vw;
+}
+.set-teacher .flex-group .flex-single {
+  height: 13.33333333vw;
+}
+.set-teacher .flex-group .flex-single .left-box .check-type {
+  font-size: 3.2vw;
+  color: #999;
+}
+.set-teacher .flex-group .flex-single .text-box .tit {
+  font-size: 4vw;
+  color: #000;
+}
+.set-teacher .flex-group .flex-single .text-box .tit > span {
+  font-size: 4vw;
+  color: #999;
+}
+.set-teacher .flex-group .flex-single .text-box span {
+  font-size: 3.2vw;
+  color: #999;
+}
+/* 添加老师 */
+.add-teacher {
+  margin-top: 2.66666667vw;
+  border-radius: 1.33333333vw;
+  background-color: #fff;
+}
+.add-teacher .title {
+  height: 12vw;
+  padding: 0 2.66666667vw;
+  border-bottom: 0.13333333vw solid #e8e8e8;
+}
+.add-teacher .flex-group .group-item {
+  padding-left: 2.66666667vw;
+  height: 13.33333333vw;
+  display: flex;
+  align-items: center;
+}
+.add-teacher .flex-group .group-item:last-child .flex-single {
+  border: 0;
+}
+.add-teacher .flex-group .group-item .flex-single {
+  height: 13.33333333vw;
+  margin-left: 2.66666667vw;
+  padding-left: 0;
+  border-bottom: 0.13333333vw solid #e8e8e8;
+}
+.add-teacher .flex-group .group-item .flex-single .left-box .tag {
+  margin-left: 1.33333333vw;
+  border-radius: 2.66666667vw;
+  font-size: 2.66666667vw;
+  border: 0.13333333vw solid #15bc83;
+  padding: 0 1.33333333vw;
+}
+.add-teacher .right-box span {
+  font-style: 3.46666667vw;
+  color: #15bc83;
+}
+.add-teacher-footer .pop-btn em {
+  font-style: 4.8vw;
+  font-style: normal;
+}
+.add-teacher-footer .pop-btn i {
+  margin-left: 1.33333333vw;
+  font-size: 4vw;
+  color: #999;
+}
+/* 添加老师弹窗 */
+.del-teacher-list {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.del-teacher-list .flex-single {
+  padding: 0;
+  height: 13.33333333vw;
+}
+.del-teacher-list .flex-single .right-box i {
+  font-size: 4.8vw;
+}
+/* 底部按钮 */
+.manage-btn-footer a:nth-of-type(1) {
+  flex: 1;
+  margin-right: 2.66666667vw;
+  color: #fff;
+  background-image: -moz-linear-gradient(120deg, #01a892 0%, #0ac46f 100%);
+  background-image: -webkit-linear-gradient(120deg, #01a892 0%, #0ac46f 100%);
+  background-image: -ms-linear-gradient(120deg, #01a892 0%, #0ac46f 100%);
+}
+.manage-btn-footer a:nth-of-type(2) {
+  flex: 1;
+  background-image: none;
+  color: #15bc83;
+  border: 0.13333333vw solid #15bc83;
+}
+.manage-btn-footer a:nth-of-type(3) {
+  width: 17.06666667vw;
+  margin-left: 2.66666667vw;
+  background-image: none;
+  color: #333;
+  border: 0.13333333vw solid #dbdbdb;
+}
+/* 发布作业 */
+.form-box {
+  padding-top: 2.66666667vw;
+}
+.form-box .form-item {
+  margin-bottom: 2.66666667vw;
+  padding: 2.66666667vw;
+  border-radius: 1.33333333vw;
+  background-color: #fff;
+}
+.form-box .form-item label {
+  display: block;
+  font-size: 4vw;
+}
+.form-box .form-item input {
+  height: 8vw;
+  line-height: 8vw;
+  border: 0;
+  outline: none;
+  background-color: transparent;
+  font-size: 4vw;
+  color: #999;
+}
+.form-box .form-item .check-box {
+  position: relative;
+  height: 8vw;
+}
+.form-box .form-item .check-box input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.form-box .form-item .check-box i {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  color: #999;
+  font-size: 4vw;
+}
+.form-box .form-item .weui-textarea {
+  color: #999;
+}
+/* 图片和音频上传 */
+.publish-upload {
+  margin-top: 37.33333333vw;
+  justify-content: center;
+}
+/* 发布按钮 */
+.publish-btn {
+  flex: 1!important;
+}
+/* 班级通知模板 */
+.temp-nav-box {
+  padding: 2.66666667vw 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.temp-nav-box a {
+  width: 20.8vw;
+  height: 7.2vw;
+  line-height: 7.2vw;
+  text-align: center;
+  border: 0.13333333vw solid #e8e8e8;
+  border-radius: 3.6vw;
+  background-color: #fff;
+  font-size: 3.73333333vw;
+}
+.temp-nav-box a.active {
+  border: 0;
+  color: #fff;
+  background-image: -moz-linear-gradient(120deg, #01a892 0%, #0ac46f 100%);
+  background-image: -webkit-linear-gradient(120deg, #01a892 0%, #0ac46f 100%);
+  background-image: -ms-linear-gradient(120deg, #01a892 0%, #0ac46f 100%);
+}
+/* 模板列表 */
+.temp-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.temp-list .temp-item {
+  width: calc(50% - 1.33333vw);
+  padding: 2.66666667vw;
+  margin-right: 2.66666667vw;
+  margin-bottom: 2.66666667vw;
+  border-radius: 1.33333333vw;
+  background-color: #fff;
+}
+.temp-list .temp-item:nth-of-type(2n) {
+  margin-right: 0;
+}
+.temp-list .temp-item .temp-title {
+  font-size: 3.73333333vw;
+  color: #000;
+}
+.temp-list .temp-item .temp-content {
+  font-size: 3.2vw;
+  line-height: 5.06666667vw;
+}
+.temp-list .temp-item .temp-content p {
+  text-indent: 2em;
+}
+/* 模板底部按钮 */
+.temp-footer-btn {
+  flex: 1;
+}
+.temp-footer-btn i {
+  margin-right: 2.66666667vw;
+}
+/* 创建文章 */
+.create-article {
+  margin-top: 2.66666667vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.create-article .weui-textarea {
+  flex: 1;
+  margin-right: 2.66666667vw;
+  padding: 2.66666667vw;
+  border-radius: 1.33333333vw;
+}
+.create-article .btn-box a {
+  display: block;
+  width: 16vw;
+  height: 6.93333333vw;
+  background-color: #fff;
+  text-align: center;
+  line-height: 6.93333333vw;
+  font-size: 3.46666667vw;
+  color: #15bc83;
+  border-radius: 1.33333333vw;
+  border: 0.13333333vw solid #15bc83;
+}
+.create-article .btn-box a:nth-of-type(1) {
+  margin-bottom: 2.66666667vw;
+}
+/* 添加 */
+.article-list .add-article-box {
+  margin: 4vw;
+  text-align: center;
+}
+.article-list .add-article-box a {
+  font-size: 3.73333333vw;
+  color: #000;
+}
+.article-list .add-article-box a i {
+  font-size: 5.33333333vw;
+  margin-right: 2.66666667vw;
+}
+.article-list .article-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 2.66666667vw;
+  border-radius: 1.33333333vw;
+  background-color: #fff;
+}
+.article-list .article-item .article-img {
+  width: 21.33333333vw;
+  border-radius: 1.33333333vw;
+  overflow: hidden;
+  background-color: green;
+}
+.article-list .article-item .article-img img {
+  display: block;
+  width: 100%;
+}
+.article-list .article-item .article-text {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 2.66666667vw;
+}
+.article-list .article-item .article-text .article-title {
+  font-size: 4vw;
+  line-height: 6.93333333vw;
+}
+.article-list .article-item .article-text .article-action {
+  margin-left: 2.66666667vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.article-list .article-item .article-text .article-action i {
+  padding: 1.33333333vw;
+  color: #999;
+}
+/* 创建文章底部按钮 */
+.article-footer a {
+  flex: 1;
+}
+.article-pop-content {
+  padding: 0 4vw;
+}
+.article-pop-content .flex-group {
+  padding: 0 2.66666667vw;
+}
+.article-pop-content .flex-group .flex-single {
+  padding: 0;
+}
+.article-pop-content .flex-group .flex-single .upload-box .upload-img {
+  width: 6.13333333vw;
+  margin-right: 2.66666667vw;
+  position: relative;
+}
+.article-pop-content .flex-group .flex-single .upload-box .upload-img input {
+  opacity: 0;
+}
+.article-pop-content .flex-group .flex-single .upload-box .upload-img i {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #15bc83;
+}

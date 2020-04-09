@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>手机端-预览</title>
+    <link rel="stylesheet" href="./plugin/jquery-weui/weui.min.css">
+    <link rel="stylesheet" href="./plugin/jquery-weui/css/jquery-weui.min.css">
+    <link rel="stylesheet" href="./fonts/iconfont/iconfont.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <div class="mine-box mine-noTab-box">
+        <!-- 头部 -->
+        <div class="header">
+            <i class="iconfont icon-arrow_left go-back"></i>
+            <h3>回首页</h3>
+        </div>
+        <!-- 上部 -->
+        <div class="article-detail-top">
+            <div class="article-detail-title">
+                <div class="img-box">
+                    <img src="./image/photo-img.png" alt="">
+                </div>
+                <div class="text-box">
+                    <h3 class="line-clamp1 text-title">美食家大熊</h3>
+                    <div class="text-time">
+                        <p>2020.04.06 20:13:06</p>
+                        <span>阅读:<em>12000</em></span>
+                    </div>
+                </div>
+            </div>
+            <div class="article-detail-content active">
+                <p class="line-clamp1 content-title">这才是扎实的北京小吃</p>
+                <div class="img-box">
+                    <img src="./image/mine-img.png" alt="">
+                </div>
+                <div class="content-box">
+                    这才是扎实的北京小吃这才是扎实的北京小吃这才是扎实的北京小吃这才是扎实的北京小吃这才是扎实的北京小吃这才是扎实的北京小吃这才是扎实的北京小吃这才是扎实的北京小吃这才是扎实的北京小吃这才是扎实的北京小吃这才是扎实的北京小吃这才是扎实的北京小吃这才是扎实的北京小吃这才是扎实的北京小吃这才是扎实的北京小吃这才是扎实的北京小吃这才是扎实的北京小吃
+                </div>
+            </div>
+            <div class="article-detail-more">
+                <div class="all">
+                    点击下方<a href="javascript:;" class="all-arcitle">“阅读原文”</a>查看更多
+                </div>
+                <div class="up hd">
+                    <a href="javascript:;" class="up-arcitle">点击收起</a>
+                </div>
+            </div>
+        </div>
+        <!-- 最新评论 -->
+        <div class="article-detail-comment">
+            <h3 class="title">最新评论</h3>
+            <ul class="comment-list">
+                <li class="comment-item">
+                    <div class="item-top">
+                        <div class="left-box">
+                            <div class="photo-box">
+                                <img src="./image/photo-img.png" alt="">
+                            </div>
+                            <p class="line-clamp1">秋雨沙沙</p>
+                        </div>
+                        <span class="right-box">6小时前</span>
+                    </div>
+                    <div class="item-content">
+                        这里显示很长很长的评论内容，这里显示很长很长的评论内容这里显示很长。
+                    </div>
+                </li>
+                <li class="comment-item">
+                    <div class="item-top">
+                        <div class="left-box">
+                            <div class="photo-box">
+                                <img src="./image/photo-img.png" alt="">
+                            </div>
+                            <p class="line-clamp1">秋雨沙沙</p>
+                        </div>
+                        <span class="right-box">6小时前</span>
+                    </div>
+                    <div class="item-content">
+                        这里显示很长很长的评论内容，这里显示很长很长的评论内容这里显示很长。
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- 底部 -->
+        <div class="footer article-preview-footer">
+            <div class="left-box">
+                <a href="javascript:;" class="open-popup" data-target="#tmp-pop">模板</a>
+                <a href="javascript:;" class="open-popup" data-target="#size-pop">字体</a>
+                <a href="javascript:;" class="open-popup" data-target="#type-pop">排版</a>
+            </div>
+            <div class="right-box">
+                <a href="javascript:;" class="green-btn">完成</a>
+            </div>
+        </div>
+    </div>
+    <!-- 模板弹窗 -->
+    <div id="tmp-pop" class="weui-popup__container popup-bottom">
+        <div class="weui-popup__overlay"></div>
+        <div class="weui-popup__modal pop-no-footer">
+          <div class="pop-header">
+            <a href="javascript:;" class="close-popup close-btn"><i class="iconfont icon-arrowdown"></i></a>
+            <h3>选择模板</h3>
+          </div>
+          <div class="pop-content pop-tmp-content">
+              <div class="tab-box">
+                  <a href="javascript:;"><span>无模板</span></a>
+                  <a href="javascript:;" class="active"><span>热门</span></a>
+                  <a href="javascript:;"><span>美文</span></a>
+                  <a href="javascript:;"><span>生活</span></a>
+              </div>
+              <ul class="img-list">
+                  <li class="img-item">
+                      <a href="javascript:;">
+                          <div class="img-box">
+                              <img src="./image/tmp-img.png" alt="">
+                          </div>
+                          <p class="title">韶光</p>
+                      </a>
+                  </li>
+                  <li class="img-item">
+                    <a href="javascript:;">
+                        <div class="img-box">
+                            <img src="./image/tmp-img.png" alt="">
+                        </div>
+                        <p class="title">韶光</p>
+                    </a>
+                </li>
+                <li class="img-item">
+                    <a href="javascript:;">
+                        <div class="img-box">
+                            <img src="./image/tmp-img.png" alt="">
+                        </div>
+                        <p class="title">韶光</p>
+                    </a>
+                </li>
+                <li class="img-item">
+                    <a href="javascript:;">
+                        <div class="img-box">
+                            <img src="./image/tmp-img.png" alt="">
+                        </div>
+                        <p class="title">韶光</p>
+                    </a>
+                </li>
+              </ul>
+          </div>
+        </div>
+      </div>
+      <!-- 字体弹窗 -->
+      <div id="size-pop" class="weui-popup__container popup-bottom">
+        <div class="weui-popup__overlay"></div>
+        <div class="weui-popup__modal pop-no-footer">
+          <div class="pop-header">
+            <a href="javascript:;" class="close-popup close-btn"><i class="iconfont icon-arrowdown"></i></a>
+            <h3>选择字体</h3>
+          </div>
+          <div class="pop-content pop-tmp-content">
+              <div class="size-box">
+                  <a href="javascript:;" class="active">默认字体</a>
+                  <a href="javascript:;">仿宋</a>
+                  <a href="javascript:;">楷书</a>
+                  <a href="javascript:;">隶属</a>
+              </div>
+             
+          </div>
+        </div>
+      </div>
+      <!-- 排版 -->
+      <div id="type-pop" class="weui-popup__container popup-bottom">
+        <div class="weui-popup__overlay"></div>
+        <div class="weui-popup__modal pop-no-footer">
+          <div class="pop-header">
+            <a href="javascript:;" class="close-popup close-btn"><i class="iconfont icon-arrowdown"></i></a>
+            <h3>选择排版</h3>
+          </div>
+          <div class="pop-content pop-tmp-content">
+              <div class="type-box">
+                  <a href="javascript:;" class="active">
+                      <p>字上图下</p>
+                      <i class="iconfont icon-tupian1"></i>
+                  </a>
+                  <a href="javascript:;">
+                    <i class="iconfont icon-tupian1"></i>
+                    <p>字下图上</p>
+                  </a>
+                  
+              </div>
+             
+          </div>
+        </div>
+      </div>
+    <script src="./plugin/jquery-weui/jquery-2.1.4.js"></script>
+    <script src="./plugin/jquery-weui/fastclick.js"></script>
+    <script src="./js/common.js"></script>
+    <script>
+        $(function() {
+            FastClick.attach(document.body);
+        });
+    </script>
+		<script src="./plugin/jquery-weui/js/jquery-weui.min.js"></script>
+        <script src="./plugin/jquery-weui/js/swiper.min.js"></script>
+        <script>
+            // tab栏
+            $('.tab-box>a').click(function(){
+                $(this).addClass('active').siblings().removeClass('active')
+            })
+            // 模板选择
+            $('#tmp-pop .img-item').click(function(){
+                $(this).addClass('active').siblings().removeClass('active')
+            })
+            // 字体选择
+            $('#size-pop .size-box>a').click(function(){
+                $(this).addClass('active').siblings().removeClass('active')
+            })
+             // 排版选择
+             $('#type-pop .type-box>a').click(function(){
+                $(this).addClass('active').siblings().removeClass('active')
+            })
+            // 阅读全文
+            $('.all-arcitle').click(function(){
+                console.log($(this).parents('.all'))
+                $(this).parents('.article-detail-more').siblings('.article-detail-content').removeClass('active')
+                $(this).parents('.all').addClass('hd')
+                $(this).parents('.all').siblings('.up').addClass('hd')
+            })
+            // 收起
+            // $('.up-arcitle').click(function(){
+            //     $(this).parents('.article-detail-more').siblings('.article-detail-content').addClass('active')
+            //     $(this).parents('.up').removeClass('hd')
+            //     $(this).parents('.up').siblings('.all').removeClass('hd')
+            // })
+        </script>
+</body>
+</html>
