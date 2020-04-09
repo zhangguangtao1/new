@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<title>APP下载码</title>
+		<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/uploadCode.css"/>
+		<script src="../js/adaptation.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!-- 内页头部 -->
+		<div class="innerHeader">
+			<a href=""><img src="../images/fanhui@2x.png" ></a>
+			<p>APP下载码</p>
+		</div>
+		<div class="appTips">
+			注意：此二维码仅限用于下载app，【邀请注册】请前往【邀请码页面】
+		</div>
+		<div class="erCode">
+			<img src="../images/code.png"/>
+			<p>扫描上方二维码，加入融亿兑</p>
+		</div>
+		<!--保存和分享-->
+		<div class="saveAndShare">
+			<div class="save">保存</div>
+			<div class="share">分享</div>
+		</div>
+		<!-- 底部分享 -->
+		<div class="shareGroup">
+			<div class="shareBox">
+				<p>选择要分享的平台</p>
+				<div class="shareListBox">
+					<div class="shareContent">
+						<img src="../images/wpct.png" >
+						<p>微信</p>
+					</div>
+					<div class="shareContent">
+						<img src="../images/wpct.png" >
+						<p>微信</p>
+					</div>
+					<div class="shareContent">
+						<img src="../images/wpct.png" >
+						<p>微信</p>
+					</div>
+					<div class="shareContent">
+						<img src="../images/wpct.png" >
+						<p>微信</p>
+					</div>
+					<div class="shareContent">
+						<img src="../images/wpct.png" >
+						<p>微信</p>
+					</div>
+					<div class="shareContent">
+						<img src="../images/wpct.png" >
+						<p>微信</p>
+					</div>
+				</div>
+				<div class="cancleShare">取消分享</div>
+			</div>
+		</div>
+		<script src="../js/jquery1.9.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(".share").click(function(){
+				$(".shareGroup").show()
+			})
+			$(".cancleShare").click(function(){
+				$(".shareGroup").hide()
+			});
+			$(".save").click(function(){
+				showMsg("图片保存成功")
+			})
+			//保存成功的提示
+			function showMsg(msg){
+				msg = msg ? msg : "成功";
+				var div = document.createElement("div");
+				div.className = "saveSuccessTips";
+				div.innerHTML = msg;
+				document.body.appendChild(div);
+				setTimeout(function(){
+					document.body.removeChild(div);
+				},3000)
+			}
+		</script>
+	</body>
+</html>

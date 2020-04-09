@@ -1,0 +1,29 @@
+@charset "utf-8";
+body{background-color: #fafafa;}
+.exchangeList{margin-top:0.5rem;}
+.exchangeItem{background-color:#fff;padding:0.25rem 0.5rem;margin-top:0.25rem;}
+.exchangeItem>p{font-size:0.6rem;color:#333;margin-top:0.25rem;}
+.exchangeContent{background-color:#010b50;padding:0.5rem 0.25rem;border-radius:0.25rem;position:relative;}
+.exchangeContent > p{font-size:0.8rem;color:#fff;}
+.exchangeBtn{position:absolute;right:0.5rem;top:0.25rem;width:5rem;line-height:1.5rem;text-align:center;font-size:0.7rem;color:#fff;background-color:#ec0513;border-radius:1.5rem;}
+.exchangeTable{margin-top:2rem;}
+.exchangeTabName{font-size:0.65rem;color:#fff;overflow:hidden;margin-bottom:0.25rem;}
+.exchangeTabName li{float:left;width:25%;text-align:center;}
+.exchangeTabCon{overflow:hidden;font-size:0.65rem;color:#fff;border-top:0.05rem solid #8387a0;border-right:0.05rem solid #8387a0;}
+.exchangeTabCon li{line-height:1.5rem;border-left:0.05rem solid #8387a0;border-bottom:0.05rem solid #8387a0;float:left;width:25%;box-sizing: border-box;text-align:center;}
+/*算积分*/
+.calcIntegral{background-color:#FFFFFF;padding:0.75rem 0.5rem;margin-top:0.5rem;}
+.calcIntegral > p{font-size:0.7rem;font-weight:bold;color:#333;}
+.CalculationFormula{margin-top:1rem;}
+.CalculationFormula input{font-size:0.6rem;width:9.5rem;height:1.5rem;color:#333;border:0.025rem solid #dfdfdf;border-radius:0.2rem;margin-left:1.25rem;text-indent:0.5rem;}
+.CalculationFormula span{float:right;width:5rem;line-height:1.5rem;font-size:0.6rem;background-color:#e70012;text-align:center;border-radius:1.5rem;color:#fff;margin-right:1rem;}
+.interalExplain{font-size:0.6rem;color:#333;margin-top:0.75rem;}
+.interalExplain a{color:#c61b2a;margin-left:0.25rem;}
+
+.queryList{background-color:#FFFFFF;padding:0rem 0.5rem;margin-top:0.5rem;}
+.queryList .queryItem{border-bottom:0.05rem solid #f6f6f6;position:relative;padding:0.75rem 0;position:relative;}
+.queryItem h3{font-size:0.7rem;color:#333;font-weight:bold;}
+.queryItem p{font-size:0.6rem;color:#333;margin-top:0.75rem;}
+.queryItem img{position:absolute;top:0.5rem;right:1.25rem;width:1.5rem;height:1.5rem}
+
+

@@ -1,0 +1,20 @@
+@charset "utf-8";
+body{background-color:#FAFAFA;}
+.avatar{padding:0 0.75rem;background-color:#FFFFFF;overflow: hidden;}
+.avatar img{float:left;width:3.75rem;height:3.75rem;margin-right:0.5rem;}
+.avatar img:first-child+img{float:right;width:0.5rem;height:0.85rem;margin-left:0.5rem;margin-right:0;margin-top:1.15rem;}
+.avatarInfo{overflow:hidden;font-size:0.65rem;margin-top:0.9rem;}
+.avatarInfo p{line-height:1.5em;}
+
+.wechatNumber{overflow: hidden;background-color:#FFFFFF;}
+.wechatNumber a{display:block;overflow:hidden;line-height:2rem;padding:0.75rem 0.75rem;}
+.wechatNumber span{float:left;font-size:0.65rem;color:#333;}
+.wechatNumber img{float:right;width:0.5rem;height:0.85rem;margin-left:0.5rem;margin-top:0.5rem;}
+.wechatNumber p{float:right;padding:0 0.5rem;line-height:1rem;font-size:0.65rem;color:#333;border-radius:0.5rem;border:0.05rem solid #EAEFF3;margin-right:0.5rem;margin-top:0.5rem;}
+
+.alterSetting{padding:0 0.75rem;overflow:hidden;background-color:#FFFFFF;line-height:2.5rem;border-bottom:0.025rem solid #F5F5F5;}
+.alterSetting p{float:left;font-size:0.65rem;color:#333;}
+.alterSetting img{float:right;width:0.5rem;height:0.85rem;margin-left:0.5rem;margin-top:0.55rem;}
+.alterSetting a{display:block;overflow:hidden;}
+
+.backLogin{text-align: center;line-height:2.5rem;font-size:0.65rem;margin-top:1.25rem;color:#CF0213;background-color:#FFFFFF;}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<title>设置</title>
+		<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/set.css"/>
+		<script src="../js/adaptation.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!-- 内页头部 -->
+		<div class="innerHeader">
+			<a href=""><img src="../images/fanhui@2x.png" ></a>
+			<p>设置</p>
+		</div>
+		<div class="setAvatar">
+			<span>头像</span>
+			<img class="arrow" src="../images/xiayiye@2x.png"/>
+			<img src="../images/touxiang@2x.png" alt="" />
+		</div>
+		<div class="nickName">
+			<a href="">
+				<span>昵称</span>
+				<img class="arrow" src="../images/xiayiye@2x.png"/>
+				<p>90090909090900</p>
+			</a>
+		</div>
+		<div class="wechatNumber">
+			<a href="">
+				<span>结算信息</span>
+				<img src="../images/xiayiye@2x.png" />
+				<p>已设置</p>
+			</a>
+		</div>
+		<ul class="alterSetting">
+			<a href="">
+				<p>身份</p>
+				<span>兑客</span>
+			</a>
+		</ul>
+		<ul class="alterSetting">
+			<a href="">
+				<p>邀请人</p>
+				<span>张三</span>
+			</a>
+		</ul>
+		<div class="uploadAvatar">
+			<div class="changeAvatar">
+				<div class="camera">相机</div>
+				<label for="files" class="ambler">相册</label>
+				<input type="file" name="files" id="files" value="" />
+				<div class="cancleAvatar">取消</div>
+			</div>
+		</div>
+		<script src="../js/jquery1.9.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(".cancleAvatar").click(function(){
+				$(".uploadAvatar").hide()
+			});
+			$(".setAvatar").click(function(){
+				$(".uploadAvatar").show()
+			});
+		</script>
+	</body>
+</html>

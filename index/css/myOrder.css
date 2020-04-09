@@ -1,0 +1,12 @@
+@charset "utf-8";
+.allOrder{overflow:hidden;text-align:center;font-size:0.65rem;color:#333;border-top:0.25rem solid #DFDFDF;}
+.allOrder p{float:left;width:25%;line-height:2.5rem;}
+.allOrder a{float:left;width:25%;line-height:2.5rem;}
+.allOrder p.on{color:#CF0213;font-weight:bold;border-bottom:0.1rem solid;}
+
+.orderList{padding:0.5rem 0.5rem 1.25rem;}
+.orderList li{border-bottom:0.25rem solid #DFDFDF;padding:0.5rem 0;color:#333;}
+.listCon{overflow:hidden;font-size:0.7rem;}
+.listCon p{overflow:hidden;}
+.listCon span{float:right;margin-left:0.5rem;}
+.orderList li > p{font-size:0.7rem;margin:0.5rem 0;}

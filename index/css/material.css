@@ -1,0 +1,7 @@
+@charset "utf-8";
+body{background-color: #fafafa;}
+.showImg{margin-top:1rem;}
+.showImg img{display:block;width:100%;}
+.saveAndShare{margin-top:1.25rem;overflow:hidden;padding:0 0.5rem 1.5rem;}
+.saveAndShare .save{float:left;border:0.05rem solid #C61B2A;text-align:center;width:7rem;line-height:2rem;border-radius:0.25rem;font-size:0.75rem;color:#333;}
+.saveAndShare .share{float:right;border:0.05rem solid #C61B2A;;background-color:#C61B2A;text-align:center;width:7rem;line-height:2rem;border-radius:0.25rem;font-size:0.75rem;color:#fff;}

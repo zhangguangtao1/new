@@ -1,0 +1,58 @@
+@charset "utf-8";
+body{background-color:#FAFAFA;}
+.avatar{padding:0 0.75rem;background-color:#FFFFFF;overflow: hidden;}
+.avatar img{float:left;width:3.75rem;height:3.75rem;margin-right:0.5rem;}
+.avatar img:first-child+img{float:right;width:0.5rem;height:0.85rem;margin-left:0.5rem;margin-right:0;margin-top:1.15rem;}
+.avatarInfo{overflow:hidden;font-size:0.8rem;margin-top:0.9rem;}
+.avatarInfo p{line-height:1.5em;}
+
+.wechatNumber{overflow: hidden;background-color:#FFFFFF;margin:0.5rem 0;}
+.wechatNumber a{display:block;overflow:hidden;line-height:2rem;padding:0.5rem 0.75rem;}
+.wechatNumber span{float:left;font-size:0.8rem;color:#333;}
+.wechatNumber img{float:right;width:0.5rem;height:0.85rem;margin-left:0.5rem;margin-top:0.5rem;}
+.wechatNumber p{float:right;padding:0 0.5rem;line-height:1rem;font-size:0.8rem;color:#333;border-radius:0.5rem;border:0.05rem solid #EAEFF3;margin-right:0.5rem;margin-top:0.5rem;}
+
+.alterSetting{padding:0 0.75rem;overflow:hidden;background-color:#FFFFFF;line-height:2.5rem;border-bottom:0.025rem solid #F5F5F5;}
+.alterSetting p{float:left;font-size:0.8rem;color:#333;}
+.alterSetting span{float:right;font-size:0.8rem;color:#333;}
+.alterSetting img{float:right;width:0.5rem;height:0.85rem;margin-left:0.5rem;margin-top:0.55rem;}
+.alterSetting a{display:block;overflow:hidden;}
+
+
+.setAvatar{padding:0.25rem 0.75rem;background-color:#FFFFFF;overflow:hidden;line-height:3.75rem;}
+.setAvatar img.arrow{float:right;width:0.5rem;height:0.85rem;margin-left:0.5rem;margin-top:0.5rem;margin-top:1.25rem;}
+.setAvatar span{float:left;font-size:0.8rem;color:#333;}
+.setAvatar img{float:right;width:3.75rem;height:3.75rem;border-radius:50%;}
+
+.nickName{overflow: hidden;background-color:#FFFFFF;}
+.nickName a{display:block;overflow:hidden;line-height:2rem;padding:0.5rem 0.75rem;border-top:0.025rem solid #DFDFDF}
+.nickName span{float:left;font-size:0.8rem;color:#333;}
+.nickName img{float:right;width:0.5rem;height:0.85rem;margin-left:0.5rem;margin-top:0.5rem;}
+.nickName p{float:right;font-size:0.8rem;color:#333;margin-right:0.5rem;}
+
+.uploadAvatar{position: fixed;left:0;right:0;top:0;bottom:0;background-color:rgba(0,0,0,0.5);z-index:10000;display:none;}
+.changeAvatar{position: absolute;bottom:0;left:0;right:0;}
+.camera{background-color:#FFFFFF;line-height:2rem;text-align:center;font-size:0.7rem;color:#333;border-bottom:0.05rem solid #DFDFDF;}
+.ambler{background-color:#FFFFFF;line-height:2rem;text-align:center;font-size:0.7rem;color:#333;display:block;}
+.cancleAvatar{background-color:#FFFFFF;line-height:2rem;text-align:center;font-size:0.7rem;color:#333;margin-top:0.75rem;}
+.changeAvatar input{display:none;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

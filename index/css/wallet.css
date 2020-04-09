@@ -1,0 +1,19 @@
+@charset "utf-8";
+body{background-color:#FAFAFA;}
+.walletMoney{background:linear-gradient(to right,#9500ba,#10b3f8);font-size:0;}
+.cumulativeMoney{width:50%;text-align:center;font-size:0.65rem;margin:2rem 0;display:inline-block;vertical-align:top;border-right:0.05rem solid #FFFFFF;}
+.cumulativeMoney p{color:#FFFFFF;margin-bottom:0.75rem;}
+.cumulativeMoney span{color:#FFFFFF;display:block;font-size:0.75rem;font-weight:bold;}
+
+.balance{width:50%;text-align:center;font-size:0.65rem;margin:2rem 0;display:inline-block;vertical-align:top;}
+.balance p{color:#FFFFFF;margin-bottom:0.75rem;}
+.balance span{color:#FFFFFF;display:block;font-size:0.75rem;font-weight:bold;}
+
+.walletInfo li{margin:0.25rem 0;padding:0.75rem;overflow:hidden;background-color:#FFFFFF;}
+.walletInfo a{display:block;}
+.walletInfo li img:first-child{float:left;width:1.25rem;height:1.25rem;float:left;margin-right:0.5rem;}
+.walletInfo li span{float:left;font-size:0.7rem;line-height:1.25rem;}
+.walletInfo li span + img{float:right;width:0.3rem;height:0.5rem;margin-top:0.5rem;}
+
+.showMoney{position:fixed;bottom:0;left:0;right:0;line-height:2.5rem;text-align: center;background-color:#CC0011;color:#FFFFFF;font-size:0.65rem;}
+

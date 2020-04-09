@@ -1,0 +1,8 @@
+@charset "utf-8";
+.wxCode{text-align: center;margin:2.5rem 0;}
+.wxCode img{vertical-align:middle;width:6rem;height:6rem;}
+.wxCode p{font-size:0.7rem;color:#333;margin-top:1rem;}
+.setStep{padding:0 1.25rem;}
+.setStep img{width:100%;vertical-align:top;}
+.attention{padding:1.25rem;}
+.attention span{display:block;text-align:center;border:0.1rem solid;border-radius:0.35rem;line-height:2rem;font-size:0.7rem;color:#CF0213;}

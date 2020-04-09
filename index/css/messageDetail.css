@@ -1,0 +1,8 @@
+@charset "utf-8";
+body{padding-bottom:0.5rem;}
+.msgCon{border-top:0.025rem solid #E8E8E8;padding:1rem 0.5rem 0;}
+.msgCon h3{font-size:0.9rem;color:#333;font-weight:bold;}
+.msgCon > p{font-size:0.6rem;color:#b7b7b7;margin-top:0.7rem;}
+.editorCon{margin-top:0.75rem;}
+.editorCon p{font-size:0.65rem!important;color:#333!important;line-height:1.5em!important;text-align:center!important;margin:0.5rem 0;}
+

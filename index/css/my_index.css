@@ -1,0 +1,240 @@
+@charset "utf-8";
+body{
+	background-color: #F9F9F9;
+}
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+.margnlf{
+	overflow: hidden;
+	margin: 0 1rem;
+}
+.background_img{
+	overflow: hidden;
+	width: 100%;
+	height: 9rem;
+	background-image: url(../images/bg1.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	z-index: 1;
+	
+}
+.hasd_img{
+	width: 4rem;
+	/*background-color: pink;*/
+	margin-top:1.75rem;
+}
+.hea_left{
+	overflow: hidden;
+	padding-top: 1rem;
+}
+.mrimg{
+	margin-top: 1rem;
+	width: 4rem;
+	height: 4rem;
+	background-image: url(../images/morentoux.png);
+	background-repeat: no-repeat;
+	background-size:100% 100%;
+}
+.mrimg>img{
+	width: 4rem;
+	height: 4rem;
+	border-radius: 100%;
+}
+.heaname_img>span{
+	font-size: 0.8rem;
+	color: #FFFFFF;
+	font-weight: 600;
+}
+.heaname_img>img{
+	width: 1.1rem;
+	height: 1.15rem;
+	margin-bottom:0.25rem ;
+}
+/*.hea_name>div:nth-child(2){
+	font-size: 0.8rem;
+	color: #FFFFFF;
+	font-weight: 600;
+	margin-top: -0.6rem;
+}*/
+.telephone{
+	overflow: hidden;
+	color: #FFFFFF;
+	font-size: 0.7rem;
+	margin-top:0.6rem;
+}
+.hea_nameBox{
+	width: 65%;
+	margin-left:1rem;
+	margin-top: 2.1rem;
+}
+.newbox >img{
+	width: 3.5rem;
+	height: auto;
+	margin-top: 0.6rem;
+}
+.telephonebox{
+	overflow: hidden;
+	line-height: 100%;
+}
+.margin_conlf{
+	overflow: hidden;
+	margin: 0 0.5rem;
+}
+.backgroundFFFs{
+	overflow: hidden;
+	width: 100%;
+	height: 6.93rem;
+	background-color: #FFFFFF;
+	border-radius: 0.25rem;
+	z-index: 2;
+}
+.backgroundFFF1{
+	overflow: hidden;
+	width: 100%;
+	background-color: #FFFFFF;
+	border-radius: 0.25rem;
+	z-index: 2;
+	margin-bottom: 2.7rem;
+}
+.cont_btom1{
+	height: 3.93rem;
+	/*background-color: pink;*/
+}
+.marbottom{
+	margin-top: -1rem;
+}
+.My_mar{
+	overflow: hidden;
+	margin: 0rem 0.45rem 0rem 0.5rem;
+}
+.My_mhead{
+	width: 100%;
+	height: 2.25rem;
+	line-height: 2.25rem;
+	border-bottom: 1px solid #F9F9F9;
+}
+.my_moeny{
+	font-size: 0.8rem;
+	color: #333333;
+}
+.money>span{
+	font-size: 0.8rem;
+	color: #333333;
+	font-weight: 600;
+}
+.money>img{
+	width: 0.3rem;
+	height: 0.55rem;
+	margin-left: 0.25rem;
+}
+/*内容*/
+.mattop{
+	margin-top: 0.25rem;
+}
+.cont{
+	overflow: hidden;
+	width: 100%;
+	margin-top: 0.75rem;
+}
+.cont_box>img,.cont_box1>img{
+	width: 2rem;
+	height: 2rem;
+}
+.cont_box{
+	width: 25%;
+	text-align: center;
+	line-height: 100%;
+}
+.cont_font{
+	font-size: 0.7rem;
+	color: #333333;
+}
+
+.cont_box1{
+	width: 33.33%;
+	text-align: center;
+	line-height: 100%;
+	position: relative;
+}
+.textNum>span{
+	display: inline-block;
+	/*width:1rem;
+	height: 0.8rem;*/
+	color: #FFFFFF;
+	background-color:#CC0011;
+	position: absolute;
+	left: 60%;
+	line-height: 100%;
+	text-align: center;
+	border-radius:0.4rem;
+	font-size: 0.4rem;
+	padding: 0.07rem 0.21rem 0.07rem 0.21rem;
+}
+
+.shezhi{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	margin-top: 1rem;
+}
+.szimg{
+	width: 1rem;
+	height: 1rem;
+}
+.xix{
+	overflow: hidden;
+	display: inline-block;
+	width: 1.1rem;
+	height: 1rem;
+	margin-right: 1rem;
+	background-image: url(../images/xiaoxi.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	line-height:100%;
+}
+.shezhiright{
+	position: relative;
+}
+.xixsl{
+	position: absolute;
+	top:-0.2rem;
+	left: 0.75rem;
+    font-size: 0.45rem;	
+	display: inline-block;
+    color: #FFFFFF;
+    background-color: #CC0011;
+    text-align: center;
+    border-radius: 0.4rem;
+    padding-top:0.1rem;
+    padding-left: 0.15rem;
+    padding-right: 0.15rem;
+   line-height: 100%;
+   
+}
+.foot_bgcolor{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 2.45rem;
+	background-color: #FFFFFF;
+}
+
+.hasd_img img{vertical-align:top;width:4rem;height:4rem;border-radius:50%;}
+.hea_name{position:relative;font-size:0.8rem;display:inline-block;vertical-align:top;color:#fff;}
+.heaname_img{
+	    position: absolute;
+    right: -1.275rem;
+    top: -0.8rem;
+
+}
+.posi{position: relative;}
+.myOPeration{position:absolute;top:1rem;right:0rem;}
+.myOPeration img{width:1.2rem;height:1.2rem;vertical-align:top;}
+.myOPeration a{margin-left:0.5rem;}

@@ -1,0 +1,38 @@
+@charset "utf-8";
+body{background-color: #fafafa;}
+
+.formTip{font-size:0.65rem;background-color:#f5f5f5;padding:0.25rem 0.5rem;line-height:1.5em;}
+.selectProp{background-color:#FFFFFF;padding:0.75rem 0.5rem;}
+.selectProp h3{font-weight:bold;color:#333;margin-bottom:0.5rem;font-size:0.7rem;}
+.proList{overflow:hidden;}
+.proList p{float:left;padding:0.25rem 0;width:5rem;line-height:2rem;color:#333;font-size:0rem;border-radius:0.15rem;text-align:center;border:0.05rem solid #ccc;margin-right:0.5rem;}
+.proList p span{font-size:0.65rem;display:inline-block;vertical-align:middle;}
+.proList p.active{border-color:#CC0011}
+.proList p.active span{color:#CC0011}
+
+.screenshot{background-color: #FFFFFF;padding: 0.75rem 0.5rem;margin-top:0.5rem;}
+.screenshot h3{font-weight:bold;color:#333;margin-bottom:0.5rem;font-size:0.7rem;}
+.screenshot img{display:block;width:5rem;height:5rem}
+
+.uploadImg{margin-top:0.5rem;background-color:#FFFFFF;padding: 0.75rem 0.5rem;}
+.uploadImg h3{font-weight:bold;color:#333;margin-bottom:0.5rem;font-size:0.7rem;}
+.imgPosi{display:none;}
+.imgPosi img{display:block;width:5rem;height:5rem}
+.uploadImg label{display:block;width:5rem;height:5rem;background-color: #8f8f8f;position:relative;}
+.uploadImg label span{position:absolute;left:0;right:0;bottom:0;top:0;width:2.5rem;height:2.5rem;background-color:#FFFFFF;border-radius:50%;margin:auto;}
+.uploadImg label span:after{content:"";position:absolute;left:0;right:0;bottom:0;top:0;margin:auto;background-color:#8f8f8f;border-radius:0.125rem;width:1.25rem;height:0.25rem;}
+.uploadImg label span:before{content:"";position:absolute;left:0;right:0;bottom:0;top:0;margin:auto;background-color:#8f8f8f;border-radius:0.125rem;height:1.25rem;width:0.25rem;}
+.uploadImg input{display:none;}
+
+.exchangeCode{margin-top:0.5rem;background-color:#FFFFFF;padding: 0.75rem 0.5rem;}
+.exchangeCode h3{font-weight:bold;color:#333;margin-bottom:0.5rem;font-size:0.7rem;}
+.exchangeCode input{display:block;margin-top:1rem;margin-left:0.75rem;border:none;font-size:0.65rem;height:1rem;width:12.5rem}
+
+.exchangeTops{margin-top:0.5rem;background-color:#FFFFFF;padding: 0.75rem 0.5rem;overflow:hidden;}
+.exchangeTops span{font-weight:bold;color:#333;font-size:0.7rem;float:left;}
+.exchangeTops input{color:#333;font-size:0.7rem;float:left;margin-left:0.5rem;width:14.5rem;border:0;}
+
+.formCount{background-color: #f5f5f5;color:#6c6c6c;font-size:0.7rem;line-height:2rem;padding-left:0.5rem;}
+.submitBtn{background-color:#FFFFFF;padding:1.25rem 0.5rem;}
+.submitBtn span{display:block;text-align: center;line-height:2rem;font-size:0.7rem;border-radius:0.2rem;background-color: #C61B2A;color:#fff;}
+.submitBtn a{display:block;text-align: center;line-height:2rem;font-size:0.7rem;border-radius:0.2rem;background-color: #C61B2A;color:#fff;}

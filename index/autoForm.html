@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<title>商品详情</title>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/autoForm.css"/>
+		<script src="js/adaptation.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!-- 内页头部 -->
+		<div class="innerHeader">
+			<a href=""><img src="images/fanhui@2x.png" ></a>
+			<p>自助报单</p>
+		</div>
+		<div class="formTip">
+			请提交正确卷码信息，若恶意提交无关卷码，已经核实。将进行扣款和封号处理
+		</div>
+		<!--选择商品属性-->
+		<div class="selectProp">
+			<h3>选择商品属性</h3>
+			<div class="proList">
+				<p><span>腾讯视频</span></p>
+				<p><span>腾讯视频</span></p>
+				<p><span>腾讯视频</span></p>
+			</div>
+		</div>
+		<!--截图-->
+		<div class="screenshot">
+			<h3>截图示例</h3>
+			<img src="images/dhjp@2x.png"/>
+		</div>
+		<!--上传截图-->
+		<div class="uploadImg">
+			<h3>选择商品属性</h3>
+			<div class="imgPosi">
+				<img src="images/dhjp.png"/>
+			</div>
+			<label for="inputFile"><span></span></label>
+			<input id="inputFile" type="file" />
+		</div>
+		<!--兑换码-->
+		<div class="exchangeCode">
+			<h3>兑换码</h3>
+			<input type="text" placeholder="请将整条短信复制到此处" />
+		</div>
+		<!--备注-->
+		<div class="exchangeTops">
+			<span>备注</span>
+			<input type="text" placeholder="若有特殊情况请在此填写" />
+		</div>
+		<div class="formCount">
+			一次性报20单以上，请联系客服报单
+		</div>
+		<!--提交按钮-->
+		<div class="submitBtn"><span>提交按钮</span></div>
+		<script src="js/jquery1.9.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(".proList p").click(function(){
+				if($(this).hasClass("active")){
+					$(this).removeClass("active");
+				}else{
+					$(this).addClass("active");
+				}
+				
+			})
+		</script>
+	</body>
+</html>

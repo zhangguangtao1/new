@@ -1,0 +1,10 @@
+@charset "utf-8";
+body{background-color: #fafafa;}
+.declaForm{margin-top:4rem;text-align:center;}
+.declaForm img{width:2.35rem;height:2.5rem;vertical-align:top;}
+.declaForm p.succ{font-size:0.8rem;margin:1rem 0;color:#cf0012;}
+.declaForm p.hasWaiter{font-size:0.6rem;color:#333;} 
+
+
+
+

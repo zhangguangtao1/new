@@ -1,0 +1,22 @@
+@charset "utf-8";
+body{background-color:#FFFFFF;}
+.myTeam{padding:0 0.5rem;}
+.teamHead{background-color:#afd4ef;line-height:2rem;text-align:center;border:0.05rem solid #dddddd;font-size:0.7rem;color:#347db2}
+.tableCon{display:table;width:100%;text-align:center;}
+.tableLeft{display:table-cell;vertical-align:middle;font-size:0.65rem;border:0.05rem solid #DDDDDD;}
+.tableLeft p{font-size:0.6rem;color:#347DB2;}
+.tableLeft span{font-size:0.7rem;color:#347DB2;display:block;font-weight:bold;margin-bottom:0.75rem;}
+.tableRight{display:table-cell;}
+.tableItem{border:0.05rem solid #DDDDDD;padding:0.5rem 0;}
+.tableItem p{font-size:0.6rem;color:#347DB2;}
+.tableItem span{font-size:0.7rem;color:#347DB2;display:block;font-weight:bold;margin-bottom:0.75rem;}
+
+.exchangeAchieve{padding:1.25rem 0.5rem 0;}
+.exchangeTable{overflow:hidden;text-align: center;}
+.exchangeItem{float:left;width:50%;border:0.05rem solid #DDDDDD;box-sizing: border-box;padding:0.5rem 0;}
+.exchangeItem p{font-size:0.6rem;color:#347DB2;}
+.exchangeItem span{font-size:0.7rem;color:#347DB2;display:block;font-weight:bold;margin-bottom:0.75rem;}
+
+
+
+
