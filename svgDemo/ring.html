@@ -3,31 +3,35 @@
 	<head>
 		<meta charset="utf-8">
 		<title>圆环动画</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<style>
 			*{padding:0;margin:0;}
-			.ring{position:relative;width:300px;height:400px;}
-			.ring p{position:absolute;left:0;height:60px;line-height:60px;right:0;bottom:0;top:0;margin:auto;text-align:center;}
+			body{font-size:16px;}
+			#svgEle{width:7.5rem;height:10rem;}
+			.ring{position:relative;width:7.5rem;height:10rem;}
+			.ring p{font-size:0.65rem;position:absolute;left:0;height:1.5rem;line-height:1.5rem;right:0;bottom:0;top:0;margin:auto;text-align:center;}
 			.c1{stroke:#ccc;stroke-width:10;fill:none;}
 			.c2{
 				stroke:#f3d;
 				stroke-width:10;
 				fill:none;
-				stroke-dasharray:628;
-				stroke-dashoffset:628;
 				stroke-linecap: round;
+				stroke-dasharray: 15.707975rem;
+				stroke-dashoffset: 15.707975rem;
 				transform:rotate(-90deg);
 				transform-origin:center center;
 				transition:stroke-dashoffset 2s ease-in-out;
+				display:none;
 			}
 			.btn{
-				margin-top:50px;
+				margin-top:1.25rem;
 			}
-			.mins,.add{cursor:pointer;display:inline-block;vertical-align:top;width:160px;line-height:40px;text-align:center;border:1px solid #ccc;border-radius:4px;}
+			.mins,.add{cursor:pointer;display:inline-block;vertical-align:top;width:4rem;line-height:1rem;text-align:center;border:1px solid #ccc;border-radius:0.1rem;}
 		</style>
 	</head>
 	<body>
 		<div class="ring">
-			<svg xmlns="http://www.w3.org/2000/svg" height="400" version="1.1">
+			<svg id="svgEle" xmlns="http://www.w3.org/2000/svg" version="1.1">
 			    <circle class="c1" cx="150" cy="200" r="100"></circle>
 			    <circle class="c2" cx="150" cy="200" r="100"></circle>
 			</svg>
@@ -37,15 +41,48 @@
 			<p class="mins">减少</p>
 			<p class="add">增加</p>
 		</div>
+		<script src="js/adaptation.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/mobile.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var svg = document.getElementById("svgEle");
+			// 获取根元素的font-size
+			var fontSize = parseFloat(document.documentElement.style.fontSize);
+			var c1 = document.getElementsByClassName("c1")[0];
+			var c2 = document.getElementsByClassName("c2")[0];
+			var c1cx = c1.cx.baseVal.value;
+			var c1cy = c1.cy.baseVal.value;
+			var c1r = c1.r.baseVal.value;
+			c1.cx.baseVal.value = (c1cx / 40) *  fontSize;
+			c1.cy.baseVal.value = (c1cy / 40) *  fontSize;
+			c1.r.baseVal.value = (c1r / 40) *  fontSize;
+			
+			var c2cx = c2.cx.baseVal.value;
+			var c2cy = c2.cy.baseVal.value;
+			var c2r = c2.r.baseVal.value;
+			c2.cx.baseVal.value = (c2cx / 40) *  fontSize;
+			c2.cy.baseVal.value = (c2cy / 40) *  fontSize;
+			c2.r.baseVal.value = (c2r / 40) *  fontSize;
+			
+			c1.style.strokeWidth = (10 / 40) * fontSize;
+			c2.style.strokeWidth = (10 / 40) * fontSize;
+			// 计算周长
+			var perimeter = 2 * Math.PI * c2.r.baseVal.value;
+			c2.style.strokeDasharray = perimeter;
+			c2.style.strokeDashoffset = perimeter;
+		</script>
 		<script type="text/javascript">
 			var mins = document.getElementsByClassName("mins")[0];
 			var add = document.getElementsByClassName("add")[0];
 			function init(nums){
+				// 计算周长
+				var c2 = document.getElementsByClassName("c2")[0];
+				c2.style.display = "block";
+				var perimeter = 2 * Math.PI * c2.r.baseVal.value;
 				nums = nums ? nums : (nums == 0 ? 0 : 80);
 				var text = document.querySelector(".ring p").innerText;
 				var num = parseFloat(nums / 100);
 				// 换算长度
-				var len = 628 * (1 - num);
+				var len = perimeter * (1 - num);
 				document.querySelector(".c2").style.strokeDashoffset = len
 			}
 			init();
