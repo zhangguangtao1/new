@@ -1,0 +1,13 @@
+@charset "utf-8";
+body{background-color:#F8F8F8;padding-bottom:0.75rem;}
+.infomationList li{background-color:#FFFFFF;margin-bottom:0.5rem;padding:0.5rem 0.75rem 0.75rem;}
+.infomationList li a{background-color:#FFFFFF;display:block;display:flex;align-items:center;}
+.infomationList li img{width:1.25rem;height:1.25rem;}
+.infoCon{font-size:0.6rem;color:#9c9c9c;padding:0 0.5rem;flex:1}
+.infoCon h3{font-size:0.7rem;color:#333;margin-bottom:0.25rem;}
+.timeShow{font-size:0.6rem;color:#9C9C9C;height:100%;align-self:flex-start;}
+
+
+
+
+

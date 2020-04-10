@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>svg练习</title>
+		<style type="text/css">
+			*{padding:0;margin:0;}
+		</style>
+	</head>
+	<body>
+		<!-- 
+		svg是一种标准，是很早就提出的开源的标准，有多个大公司制定的标准
+		优点
+		1.图片放大不会失真
+		2.里面的文字可以被搜索，非常适合用于地图的制作
+		-->
+		<!-- 
+		svg可以自定义宽度和高度属性是 width和height
+		默认宽高是300和150
+		svg有一些样式要写到style里面
+		fill：填充色，给封闭区域填充的颜色
+		stroke：描边，就是边框
+		stroke-width：描边的宽度
+		stroke-opacity:描边的透明度
+		fill-opacity:填充色的透明度
+		opacity:定义整个元素的透明度
+		-->
+		<!-- 
+		矩形
+		在svg标签里面使用rect标签，可以设置宽度和高度
+		x:表示矩形左边距离svg左边缘的坐标
+		y:表示矩形上边距距离svg上边的坐标
+		rx:表示圆角矩形
+		ry:表示圆角矩形
+		-->
+		<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+		  <rect x="10" y="10" rx="30" ry="10" width="200" height="100"
+		  style="fill:#55aaff;stroke-width:1;stroke:#f8e;stroke-opacity:0.5;"/>
+		</svg>
+		<!-- 
+		圆形
+		在svg标签里面创建circle标签
+		cx:圆心坐标
+		cy:圆心坐标
+		r:半径
+		如果省略cx cy，这圆心坐标默认是0，0
+		 -->
+		<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+			<circle cx="150" cy="75" r="40" style="stroke:#1dc864;stroke-width:3;fill:#fff;"></circle>
+		</svg>
+		<!-- 
+		椭圆
+		在svg标签里面创建ellipse标签
+		cx:表示椭圆的中心坐标
+		cy:表示椭圆的中心坐标
+		rx:表示椭圆x轴的半径
+		ry:表示椭圆y轴的半径
+		-->
+		<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+			<ellipse cx="150" cy="75" rx="80" ry="10" style="fill:#fff;stroke:#f45;stroke-width:4"></ellipse>
+		</svg>
+		<!-- 
+		直线
+		在svg标签里面创建line标签
+		两点之间确定一条直线，所以需要一个起点坐标和终点坐标
+		x1:起点横坐标
+		y1:起点纵坐标
+		x2:终点横坐标
+		y2:终点纵坐标
+		-->
+		<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+			<line x1="10" y1="10" x2="30" y2="90" style="stroke:#a679ff;stroke-width:4;"></line>
+		</svg>
+		<!-- 
+		多边形
+		在svg标签里面创建polygon标签
+		多边形的创建因为需要很多点，所以这些点被写道points属性里面
+		points:定义多边形每一个点的坐标
+		fill-rule:填充规则
+		-->
+		<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+			<polygon points="100,10 40,198 190,78 10,78 160,198" style="stroke:red;stroke-width:2;fill-rule: evenodd;" ></polygon>
+		</svg>
+		<!-- 
+		曲线
+		在svg标签里面创建polyline标签
+		曲线也是有很多点组成，这些点都被写在points里面
+		points:定义多边形每一个点的坐标
+		-->
+		<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+		  <polyline points="0,40 40,40 40,80 80,80 80,120 120,120 120,160" style="fill:white;stroke:red;stroke-width:4" />
+		</svg>
+		<!-- 
+		路径
+		在svg标签里面使用path标签来创建
+		d:使用命令来创建路径
+		M:moveTo 画笔从哪开始
+		L:lineTo 画笔移动到哪
+		H:水平线
+		V:垂直线
+		C:曲度
+		S:光滑曲线
+		Z:闭合
+		-->
+		<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+		    <path d="M150 0 L75 200 L225 200 Z" />
+		</svg>
+	</body>
+</html>
