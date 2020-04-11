@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>字体动画</title>
+		<style type="text/css">
+			* {
+				padding: 0;
+				margin: 0;
+			}
+
+			.wanqu {
+				stroke-dasharray: 754px;
+				font-size: 80px;
+				stroke: red;
+				fill: none;
+				stroke-dashoffset: 754px;
+				animation: worldAnimation 5s ease-in-out both;
+				letter-spacing: 15px;
+			}
+
+			@keyframes worldAnimation {
+				from {
+					stroke-dashoffset: 754px;
+				}
+
+				to {
+					stroke-dashoffset: 0px;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<svg width="580" height="400" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+			<text x="10" y="100" class="wanqu">董文静</text>
+		</svg>
+	</body>
+</html>

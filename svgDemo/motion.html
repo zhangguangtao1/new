@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>太阳系</title>
+		<style>
+			* {
+				padding: 0;
+				margin: 0;
+			}
+
+			body {
+				background-color: #02050e;
+			}
+		</style>
+	</head>
+	<body>
+		<svg width="800" height="800" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+			<!-- 太阳 -->
+			<circle cx="400" cy="400" r="20" style="fill:#b31b04"></circle>
+			<!-- 水星路径 -->
+			<!-- <circle id="path1" cx="400" cy="400" r="40" style="fill:none;stroke:#7a8dc5;stroke-width:1;"></circle> -->
+			<path id="path1" d="M400,400 m-40,0 a40,40 0 1,0 80,0 a40,40 0 1,0 -80,0" style="fill:none;stroke:#7a8dc5;stroke-width:1;"></path>
+			<!-- 水星 -->
+			<circle cx="0" cy="0" r="5" style="fill:#00ffff;">
+				<animateMotion begin="0s" dur="5s" rotate="auto" repeatCount="indefinite">
+					<mpath xlink:href="#path1" />
+				</animateMotion>
+			</circle>
+			<!-- 金星路径 -->
+			<path id="path2" d="M400,400 m-80,0 a80,80 0 1,0 160,0 a80,80 0 1,0 -160,0" style="fill:none;stroke:#7a8dc5;stroke-width:1;"></path>
+			<!-- 金星 -->
+			<circle cx="0" cy="0" r="9" style="fill:#555500;">
+				<animateMotion begin="0s" dur="4s" rotate="auto" repeatCount="indefinite">
+					<mpath xlink:href="#path2" />
+				</animateMotion>
+			</circle>
+			<!-- 地球路径 -->
+			<path id="path3" d="M400,400 m-100,0 a100,100 0 1,0 200,0 a100,100 0 1,0 -200,0" style="fill:none;stroke:#7a8dc5;stroke-width:1;"></path>
+			<!-- 地球 -->
+			<circle cx="0" cy="0" r="9" style="fill:#00aa00;">
+				<animateMotion begin="0s" dur="7s" rotate="auto" repeatCount="indefinite">
+					<mpath xlink:href="#path3" />
+				</animateMotion>
+			</circle>
+			<!-- 火星路径 -->
+			<path id="path4" d="M400,400 m-130,0 a130,130 0 1,0 260,0 a130,130 0 1,0 -260,0" style="fill:none;stroke:#7a8dc5;stroke-width:1;"></path>
+			<!-- 火星 -->
+			<circle cx="0" cy="0" r="9" style="fill:#ff0000;">
+				<animateMotion begin="0s" dur="3s" rotate="auto" repeatCount="indefinite">
+					<mpath xlink:href="#path4" />
+				</animateMotion>
+			</circle>
+			<!-- 木星路径 -->
+			<path id="path5" 
+			d="M400,400 m-200,0 
+			a200,150 0 1,0 400,0 
+			a200,150 0 1,0 -400,0" 
+			style="fill:none;stroke:#7a8dc5;stroke-width:1;"></path>
+			<!-- 土星 -->
+			<circle cx="0" cy="0" r="9" style="fill:#aa5500;">
+				<animateMotion begin="0s" dur="10s" rotate="auto" repeatCount="indefinite">
+					<mpath xlink:href="#path5" />
+				</animateMotion>
+			</circle>
+			<!-- 土星路径 -->
+			<path id="path6" 
+			d="M400,400 m-250,0 
+			a250,180 0 1,0 500,0 
+			a250,180 0 1,0 -500,0" 
+			style="fill:none;stroke:#7a8dc5;stroke-width:1;"></path>
+			<!-- 木星 -->
+			<circle cx="0" cy="0" r="9" style="fill:#552a00;">
+				<animateMotion begin="0s" dur="6s" rotate="auto" repeatCount="indefinite">
+					<mpath xlink:href="#path6" />
+				</animateMotion>
+			</circle>
+			<!-- 天王星路径 -->
+			<path id="path7" 
+			d="M400,400 m-300,0 
+			a300,200 0 1,0 600,0 
+			a300,200 0 1,0 -600,0" 
+			style="fill:none;stroke:#7a8dc5;stroke-width:1;"></path>
+			<!-- 天王星 -->
+			<circle cx="0" cy="0" r="9" style="fill:#5500ff;">
+				<animateMotion begin="0s" dur="8s" rotate="auto" repeatCount="indefinite">
+					<mpath xlink:href="#path7" />
+				</animateMotion>
+			</circle>
+			<!-- 海王星路径 -->
+			<path id="path8" 
+			d="M400,400 m-350,0 
+			a350,240 0 1,0 700,0 
+			a350,240 0 1,0 -700,0" 
+			style="fill:none;stroke:#7a8dc5;stroke-width:1;"></path>
+			<!-- 海王星 -->
+			<circle cx="0" cy="0" r="9" style="fill:#00aaff;">
+				<animateMotion begin="0s" dur="16s" rotate="auto" repeatCount="indefinite">
+					<mpath xlink:href="#path8" />
+				</animateMotion>
+			</circle>
+		</svg>
+	</body>
+</html>
