@@ -62,7 +62,7 @@
 		onAdd: function (evt){ console.log('onAdd.foo:', [evt.item, evt.from]); },
 		onUpdate: function (evt){ console.log('onUpdate.foo:', [evt.item, evt.from]); },
 		onRemove: function (evt){ console.log('onRemove.foo:', [evt.item, evt.from]); },
-		onStart:function(evt){ console.log('onStart.foo:', [evt.item, evt.from]);},
+		onStart:function(evt){ console.log('onStart.foo:', evt);},
 		onSort:function(evt){ console.log('onStart.foo:', [evt.item, evt.from]);},
 		onEnd: function(evt){ console.log('onEnd.foo:', [evt.item, evt.from]);}
 	});
@@ -77,7 +77,6 @@
 		onStart:function(evt){ console.log('onStart.foo:', evt.item);},
 		onEnd: function(evt){ console.log('onEnd.foo:', evt.item);}
 	});
-
 
 	// Multi groups
 	Sortable.create(byId('multi'), {

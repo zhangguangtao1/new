@@ -123,6 +123,7 @@
   border-radius: 1.33333333vw;
 }
 .mine-content .content-list .content-list-item .item-title {
+  position: relative;
   height: 10.66666667vw;
   display: flex;
   justify-content: space-between;
@@ -131,15 +132,20 @@
 }
 .mine-content .content-list .content-list-item .item-title > p {
   flex: 1;
-  margin-right: 5.33333333vw;
+  margin-right: 6vw;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .mine-content .content-list .content-list-item .item-img {
+  width: 100%;
+  height: 40vw;
   border-radius: 1.33333333vw;
   overflow: hidden;
 }
 .mine-content .content-list .content-list-item .item-img > img {
   display: block;
   width: 100%;
+  height: 100%;
 }
 .mine-content .content-list .content-list-item .item-footer {
   height: 10.66666667vw;
@@ -153,7 +159,7 @@
   height: 5.86666667vw;
   line-height: 5.86666667vw;
   border-radius: 2.93333333vw;
-  border: 0.13333333vw solid #15bc83;
+  border: 0.26666667vw solid #15bc83;
   font-weight: bold;
   text-align: center;
   font-size: 3.46666667vw;
@@ -204,7 +210,7 @@
 }
 .mine-tab-box .tab-box a {
   display: block;
-  width: 22.93333333vw;
+  width: 24.93333333vw;
 }
 .mine-tab-box .content-list .content-list-item > a {
   display: block;
@@ -227,9 +233,11 @@
   display: flex;
   align-items: center;
   z-index: 6;
+  overflow-x: auto;
 }
 .tab-box a {
-  flex: 1;
+  display: block;
+  width: 24.93333333vw;
   font-weight: bold;
   font-size: 3.73333333vw;
   text-align: center;
@@ -285,11 +293,23 @@
 .article-detail-top .article-detail-title .text-box .text-time > span > em {
   color: #000;
 }
+.article-detail-top .article-detail-content {
+  font-size: 4vw;
+}
 .article-detail-top .article-detail-content .content-title {
   font-size: 4vw;
+  margin-right: 4vw;
   margin-bottom: 2.66666667vw;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.article-detail-top .article-detail-content img {
+  display: block;
+  width: 100%;
+  border-radius: 1.33333333vw;
 }
 .article-detail-top .article-detail-content .img-box {
+  width: 100%;
   border-radius: 1.33333333vw;
   overflow: hidden;
 }
@@ -311,7 +331,7 @@
   font-size: 3.2vw;
   color: #696969;
 }
-.article-detail-top .article-detail-more > a {
+.article-detail-top .article-detail-more a {
   color: #15bc83;
 }
 /* 最新评论 */
@@ -417,20 +437,22 @@
 }
 .pop-tmp-content .img-list {
   display: flex;
-  flex-wrap: wrap;
-  padding: 0 4vw;
-  margin: 6.66666667vw 0;
+  align-items: center;
+  margin: 6.66666667vw 4vw;
+  overflow-x: auto;
+}
+.pop-tmp-content .img-list img {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 .pop-tmp-content .img-list .img-item {
-  width: 20.8vw;
   margin-right: 2.93333333vw;
   margin-bottom: 2.93333333vw;
 }
 .pop-tmp-content .img-list .img-item > a {
   display: block;
-}
-.pop-tmp-content .img-list .img-item:nth-of-type(4n) {
-  margin-right: 0;
+  width: 20.8vw;
 }
 .pop-tmp-content .img-list .img-item .img-box {
   width: 20.8vw;
@@ -440,6 +462,8 @@
 .pop-tmp-content .img-list .img-item .title {
   font-size: 4vw;
   text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .pop-tmp-content .img-list .img-item.active .img-box {
   border: 0.26666667vw solid #15bc83;
@@ -449,15 +473,13 @@
 }
 .pop-tmp-content .size-box {
   padding: 0 4vw;
-  margin: 6.66666667vw 0 40vw;
+  margin: 6.66666667vw 4vw 40vw;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  overflow-x: auto;
 }
-.pop-tmp-content .size-box a {
-  display: block;
-  width: 20vw;
-  height: 9.33333333vw;
+.pop-tmp-content .size-box > li {
+  margin-right: 20px;
   border-radius: 1.33333333vw;
   text-align: center;
   line-height: 9.33333333vw;
@@ -465,10 +487,12 @@
   color: #000;
   border: 0.26666667vw solid #e5e5e5;
 }
-.pop-tmp-content .size-box a:nth-of-type(1) {
+.pop-tmp-content .size-box > li > span {
+  display: block;
   width: 22.66666667vw;
+  height: 9.33333333vw;
 }
-.pop-tmp-content .size-box a.active {
+.pop-tmp-content .size-box > li.active {
   border-color: #15bc83;
   color: #15bc83;
   background-color: rgba(21, 188, 131, 0.1);
@@ -500,4 +524,122 @@
   border-color: #15bc83;
   color: #15bc83;
   background-color: rgba(21, 188, 131, 0.1);
+}
+/* 创建文章 */
+.create-box {
+  background-color: #f6f6f6;
+  padding: 11.73333333vw 4vw 16vw;
+  min-height: 100vh;
+  overflow-y: auto;
+}
+.create-article {
+  margin-top: 2.66666667vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.create-article .weui-textarea {
+  flex: 1;
+  margin-right: 2.66666667vw;
+  padding: 2.66666667vw;
+  border-radius: 1.33333333vw;
+}
+.create-article .btn-box a {
+  display: block;
+  width: 16vw;
+  height: 6.93333333vw;
+  background-color: #fff;
+  text-align: center;
+  line-height: 6.93333333vw;
+  font-size: 3.46666667vw;
+  color: #15bc83;
+  border-radius: 1.33333333vw;
+  border: 0.13333333vw solid #15bc83;
+}
+.create-article .btn-box a:nth-of-type(1) {
+  margin-bottom: 2.66666667vw;
+}
+/* 添加 */
+.article-list .add-article-box {
+  margin: 4vw;
+  text-align: center;
+}
+.article-list .add-article-box a {
+  font-size: 3.73333333vw;
+  color: #000;
+}
+.article-list .add-article-box a i {
+  font-size: 5.33333333vw;
+  margin-right: 2.66666667vw;
+}
+.article-list .article-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 2.66666667vw;
+  border-radius: 1.33333333vw;
+  background-color: #fff;
+}
+.article-list .article-item .article-img {
+  width: 21.33333333vw;
+  height: 21.33333333vw;
+  border-radius: 1.33333333vw;
+  overflow: hidden;
+}
+.article-list .article-item .article-img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.article-list .article-item .article-text {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 2.66666667vw;
+}
+.article-list .article-item .article-text .article-title {
+  font-size: 4vw;
+  height: 12vw;
+  overflow: hidden;
+}
+.article-list .article-item .article-text .article-action {
+  margin-left: 2.66666667vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.article-list .article-item .article-text .article-action i {
+  padding: 1.33333333vw;
+  color: #999;
+}
+/* 创建文章底部按钮 */
+.article-footer {
+  position: static;
+  margin-top: 2.66666667vw;
+}
+.article-footer a {
+  flex: 1;
+}
+.article-pop-content {
+  padding: 0 4vw;
+}
+.article-pop-content .flex-group {
+  padding: 0 2.66666667vw;
+}
+.article-pop-content .flex-group .flex-single {
+  padding: 0;
+}
+.article-pop-content .flex-group .flex-single .upload-box .upload-img {
+  width: 6.13333333vw;
+  margin-right: 2.66666667vw;
+  position: relative;
+}
+.article-pop-content .flex-group .flex-single .upload-box .upload-img input {
+  opacity: 0;
+}
+.article-pop-content .flex-group .flex-single .upload-box .upload-img i {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #15bc83;
 }

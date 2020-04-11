@@ -32,13 +32,23 @@
                     </div>
                 </div>
             </div>
-            <div class="article-detail-content">
-                <p class="line-clamp1 content-title">这才是扎实的北京小吃</p>
+            <div class="article-detail-content active">
+                <p class="line-clamp1 content-title">这才是扎实的北京小吃这才是扎实的北京小吃这才是扎实的北京小吃</p>
                 <div class="img-box">
                     <img src="./image/mine-img.png" alt="">
                 </div>
+                <div class="content-box">
+                    这才是扎实的北京小吃这才是扎实的北京小吃这才是扎实的北京小吃这才是扎实的北京小吃这才是扎实的北京小吃这才是扎实的北京小吃这才是扎实的北京小吃这才是扎实的北京小吃这才是扎实的北京小吃这才是扎实的北京小吃这才是扎实的北京小吃这才是扎实的北京小吃这才是扎实的北京小吃这才是扎实的北京小吃这才是扎实的北京小吃这才是扎实的北京小吃这才是扎实的北京小吃
+                </div>
             </div>
-            <div class="article-detail-more">点击下方<a href="javascript:;">“阅读原文”</a>查看更多</div>
+            <div class="article-detail-more">
+                <div class="all">
+                    点击下方<a href="javascript:;" class="all-arcitle">“阅读原文”</a>查看更多
+                </div>
+                <div class="up hd">
+                    <a href="javascript:;" class="up-arcitle">点击收起</a>
+                </div>
+            </div>
         </div>
         <!-- 最新评论 -->
         <div class="article-detail-comment">
@@ -96,6 +106,21 @@
         });
     </script>
 		<script src="./plugin/jquery-weui/js/jquery-weui.min.js"></script>
-		<script src="./plugin/jquery-weui/js/swiper.min.js"></script>
+        <script src="./plugin/jquery-weui/js/swiper.min.js"></script>
+        <script>
+            // 阅读全文
+            $('.all-arcitle').click(function(){
+                console.log($(this).parents('.all'))
+                $(this).parents('.article-detail-more').siblings('.article-detail-content').removeClass('active')
+                $(this).parents('.all').addClass('hd')
+                $(this).parents('.all').siblings('.up').removeClass('hd')
+            })
+            // 收起
+            $('.up-arcitle').click(function(){
+                $(this).parents('.article-detail-more').siblings('.article-detail-content').addClass('active')
+                $(this).parents('.up').addClass('hd')
+                $(this).parents('.up').siblings('.all').removeClass('hd')
+            })
+        </script>
 </body>
 </html>

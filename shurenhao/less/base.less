@@ -58,44 +58,7 @@
         }
     }
 }
-/* 带有搜索的头部 */
-.search-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    .go-back{
-        font-style: 24/7.5vw;
-    }
-    .search-box{
-        position: relative;
-        width: 610/7.5vw;
-        height: 60/7.5vw;
-        border-radius: 30/7.5vw;
-        background-color: #f5f5f5;
-        overflow: hidden;
-        input{
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            padding: 0 60/7.5vw 0 30/7.5vw;
-            background-color: transparent;
-            line-height: 60/7.5vw;
-            font-size:26/7.5vw ;
-            color: #888;
-            box-sizing: border-box;
-        }
-        >i{
-            position: absolute;
-            top:50%;
-            right: 30/7.5vw;
-            transform: translateY(-50%);
-            color: #696969;
-            font-size:36/7.5vw;
-        }
-    }
-}
+
 /* 返回+文字  头部 */
 .flex-header{
     display: flex;
@@ -323,88 +286,6 @@
     .tit{
         font-size: 30/7.5vw;
     }
-
-    /* 图片列表 */
-    .img-list{
-        display: flex;
-        flex-wrap: wrap;
-        margin-top: 30/7.5vw;
-        .img-list-item{
-            position: relative;
-            width: 100/7.5vw;
-            height: 100/7.5vw;
-            margin-right: 20/7.5vw;
-            margin-bottom: 20/7.5vw;
-            /* 图片盒子 */
-            .img-box{
-                width: 100%;
-                height: 100%;
-                overflow: hidden;
-                >img{
-                    display: block;
-                    width: 100%;
-                }
-            }
-            /* 音频盒子 */
-            .audio-box{
-                position: relative;
-                width: 100%;
-                height: 100%;
-                background-color: #06b781;
-                color:#fff;
-                font-size: 18/7.5vw;
-                text-align: center;
-                i{
-                   display: block;
-                   padding-top: 5/7.5vw;
-                    font-size: 36/7.5vw;
-                    font-weight: bold;
-                    color: #fff;
-                }
-                
-            }
-            /* 删除 */
-            .del-box{
-                position: absolute;
-                top: -10/7.5vw;
-                right: -10/7.5vw;
-                width: 30/7.5vw;
-                height: 30/7.5vw;
-                border-radius: 50%;
-                line-height: 24/7.5vw;
-                text-align: center;
-                background-color: #ff4225;
-                i{
-                    color: #fff;
-                    font-size: 16/7.5vw;
-                }
-            }
-        }
-    }
-    /* 快速评语列表 */
-    .list-box{
-        .list-item{
-            font-size: 30/7.5vw;
-            line-height: 90/7.5vw;
-            border-bottom: 1/7.5vw solid #ecedee;
-        }
-    }
-    /* 自定义评语 */
-    .free-box{
-        line-height: 90/7.5vw;
-        color: #06b781;
-        font-size: 28/7.5vw;
-        i{
-            color: #06b781;
-        }
-    }
-    .remark-box{
-        background-color: #fff;
-        label{
-            display: block;
-            font-size: 30/7.5vw;
-        }
-    }
 }
 
 /* 图片上传 */
@@ -435,3 +316,43 @@
         text-align: center;
     }
 }
+/* 编辑删除弹窗 */
+.action-prop{
+    display: none;
+    position: absolute;
+    right: -10/7.5vw;
+    bottom: 0;
+    transform: translateY(100%);
+    width: 220/7.5vw;
+    border-radius: 20/7.5vw;
+    -moz-box-shadow:2/7.5vw 2/7.5vw 10/7.5vw 2/7.5vw #BFBFBF;
+    -webkit-box-shadow:2/7.5vw 2/7.5vw 10/7.5vw 2/7.5vw #BFBFBF;
+    box-shadow:2/7.5vw 2/7.5vw 10/7.5vw 2/7.5vw #BFBFBF;
+    background-color: #fff;
+    z-index: 10;
+    &::before{
+        position: absolute;
+        right: 30/7.5vw;
+        top: -10/7.5vw;
+        content: '';
+        width: 20/7.5vw;
+        height: 20/7.5vw;
+        transform: rotate(45deg);
+        background-color: #fff;
+        -moz-box-shadow:-4/7.5vw -4/7.5vw 4/7.5vw 0 #BFBFBF;
+        -webkit-box-shadow:-4/7.5vw -4/7.5vw 4/7.5vw 0 #BFBFBF;
+        box-shadow:-4/7.5vw -4/7.5vw 4/7.5vw 0 #BFBFBF;
+         z-index: 9;
+    }
+    .del-box,.editor-box{
+        line-height: 80/7.5vw;
+        i{
+            color: #999;
+            margin: 0 15/7.5vw 0 30/7.5vw;
+        }
+    }
+    .del-box{
+        border-bottom: 1/7.5vw solid #ecedee;
+    }
+   
+} 

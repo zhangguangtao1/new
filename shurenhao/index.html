@@ -477,9 +477,107 @@
             </div>
           </div>
            <!-- tab2 创作 -->
-           <div id="tab2" class="weui-tab__bd-item">
-            
+           <div id="tab2" class="weui-tab__bd-item create-box">
+            <!-- 头部 -->
+            <div class="header flex-header">
+                <i class="iconfont icon-arrow_left go-back"></i>
+                <h3>创建文章</h3>
+            </div>
+            <div class="create-article">
+                <textarea class="weui-textarea" rows="3" placeholder="请输入文章标题"></textarea>
+                <div class="btn-box">
+                    <a href="javascript:;">预览</a>
+                    <a href="javascript:;">保存</a>
+                </div>
+            </div>
+            <!-- 添加 -->
+            <ul class="article-list" id="foo1">
+                <li class="article-list-item">
+                    <div class="add-article-box">
+                        <a href="javascript:;" class="open-popup" data-target="#article-pop"><i class="iconfont icon-jiahao3 green"></i>添加</a>
+                    </div>
+                    <div class="article-item" draggable="true" id="drag-btn">
+                        <div class="article-img">
+                            <img src="./image/article-img.png" alt="">
+                        </div>
+                        <div class="article-text">
+                            <p class="article-title">这是一条很长很长很长很长的文章标题</p>
+                            <div class="article-action">
+                                <i class="iconfont icon-delete"></i>
+                                <i class="iconfont icon-tuozhuai tuozhuai-btn"></i>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="article-list-item">
+                    <div class="add-article-box">
+                        <a href="javascript:;"><i class="iconfont icon-jiahao3 green"></i>添加</a>
+                    </div>
+                    <div class="article-item">
+                        <div class="article-img">
+                            <img src="./image/article-img.png" alt="">
+                        </div>
+                        <div class="article-text">
+                            <p class="article-title">这是一条很长很长很长很长的文章标题</p>
+                            <div class="article-action">
+                                <i class="iconfont icon-delete"></i>
+                                <i class="iconfont icon-tuozhuai tuozhuai-btn"></i>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="article-list-item">
+                    <div class="add-article-box">
+                        <a href="javascript:;"><i class="iconfont icon-jiahao3 green"></i>添加</a>
+                    </div>
+                    <div class="article-item">
+                        <div class="article-img">
+                            <img src="./image/article-img.png" alt="">
+                        </div>
+                        <div class="article-text">
+                            <p class="article-title">这是一条很长很长很长很长的文章标题</p>
+                            <div class="article-action">
+                                <i class="iconfont icon-delete"></i>
+                                <i class="iconfont icon-tuozhuai tuozhuai-btn"></i>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <!-- 底部按钮 -->
+            <!-- <div class="footer article-footer">
+                <a href="javascript:;" class="green-btn">完成</a>
+            </div> -->
+            <!-- 弹窗 -->
+            <div id="article-pop" class="weui-popup__container popup-bottom">
+                <div class="weui-popup__overlay"></div>
+                <div class="weui-popup__modal">
+                    <div class="pop-header">
+                        <a href="javascript:;" class="close-popup close-btn"><i class="iconfont icon-arrowdown"></i></a>
+                        <h3>选择操作</h3>
+                    </div>
+                    <div class="pop-content article-pop-content">
+                        <div class="flex-group ">
+                            <div class="flex-single">
+                                <label class="upload-box">
+                                    <div class="upload-img">
+                                        <input type="file">
+                                        <i class="iconfont icon-tupian1 green"></i>
+                                    </div>
+                                    <span>添加图片</span>
+                                </label>
+                            </div>
+                            <div class="flex-single">
+                                <a href="javascript:;" class="left-box">
+                                    <i class="iconfont icon-wenzi green"></i>
+                                    <span>添加文字</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
           </div>
+        </div>
           <!-- tab3 我的 -->
           <div id="tab3" class="weui-tab__bd-item mine-box">
               <!-- 头部 -->
@@ -497,63 +595,90 @@
            </div>
            <!-- 内容 -->
            <div class="mine-content">
-            <ul class="content-list ">
+            <ul class="content-list" id="myList">
                 <li class="content-list-item">
-                    <a href="./article_detail.html">
-                        <div class="item-title">
-                            <p class="line-clamp1">这才是扎实的北京小吃这才是扎实的北京小吃</p>
-                            <i class="iconfont icon-sangedian"></i>
-                        </div>
-                        <div class="item-img">
-                            <img src="./image/mine-img.png" alt="">
-                        </div>
-                        <div class="item-footer">
-                            <span class="tag">公开</span>
-                            <div class="action">
-                                <span><i class="iconfont icon-yulan"></i>10</span>
-                                <span><i class="iconfont icon-liaotian1"></i>20</span>
-                                <span><i class="iconfont icon-dianzan"></i>30</span>
+                    <div class="item-title">
+                        <p class="line-clamp1">这才是扎实的北京小吃这才是扎实的北京小吃</p>
+                        <i class="iconfont icon-sangedian action-btn"></i>
+                        <!-- 弹窗 -->
+                        <div class="action-prop">
+                            <div class="del-box">
+                                <i class="iconfont icon-delete"></i>
+                                删除
+                            </div>
+                            <div class="editor-box">
+                                <i class="iconfont icon-bianji-copy"></i>
+                                编辑
                             </div>
                         </div>
-                    </a>
+                    </div>
+                    <div class="item-img">
+                        <img src="./image/mine-img.png" alt="">
+                    </div>
+                    <div class="item-footer">
+                        <span class="tag">公开</span>
+                        <div class="action">
+                            <span><i class="iconfont icon-yulan"></i>10</span>
+                            <span><i class="iconfont icon-liaotian1"></i>20</span>
+                            <span><i class="iconfont icon-dianzan"></i>30</span>
+                        </div>
+                    </div>
                 </li>
                 <li class="content-list-item">
-                    <a href="./article_detail.html">
-                        <div class="item-title">
-                            <p class="line-clamp1">这才是扎实的北京小吃这才是扎实的北京小吃</p>
-                            <i class="iconfont icon-sangedian"></i>
-                        </div>
-                        <div class="item-img">
-                            <img src="./image/mine-img.png" alt="">
-                        </div>
-                        <div class="item-footer">
-                            <span class="tag">公开</span>
-                            <div class="action">
-                                <span><i class="iconfont icon-yulan"></i>10</span>
-                                <span><i class="iconfont icon-liaotian1"></i>20</span>
-                                <span><i class="iconfont icon-dianzan"></i>30</span>
+                    <div class="item-title">
+                        <p class="line-clamp1">这才是扎实的北京小吃这才是扎实的北京小吃</p>
+                        <i class="iconfont icon-sangedian action-btn"></i>
+                        <!-- 弹窗 -->
+                        <div class="action-prop">
+                            <div class="del-box">
+                                <i class="iconfont icon-delete"></i>
+                                删除
+                            </div>
+                            <div class="editor-box">
+                                <i class="iconfont icon-bianji-copy"></i>
+                                编辑
                             </div>
                         </div>
-                    </a>
+                    </div>
+                    <div class="item-img">
+                        <img src="./image/mine-img.png" alt="">
+                    </div>
+                    <div class="item-footer">
+                        <span class="tag">公开</span>
+                        <div class="action">
+                            <span><i class="iconfont icon-yulan"></i>10</span>
+                            <span><i class="iconfont icon-liaotian1"></i>20</span>
+                            <span><i class="iconfont icon-dianzan"></i>30</span>
+                        </div>
+                    </div>
                 </li>
                 <li class="content-list-item">
-                    <a href="./article_detail.html">
-                        <div class="item-title">
-                            <p class="line-clamp1">这才是扎实的北京小吃这才是扎实的北京小吃</p>
-                            <i class="iconfont icon-sangedian"></i>
-                        </div>
-                        <div class="item-img">
-                            <img src="./image/mine-img.png" alt="">
-                        </div>
-                        <div class="item-footer">
-                            <span class="tag">公开</span>
-                            <div class="action">
-                                <span><i class="iconfont icon-yulan"></i>10</span>
-                                <span><i class="iconfont icon-liaotian1"></i>20</span>
-                                <span><i class="iconfont icon-dianzan"></i>30</span>
+                    <div class="item-title">
+                        <p class="line-clamp1">这才是扎实的北京小吃这才是扎实的北京小吃</p>
+                        <i class="iconfont icon-sangedian action-btn"></i>
+                        <!-- 弹窗 -->
+                        <div class="action-prop">
+                            <div class="del-box">
+                                <i class="iconfont icon-delete"></i>
+                                删除
+                            </div>
+                            <div class="editor-box">
+                                <i class="iconfont icon-bianji-copy"></i>
+                                编辑
                             </div>
                         </div>
-                    </a>
+                    </div>
+                    <div class="item-img">
+                        <img src="./image/mine-img.png" alt="">
+                    </div>
+                    <div class="item-footer">
+                        <span class="tag">公开</span>
+                        <div class="action">
+                            <span><i class="iconfont icon-yulan"></i>10</span>
+                            <span><i class="iconfont icon-liaotian1"></i>20</span>
+                            <span><i class="iconfont icon-dianzan"></i>30</span>
+                        </div>
+                    </div>
                 </li>
             </ul>
            </div>
@@ -599,6 +724,10 @@
     <script src="./plugin/jquery-weui/jquery-2.1.4.js"></script>
     <script src="./plugin/jquery-weui/fastclick.js"></script>
     <script src="./js/common.js"></script>
+    <!-- 拖拽插件 -->
+	<!-- <script src="./plugin/Js-Jquery-master/Sortable.js"></script>
+    <script src="./plugin/Js-Jquery-master/app.js"></script> -->
+    <script src="./plugin/zepto.js"></script>
     <script>
         $(function() {
             FastClick.attach(document.body);
@@ -621,6 +750,13 @@
             $('.tab-content-list .content-list').eq(index).removeClass('hd')
             $('.tab-content-list .content-list').eq(index).siblings('.content-list').addClass('hd')
         })
+        // 点击显示 编辑 删除
+        $('#myList .action-btn').click(function(){
+            $(this).siblings('.action-prop').toggle()
+        })
+        
+            
+        
     </script>
 </body>
 </html>

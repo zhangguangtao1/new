@@ -410,7 +410,10 @@
 				options = _this.options,
 				ownerDocument = el.ownerDocument,
 				dragStartFn;
-
+				console.log(evt.target.className.indexOf("icon-tuozhuai"));
+				if(evt.target.className.indexOf("icon-tuozhuai") == -1){
+					return;
+				}
 			if (target && !dragEl && (target.parentNode === el)) {
 				tapEvt = evt;
 
@@ -1327,7 +1330,7 @@
 			onName = 'on' + name.charAt(0).toUpperCase() + name.substr(1);
 
 		evt.initEvent(name, true, true);
-
+		
 		evt.to = toEl || rootEl;
 		evt.from = fromEl || rootEl;
 		evt.item = targetEl || rootEl;
@@ -1339,7 +1342,7 @@
 		evt.originalEvent = originalEvt;
 
 		rootEl.dispatchEvent(evt);
-
+		
 		if (options[onName]) {
 			options[onName].call(sortable, evt);
 		}

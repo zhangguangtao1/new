@@ -31,7 +31,7 @@
 				<div class="add-article-box">
 					<a href="javascript:;" class="open-popup" data-target="#article-pop"><i class="iconfont icon-jiahao3 green"></i>添加</a>
 				</div>
-				<div class="article-item" draggable="true" id="drag-btn">
+				<div class="article-item" id="drag-btn">
 					<div class="article-img">
 						<img src="./image/article-img.png" alt="">
 					</div>
@@ -109,5 +109,11 @@
 	<!-- 拖拽插件 -->
 	<script src="./plugin/Js-Jquery-master/Sortable.js"></script>
 	<script src="./plugin/Js-Jquery-master/app.js"></script>
+	<script type="text/javascript">
+		document.querySelector(".header h3").onclick = function(e){
+			console.log(e.currentTarget);
+		}
+			
+	</script>
 </body>
 </html>
