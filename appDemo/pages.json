@@ -1,0 +1,36 @@
+{
+	"pages": [{
+		"path": "pages/index/index",
+		"path": "pages/jiekou/jiekou",
+		"style": {
+			"navigationBarTitleText": "uni-ui基础项目"
+		}
+	}],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#007AFF",
+		"backgroundColor": "#FFFFFF"
+	},
+	"tabBar":{
+		"list": [{
+		            "pagePath": "pages/index/index",
+		            "iconPath": "static/image/icon_component.png",
+		            "selectedIconPath": "static/image/icon_component_HL.png",
+		            "text": "组件"
+		        }, {
+		            "pagePath": "pages/jiekou/jiekou",
+		            "iconPath": "static/image/icon_API.png",
+		            "selectedIconPath": "static/image/icon_API_HL.png",
+		            "text": "接口"
+		        }],
+		"midButton": {
+		            "width": "80px",
+		            "height": "50px",
+		            "text": "文字",
+		            "iconPath": "static/image/midButton_iconPath.png",
+		            "iconWidth": "24px",
+		            "backgroundImage": "static/image/midButton_backgroundImage.png"
+		        }
+	}
+}
