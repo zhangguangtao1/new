@@ -1,0 +1,29 @@
+@charset "utf-8";
+body{padding-bottom:2.5rem;}
+
+.soluteBanner{background:url(../images/solute.png) no-repeat center center;background-size:cover;height:7rem;line-height:7rem;font-size:0;}
+.bannerExplain{display:inline-block;vertical-align:middle;margin-left:3.25rem;line-height:normal;}
+.bannerExplain p{text-transform: uppercase;font-size:0.5rem;color:#fff;}
+.bannerExplain h3{font-size:0.9rem;color:#fff;margin-top:0.25rem;}
+
+.allScheme{overflow:hidden;line-height:1.75rem;border-bottom:0.025rem solid #e6e6e6;}
+.schemeItem{float:left;width:33.33%;text-align:center;color:#999;font-size:0.6rem;}
+.schemeItem.on{color:#333;}
+
+.solute{padding:0.75rem;border-bottom:0.025rem solid #e6e6e6;overflow:hidden;}
+.solute a{display:block;overflow:hidden;}
+.solute img{float:left;width:5.5rem;height:3rem;margin-right:0.5rem;}
+.schemeCon{overflow:hidden;}
+.schemeCon h3{font-size:0.65rem;color:#333;line-height:1.25rem;}
+.schemeCon p{font-size:0.55rem;color:#999;line-height:1.5em;height:3em;overflow:hidden;}
+.schemeItems{display:none;}
+.schemeItems:first-child{display:block;}
+
+.laodMore{height:2.75rem;text-align:center;line-height:2.75rem;font-size:0;}
+.laodMore img{width:1rem;height:1rem;vertical-align:middle;animation:rotateAnima 1s linear infinite;}
+.laodMore span{display:inline-block;vertical-align:middle;font-size:0.6rem;color:#999;margin-left:0.25rem;}
+@keyframes rotateAnima{
+	from{transform:rotate(0deg);}
+	to{transform:rotate(360deg);}
+}
+.technical{position:fixed;bottom:0;left:0;right:0;}

@@ -1,0 +1,28 @@
+@charset "utf-8";
+body{padding-bottom:2.5rem;}
+
+.allScheme{overflow:hidden;line-height:1.75rem;border-bottom:0.025rem solid #e6e6e6;}
+.schemeItem{float:left;width:33.33%;text-align:center;color:#999;font-size:0.6rem;}
+.schemeItem.on{color:#333;}
+
+.download{padding:0.75rem;border-bottom:0.025rem solid #e6e6e6;overflow:hidden;}
+.downloadHead{overflow:hidden;}
+.downloadHead span{float:right;margin-left:0.5rem;font-size:0.55rem;color:#999999;}
+.downloadHead p{overflow:hidden;font-size:0.55rem;color:#333;text-overflow:ellipsis;white-space:nowrap;}
+.downloadCon{font-size:0.55rem;color:#999;margin:0.5rem 0;line-height:1.5em;height:3em;overflow:hidden;}
+.downloadBtn{overflow:hidden;}
+.downloadBtn a{float:left;line-height:1rem;padding:0 0.5rem;border-radius:0.5rem;border:0.025rem solid #118eea;font-size:0.55rem;text-align:center;}
+.lookDetail{color:#118EEA;margin-right:0.5rem;}
+.nowDownload{background-color:#118EEA;color:#fff;}
+
+.schemeItems{display:none;}
+.schemeItems:first-child{display:block;}
+
+.laodMore{height:2.75rem;text-align:center;line-height:2.75rem;font-size:0;}
+.laodMore img{width:1rem;height:1rem;vertical-align:middle;animation:rotateAnima 1s linear infinite;}
+.laodMore span{display:inline-block;vertical-align:middle;font-size:0.6rem;color:#999;margin-left:0.25rem;}
+@keyframes rotateAnima{
+	from{transform:rotate(0deg);}
+	to{transform:rotate(360deg);}
+}
+.technical{position:fixed;bottom:0;left:0;right:0;}

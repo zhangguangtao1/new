@@ -1,0 +1,69 @@
+@charset "utf-8";
+body{padding-bottom:0.75rem;background-color:#ededed;}
+.online{padding:0 0.5rem;overflow:hidden;}
+.companyName{margin-top:0.75rem}
+.companyName h3{font-size:0.7rem;color:#333;font-weight:normal;margin-bottom:0.5rem;}
+
+.companyInfoItem{background-color:#fff;line-height:2rem;overflow:hidden;padding:0 0.5rem;margin-bottom:0.25rem;}
+.companyInfoItem label{float:left;width:7rem;font-size:0;color:#333;}
+.companyInfoItem label font{color:#fd4500;margin-left:0.25rem;}
+.companyInfoItem label font,.companyInfoItem label span{display:inline-block;vertical-align:middle;font-size:0.65rem;}
+.companyInfoItem .inputBox{overflow:hidden;}
+.inputBox input{border:0;width:100%;box-sizing: border-box;height:2rem;font-size:0.65rem;color:#a2a2a2;vertical-align:middle;}
+.inputBox select{border:0;width:100%;box-sizing: border-box;height:2rem;font-size:0.65rem;color:#a2a2a2;vertical-align:middle;}
+
+.price{font-size:0.65rem;color:#fc5521;margin:0.625rem 0;}
+.address{font-size:0;overflow:hidden;}
+.address select{border:0;width:33.33%;box-sizing: border-box;height:2rem;font-size:0.65rem;color:#a2a2a2;vertical-align:middle;}
+
+.detailAddress{height:2rem;background-color:#fff;margin-top:0.25rem;}
+.detailAddress input{border:0;width:100%;box-sizing: border-box;height:2rem;font-size:0.65rem;color:#a2a2a2;vertical-align:middle;text-indent:1em;}
+
+.upload{margin-top:0.5rem;}
+.upload h3{font-size:0.7rem;color:#333;font-weight:normal;margin-bottom:0.5rem;}
+.upload .textLabel{font-size:0;color:#333;display:block;}
+.upload .textLabel font{color:#fd4500;margin-left:0.25rem;}
+.upload .textLabel font,.upload .textLabel span{display:inline-block;vertical-align:middle;font-size:0.65rem;}
+#uploadFile{display:none;}
+.uploadFile{display:block;line-height:7.5rem;font-size:0;height:7.5rem;text-align:center;background-color:#fff;border-radius:0.25rem;margin-top:0.5rem;}
+.uploadFile label{display:inline-block;vertical-align:middle;width:6rem;line-height:1.875rem;text-align:center;font-size:0.7rem;color:#2bb3ea;border:0.05rem solid;border-radius:0.25rem;}
+.uploadFile img{vertical-align:middle;width:5rem;height:5rem;margin:0 0.25rem;display:none;}
+.upload p{font-size:0.55rem;color:#333;line-height:1.7em;margin-top:0.25rem;}
+
+.stamp{margin-top:0.5rem;}
+.stamp h3{font-size:0.7rem;color:#333;font-weight:normal;margin-bottom:0.5rem;}
+.stampInfo{overflow:hidden;}
+.collectInfo{float:left;width:5.375rem;}
+.errorInfo{float:right;width:11.5rem;}
+.infoTitle{font-size:0.65rem;margin-bottom:0.5rem;}
+
+.collectInfo img{display:block;width:5.375rem;height:5.375rem;}
+.collectInfo p{font-size:0.55rem;color:#333;margin-top:0.5rem;}
+.errorImgList{overflow:hidden;}
+.errorItem{float:left;width:48%;}
+.errorItem:first-child{margin-right:2%;}
+.errorItem img{display:block;width:5.375rem;height:5.375rem;}
+.errorItem p{font-size:0.55rem;color:#333;margin-top:0.5rem;}
+
+.requirement{margin-top:0.5rem;}
+.requirement h3{font-size:0.7rem;color:#333;font-weight:normal;margin-bottom:0.5rem;}
+.requirement p{font-size:0.6rem;color:#333;line-height:1.6em;}
+
+.verification{margin-top:1rem;}
+.verification h3{font-size:0.7rem;color:#333;font-weight:normal;margin-bottom:0.5rem;}
+
+.verificationInfoItem{line-height:2rem;overflow:hidden;margin-bottom:0.25rem;}
+.verificationInfoItem label{float:left;font-size:0;color:#333;background-color:#fff;padding:0 0.5rem;}
+.verificationInfoItem label font{color:#fd4500;margin-left:0.25rem;}
+.verificationInfoItem label font,.verificationInfoItem label span{display:inline-block;vertical-align:middle;font-size:0.65rem;}
+.verificationInfoItem .inputBox{overflow:hidden;background-color:#fff;}
+.inputBox input{border:0;width:100%;box-sizing: border-box;height:2rem;font-size:0.65rem;color:#a2a2a2;vertical-align:top;}
+.verificationInfoItem img{float:right;width:4.5rem;height:2rem;margin-left:0.25rem;}
+
+.getCode{padding:0 0.5rem;line-height:2rem;font-size:0.65rem;color:#fff;background-color:#118EEA;margin-left:0.25rem;float:right;border-radius:0.25rem;min-width:4.5rem;}
+
+.isAgress{margin:0.75rem 0.5rem;}
+.isAgress label{font-size:0.65rem;color:#333;}
+.isAgress input{zoom:200%;}
+
+.submitBtn{background-color:#118EEA;text-align:center;line-height:2rem;font-size:0.65rem;color:#fff;border-radius:0.25rem;border:0;display:block;width:100%;}

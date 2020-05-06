@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="Keywords" content="网站关键字"/>
+		<meta name="Description" content="网站描述"/>
+		<title>登录页</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<script src="js/adaptation.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/font/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="css/login.css"/>
+	</head>
+	<body>
+		<div class="login">
+			<div class="telHead">
+				<h2>手机快捷登录</h2>
+				<p>未注册过的手机号将自动创建用户</p>
+			</div>
+			<!-- 表单 -->
+			<div class="loginFrom">
+				<div class="formItem">
+					<input id="tel" type="text" placeholder="请输入手机号">
+					<span>获取验证码</span>
+				</div>
+				<div class="formItem">
+					<input id="code" type="text" placeholder="请输入验证码">
+				</div>
+				<!-- 登录按钮 -->
+				<div class="loginBtn">
+					<div class="nowLogin">立即登录</div>
+					<div class="scopeLogin">微信授权登录</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery1.9.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(".nowLogin").click(function(){
+				var tel = $("#tel").val();
+				var code = $("#code").val();
+				if(tel == ""){
+					showMsg("请输入手机号");
+					return;
+				}else if(code == ""){
+					showMsg("请输入验证码");
+					return;
+				}
+				// 验证通过
+			})
+			// 提示信息
+			function showMsg(msg){
+				msg = msg ? msg : "成功";
+				var div = document.createElement("div");
+				div.className = "saveSuccessTips";
+				div.innerHTML = msg;
+				document.body.appendChild(div);
+				setTimeout(function(){
+					document.body.removeChild(div);
+				},2000)
+			}
+		</script>
+	</body>
+</html>

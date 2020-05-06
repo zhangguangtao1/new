@@ -1,0 +1,29 @@
+@charset "utf-8";
+body{padding-bottom:1.25rem;}
+.searchHead{background-color:#ededed;padding:0.5rem;overflow:hidden;}
+.searchHead a i{font-size:1rem;color:#a7a7a7;vertical-align:middle;}
+.searchHead a{float:left;margin-right:0.5rem;line-height:1.25rem;font-size:0;}
+.searchBox{overflow:hidden;height:1.25rem;border-radius:0.625rem;background-color:#fff;}
+.searchBox input{float:left;height:1.25rem;line-height:1.25rem;padding-left:0.75rem;font-size:0.55rem;color:#999999;border:0;}
+.searchBtn{float:right;height:1.25rem;line-height:1.25rem;text-align:center;font-size:0;background-color:#118eea;padding:0 0.5rem;}
+.searchBtn i{font-size:0.75rem;color:#fff;display:inline-block;vertical-align:middle;margin-right:0.25rem;}
+.searchBtn span{font-size:0.55rem;color:#fff;display:inline-block;vertical-align:middle;}
+
+.searchList{padding:0 0.5rem;}
+.searchList h2{text-align:center;font-size:0.75rem;color:#333;padding:1.25rem 0 0.75rem;}
+.searchList h2 span{color:#ff4400;}
+
+.searchCon{padding:0.75rem 0;border-bottom:0.025rem solid #e6e6e6;}
+.searchCon h3{font-size:0.75rem;color:#333;margin-bottom:0.5rem;}
+.searchCon p{font-size:0.6rem;overflow:hidden;margin-top:0.35rem;}
+.searchCon p span{float:left;width:3rem;}
+.searchCon p i{display:block;overflow:hidden;}
+
+.normal p{color:#999999}
+.normal .blueText{color:#0084ff;}
+
+.gray p{color:#ededed}
+.gray h3{color:#ededed}
+.gray .blueText{color:#ededed;}
+
+

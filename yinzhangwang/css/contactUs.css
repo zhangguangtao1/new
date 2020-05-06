@@ -1,0 +1,19 @@
+@charset "utf-8";
+body{padding-bottom:2.5rem;}
+
+.soluteBanner{background:url(../images/contactUs.png) no-repeat center center;background-size:cover;height:7rem;line-height:7rem;font-size:0;}
+.bannerExplain{display:inline-block;vertical-align:middle;margin-left:3.25rem;line-height:normal;}
+.bannerExplain p{text-transform: uppercase;font-size:0.5rem;color:#fff;}
+.bannerExplain h3{font-size:0.9rem;color:#fff;margin-top:0.25rem;}
+
+.companyInfo{padding:0 0.5rem;margin-top:1.5rem;}
+.infoItem{overflow:hidden;padding:0.5rem 0;border-bottom:0.025rem solid #e6e6e6;}
+.infoItem i{font-size:1rem;float:left;margin-right:0.375rem;width:1rem;}
+.infoRight{overflow:hidden;}
+.infoRight h3{font-size:0.6rem;color:#333;margin-bottom:0.25rem;}
+.infoRight p{font-size:0.55rem;line-height:1.5em;color:#333;}
+.infoRight p a{color:#333;margin-right:0.25rem;}
+.tips{padding:0 0.5rem;font-size:0.6rem;color:#666666;line-height:1.5em;margin-top:1.5rem;}
+
+
+.technical{position:fixed;bottom:0;left:0;right:0;}

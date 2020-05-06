@@ -1,0 +1,14 @@
+@charset "utf-8";
+.pBanner{background:url(../images/pBanner.png) no-repeat center center;background-size:cover;height:7rem;line-height:7rem;font-size:0;}
+.bannerExplain{display:inline-block;vertical-align:middle;margin-left:3.25rem;line-height:normal;}
+.bannerExplain p{text-transform: uppercase;font-size:0.5rem;color:#fff;}
+.bannerExplain h3{font-size:0.9rem;color:#fff;margin-top:0.25rem;}
+
+.productCase{text-align:justify;font-size:0;padding:0 0.5rem;margin-top:1rem;}
+.caseItem{display:inline-block;vertical-align:top;margin-bottom:1.25rem;width:40%;text-align:center;padding:0 0.3rem;box-sizing: border-box;}
+.left_fix{display:inline-block;vertical-align:top;width:40%;}
+.caseItem a{display:block;overflow:hidden;}
+.caseItem i{width:2.5rem;line-height:2.5rem;height:2.5rem;background-color:#118eea;margin:0 auto;display:block;font-size:1.5rem;color:#fff;border-radius:50%;}
+.caseItem h3{font-size:0.65rem;color:#666;margin:0.625rem 0;}
+.caseItem p{font-size:0.5rem;color:#666;min-height:3.25rem}
+.inline{margin:0 auto;margin-top:0.25rem;width:3.5rem;line-height:1rem;color:#118eea;border:0.05rem solid;font-size:0.5rem;border-radius:0.5rem;}

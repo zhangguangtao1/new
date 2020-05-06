@@ -1,0 +1,29 @@
+@charset "utf-8";
+body{padding-bottom:0.75rem;background-color:#ededed;}
+.userKnow{padding:1rem 0.5rem 0;}
+.userKnowHead{text-align:center;}
+.userKnowHead h3{font-size:0.65rem;color:#333;}
+.userKnowHead p{font-size:0.45rem;color:#033333;margin-top:0.25rem;}
+.konwBox{background-color:#fff;padding:0.875rem 0.35rem 0.875rem 0.5rem;overflow:hidden;margin-top:0.5rem;}
+.konwBox img{width:3.55rem;height:2.95rem;float:left;margin-right:0.35rem;}
+.konwRight{overflow:hidden;font-size:0.55rem;color:#333;}
+.konwRight a{color:#ff4400;}
+.konwRight p{line-height:1.8em;}
+
+.num{margin-top:1.25rem;padding:0 0.5rem;}
+.num > img{display:block;width:4rem;height:0.75rem;margin:auto;}
+.numTips{margin-top:0.5rem;text-align:center;}
+.numTips h3{font-size:0.8rem;color:#033333;}
+.numTips p{font-size:0.55rem;color:#666;margin-top:0.25rem;}
+
+.stepList{margin-top:0.5rem;}
+.stepItem{overflow:hidden;margin-bottom:0.25rem;}
+.number{float:left;width:3.15rem;line-height:3.15rem;text-align:center;font-size:1rem;background-color:#118EEA;color:#fff;border-radius:0.25rem 0 0 0.25rem;}
+.numInfo{line-height:3.15rem;font-size:0;text-align:left;padding:0 0.5rem;overflow:hidden;background-color:#FFF;}
+.numInfo p{display:inline-block;vertical-align:middle;font-size:0.55rem;color:#333;line-height:1.5em;}
+
+.reminder{margin-top:0.5rem;padding:0 0.5rem;}
+.reminder h3{font-size:0.65rem;color:#333;margin-bottom:0.5rem;}
+.reminder p{font-size:0.55rem;color:#333;text-indent:2em;line-height:1.8em;}
+
+

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="Keywords" content="网站关键字"/>
+		<meta name="Description" content="网站描述"/>
+		<title>业务办理-(在线申请)</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<script src="js/adaptation.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/font/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="css/business_online.css"/>
+	</head>
+	<body>
+		<!-- 一般的头部，抽成公共部分 -->
+		<div class="normalHead">
+			<a href="javascript:history.go(-1)">
+				<i class="iconfont iconiconset0417"></i>
+				<span>业务办理-(在线申请)</span>
+			</a>
+		</div>
+		<form action="" method="post" class="online">
+			<!-- 单位名称 -->
+			<div class="companyName">
+				<h3>单位名称</h3>
+				<div class="companyInfo">
+					<div class="companyInfoItem">
+						<label><span>单位名称</span><font>*</font></label>
+						<div class="inputBox">
+							<input type="text" placeholder="请输入单位名称">
+						</div>
+					</div>
+					<div class="companyInfoItem">
+						<label><span>信用代码</span><font>*</font></label>
+						<div class="inputBox">
+							<input type="text" placeholder="请输入统一社会信用代码">
+						</div>
+					</div>
+					<div class="companyInfoItem">
+						<label><span>法人名字</span><font>*</font></label>
+						<div class="inputBox">
+							<input type="text" placeholder="请输入法人名字">
+						</div>
+					</div>
+					<div class="companyInfoItem">
+						<label><span>法人联系电话</span><font>*</font></label>
+						<div class="inputBox">
+							<input type="text" placeholder="请输入法人联系电话">
+						</div>
+					</div>
+					<div class="companyInfoItem">
+						<label><span>法人身份证号</span></label>
+						<div class="inputBox">
+							<input type="text" placeholder="请输入法人身份证号">
+						</div>
+					</div>
+					<div class="companyInfoItem">
+						<label><span>社会保险登记编号</span></label>
+						<div class="inputBox">
+							<input type="text" placeholder="请输入社会保险登记编号">
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 经办人资料 -->
+			<div class="companyName">
+				<h3>经办人资料</h3>
+				<div class="companyInfo">
+					<div class="companyInfoItem">
+						<label><span>经办人姓名</span><font>*</font></label>
+						<div class="inputBox">
+							<input type="text" placeholder="请输入经办人姓名">
+						</div>
+					</div>
+					<div class="companyInfoItem">
+						<label><span>经办人身份证号</span><font>*</font></label>
+						<div class="inputBox">
+							<input type="text" placeholder="请输入经办人身份证号">
+						</div>
+					</div>
+					<div class="companyInfoItem">
+						<label><span>经办人手机号码</span><font>*</font></label>
+						<div class="inputBox">
+							<input type="text" placeholder="请输入经办人手机号码">
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 印章信息 -->
+			<div class="companyName">
+				<h3>印章信息</h3>
+				<div class="companyInfo">
+					<div class="companyInfoItem">
+						<label><span>选择印章类型</span><font>*</font></label>
+						<div class="inputBox">
+							<select name="">
+								<option value="0">河南省社保专用0</option>
+								<option value="1">河南省社保专用1</option>
+								<option value="2">河南省社保专用2</option>
+							</select>
+						</div>
+					</div>
+					<div class="companyInfoItem">
+						<label><span>选择年限</span><font>*</font></label>
+						<div class="inputBox">
+							<select name="">
+								<option value="1">1年</option>
+								<option value="2">2年</option>
+								<option value="3">3年</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 价格 -->
+			<div class="price">
+				<p>单价：200.00，总价：10000</p>
+			</div>
+			<!-- 邮寄信息 -->
+			<div class="companyName">
+				<h3>邮寄信息</h3>
+				<div class="companyInfo">
+					<div class="companyInfoItem">
+						<label><span>收件人姓名</span><font>*</font></label>
+						<div class="inputBox">
+							<input type="text" placeholder="请输入收件人姓名">
+						</div>
+					</div>
+					<div class="companyInfoItem">
+						<label><span>收件人电话</span><font>*</font></label>
+						<div class="inputBox">
+							<input type="text" placeholder="请输入收件人电话">
+						</div>
+					</div>
+					<div class="companyInfoItem">
+						<label><span>邮寄地址</span><font>*</font></label>
+						<div class="address" id="distpicker2">
+							<select name="province"></select>
+							<select name="city"></select>
+							<select name="area"></select>
+						</div>
+					</div>
+					<div class="detailAddress">
+						<input type="text" placeholder="详细地址">
+					</div>
+				</div>
+			</div>
+			<!-- 上传附件 -->
+			<div class="upload">
+				<h3>上传附件</h3>
+				<label class="textLabel"><span>收件人姓名</span><font>*</font></label>
+				<div class="uploadFile">
+					<label for="uploadFile">点击上传签章</label>
+					<!-- 上传的图片展示到此处，默认是隐藏的 -->
+					<img src="" alt="">
+				</div>
+				<input type="file" id="uploadFile">
+				<p>只允许上传印章图片</p>
+				<p>文件上传JPG、GIF、JPEG、BMP、PNG的图片格式，上传后可预览</p>
+			</div>
+			<!-- 样章信息 -->
+			<div class="stamp">
+				<h3>样章信息</h3>
+				<div class="stampInfo">
+					<div class="collectInfo">
+						<div class="infoTitle">参考标准如下</div>
+						<img src="images/zhang1.png" >
+						<p>印章清晰不模糊，背景尽量为白色或浅色</p>
+					</div>
+					<div class="errorInfo">
+						<div class="infoTitle">不合格图片如下</div>
+						<div class="errorImgList">
+							<div class="errorItem">
+								<img src="images/zhang2.png" >
+								<p>印章不正或模糊不清晰</p>
+							</div>
+							<div class="errorItem">
+								<img src="images/zhang3.png" >
+								<p>印章背景杂乱</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 要求 -->
+			<div class="requirement">
+				<h3>签章图片要求：</h3>
+				<p>1、请在纯白色纸张上加盖公章，并上传扫描件</p>
+				<p>2、公章印模图片正向、文字清晰</p>
+				<p>3、公章印模图片不大于10M。</p>
+				<p>4、文件上传JPG、GIF、JPEG、BMP、PNG的图片格式，上传后可预览。</p>
+			</div>
+			<!-- 验证信息 -->
+			<div class="verification">
+				<h3>验证信息</h3>
+				<div class="verificationInfo">
+					<div class="verificationInfoItem">
+						<label><span>收件人姓名</span><font>*</font></label>
+						<img src="images/code.png" >
+						<div class="inputBox">
+							<input type="text" placeholder="请输入收件人姓名">
+						</div>
+					</div>
+					<div class="verificationInfoItem">
+						<label><span>收件人姓名</span><font>*</font></label>
+						<div class="getCode">获取验证码</div>
+						<div class="inputBox">
+							<input type="text" placeholder="请输入收件人姓名">
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 是否同意 -->
+			<div class="isAgress">
+				<label>
+					<input type="checkbox">
+					<span>申请机构在此声明：表内所填信息及单位证明材料完全属实！并遵守《电子印章服务平台认证服务协议》</span>
+				</label>
+			</div>
+			<!-- 此处用按钮提交表单，若不想用按钮，换成其他标签，记得把类名复制过去 -->
+			<button class="submitBtn">提交保存</button>
+		</form>
+		<script src="js/jquery1.9.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/dataPicker.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/picker.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$("#distpicker2").distpicker({
+			  autoSelect: false
+			});
+			// 提示信息
+			function showMsg(msg){
+				msg = msg ? msg : "成功";
+				var div = document.createElement("div");
+				div.className = "formTipsInfo";
+				div.innerHTML = msg;
+				document.body.appendChild(div);
+				setTimeout(function(){
+					document.body.removeChild(div);
+				},2000)
+			}
+		</script>
+	</body>
+</html>

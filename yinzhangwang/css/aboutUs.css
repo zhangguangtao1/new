@@ -1,0 +1,11 @@
+@charset "utf-8";
+.aboutBanner{background:url(../images/about.png) no-repeat center center;background-size:cover;height:7rem;line-height:7rem;font-size:0;}
+.bannerExplain{display:inline-block;vertical-align:middle;margin-left:3.25rem;line-height:normal;}
+.bannerExplain p{text-transform: uppercase;font-size:0.5rem;color:#fff;}
+.bannerExplain h3{font-size:0.9rem;color:#fff;margin-top:0.25rem;}
+
+
+.about{margin-top:1rem;padding:0 0.5rem;padding-bottom:0.75rem;}
+.about p{font-size:0.6rem!important;color:#033333!important;line-height:1.5em!important;}
+.about span{font-size:0.6rem!important;color:#033333!important;line-height:1.5em!important;}
+

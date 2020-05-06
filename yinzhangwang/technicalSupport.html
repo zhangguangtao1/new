@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="Keywords" content="网站关键字"/>
+		<meta name="Description" content="网站描述"/>
+		<title>技术支持</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<script src="js/adaptation.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/font/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="css/technicalSupport.css"/>
+	</head>
+	<body>
+		<!-- 一般的头部，抽成公共部分 -->
+		<div class="normalHead">
+			<a href="javascript:history.go(-1)">
+				<i class="iconfont iconiconset0417"></i>
+				<span>技术支持</span>
+			</a>
+			<div class="normalHeadRight">
+				<i class="iconfont icondaohang-"></i>
+			</div>
+		</div>
+		<!-- 支持列表 -->
+		<div class="supportList">
+			<div class="supportItem">
+				<div class="technicalHead">
+					<div class="rightTips">
+						<i class="iconfont iconiconset0417"></i>
+						<span>展开</span>
+					</div>
+					<p>社保电子印章使用社保电子印章使用</p>
+				</div>
+				<div class="answerCon">
+					<!-- 回答的内容 -->
+					<p>请点击登录页面的“找回用户名”或“找回密码”链接，根据页面提示输入用户名、姓名、证件号码等信息找回。因学信网账号还可用于本网站的其他系统登录，请牢记用户名和密码。</p>
+					<p>请点击登录页面的“找回用户名”或“找回密码”链接，根据页面提示输入用户名、姓名、证件号码等信息找回。因学信网账号还可用于本网站的其他系统登录，请牢记用户名和密码。</p>
+					<div class="timeAndPeople">
+						<i class="iconfont iconyanjing-"></i>
+						<span>23</span>
+						<i class="iconfont iconshijian1"></i>
+						<span>2020-01-02</span>
+					</div>
+				</div>
+			</div>
+			<div class="supportItem">
+				<div class="technicalHead">
+					<div class="rightTips">
+						<i class="iconfont iconiconset0417"></i>
+						<span>展开</span>
+					</div>
+					<p>社保电子印章使用社保电子印章使用</p>
+				</div>
+				<div class="answerCon">
+					<!-- 回答的内容 -->
+					<p>请点击登录页面的“找回用户名”或“找回密码”链接，根据页面提示输入用户名、姓名、证件号码等信息找回。
+	因学信网账号还可用于本网站的其他系统登录，请牢记用户名和密码。</p>
+					<p>请点击登录页面的“找回用户名”或“找回密码”链接，根据页面提示输入用户名、姓名、证件号码等信息找回。
+	因学信网账号还可用于本网站的其他系统登录，请牢记用户名和密码。</p>
+					<div class="timeAndPeople">
+						<i class="iconfont iconyanjing-"></i>
+						<span>23</span>
+						<i class="iconfont iconshijian1"></i>
+						<span>2020-01-02</span>
+					</div>
+				</div>
+			</div>
+			<div class="supportItem">
+				<div class="technicalHead">
+					<div class="rightTips">
+						<i class="iconfont iconiconset0417"></i>
+						<span>展开</span>
+					</div>
+					<p>社保电子印章使用社保电子印章使用</p>
+				</div>
+				<div class="answerCon">
+					<!-- 回答的内容 -->
+					<p>请点击登录页面的“找回用户名”或“找回密码”链接，根据页面提示输入用户名、姓名、证件号码等信息找回。
+因学信网账号还可用于本网站的其他系统登录，请牢记用户名和密码。</p>
+					<p>请点击登录页面的“找回用户名”或“找回密码”链接，根据页面提示输入用户名、姓名、证件号码等信息找回。
+因学信网账号还可用于本网站的其他系统登录，请牢记用户名和密码。</p>
+					<div class="timeAndPeople">
+						<i class="iconfont iconyanjing-"></i>
+						<span>23</span>
+						<i class="iconfont iconshijian1"></i>
+						<span>2020-01-02</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 加载更多 -->
+		<div class="laodMore">
+			<img src="images/load.png" >
+			<span>加载更多</span>
+		</div>
+		<div class="technical">
+			<a href="">©2011-2020 dzgzw.com 河南嘉华网络系统有限公司</a>
+		</div>
+		<script src="js/jquery1.9.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(".supportItem").click(function(){
+				var index = $(this).index();
+				$(".technicalHead span").text("展开");
+				$(".technicalHead i").removeClass("on");
+				$(this).find(".technicalHead").toggleClass("on");
+				$(this).siblings().find(".technicalHead").removeClass("on");
+				$(this).find(".answerCon").slideToggle();
+				$(this).siblings().find(".answerCon").slideUp();
+				if($(this).find(".technicalHead").hasClass("on")){
+					$(this).find(".technicalHead span").text("收起");
+					$(this).find(".technicalHead i").addClass("on");
+				};
+			})
+		</script>
+	</body>
+</html>

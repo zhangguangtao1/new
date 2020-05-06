@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="Keywords" content="网站关键字"/>
+		<meta name="Description" content="网站描述"/>
+		<title>受理点查询</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<script src="js/adaptation.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/font/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="css/accepPoint.css"/>
+	</head>
+	<body>
+		<!-- 一般的头部，抽成公共部分 -->
+		<div class="normalHead">
+			<a href="javascript:history.go(-1)">
+				<i class="iconfont iconiconset0417"></i>
+				<span>受理点查询</span>
+			</a>
+			<div class="normalHeadRight">
+				<i>地区</i>
+			</div>
+		</div>
+		<!-- 三级联动 -->
+		<div class="selectCity">
+			<div id="distpicker2">
+			  <select id="selectProcince"></select>
+			  <select id="selectCity"></select>
+			  <select id="selectXian"></select>
+			</div>
+		</div>
+		<!-- 查询列表 -->
+		<div class="queryList">
+			<div class="queryItem">
+				<a href="javascript:;">
+					<h3>中牟东南文印服务中心</h3>
+					<div class="queryInfo">
+						<div class="allQueryInfo">
+							<span><i class="iconfont icondizhi"></i>地址:</span>
+							<p>河南省郑州市高新区恶男大学科技园</p>
+						</div>
+						<div class="allQueryInfo">
+							<span><i class="iconfont icondianhua1"></i>电话:</span>
+							<p>13849020</p>
+						</div>
+						<div class="allQueryInfo">
+							<span><i class="iconfont iconpeizhitubiaosvg-"></i>介绍:</span>
+							<p>河南受理点河南受理点河南受理点河南受理点河南受理点河南受理点河南受理点河南受理点河南受理点</p>
+						</div>
+					</div>
+				</a>
+			</div>
+			
+			<div class="queryItem">
+				<a href="javascript:;">
+					<h3>中牟东南文印服务中心</h3>
+					<div class="queryInfo">
+						<div class="allQueryInfo">
+							<span><i class="iconfont icondizhi"></i>地址:</span>
+							<p>河南省郑州市高新区恶男大学科技园</p>
+						</div>
+						<div class="allQueryInfo">
+							<span><i class="iconfont icondianhua1"></i>电话:</span>
+							<p>13849020</p>
+						</div>
+						<div class="allQueryInfo">
+							<span><i class="iconfont iconpeizhitubiaosvg-"></i>介绍:</span>
+							<p>河南受理点河南受理点河南受理点河南受理点河南受理点河南受理点河南受理点河南受理点河南受理点</p>
+						</div>
+					</div>
+				</a>
+			</div>
+			
+			<div class="queryItem">
+				<a href="javascript:;">
+					<h3>中牟东南文印服务中心</h3>
+					<div class="queryInfo">
+						<div class="allQueryInfo">
+							<span><i class="iconfont icondizhi"></i>地址:</span>
+							<p>河南省郑州市高新区恶男大学科技园</p>
+						</div>
+						<div class="allQueryInfo">
+							<span><i class="iconfont icondianhua1"></i>电话:</span>
+							<p>13849020</p>
+						</div>
+						<div class="allQueryInfo">
+							<span><i class="iconfont iconpeizhitubiaosvg-"></i>介绍:</span>
+							<p>河南受理点河南受理点河南受理点河南受理点河南受理点河南受理点河南受理点河南受理点河南受理点</p>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+		<!-- 加载更多 -->
+		<div class="laodMore">
+			<img src="images/load.png" >
+			<span>加载更多</span>
+		</div>
+		<script src="js/jquery1.9.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/dataPicker.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/picker.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$("#distpicker2").distpicker({
+			  autoSelect: false
+			});
+			$("#selectXian").change(function(e){
+				console.log($(this).val());
+				console.log($("#selectCity").val());
+				console.log($("#selectProcince").val());
+			})
+		</script>
+	</body>
+</html>

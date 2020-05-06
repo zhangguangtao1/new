@@ -4,7 +4,7 @@ import base64 from './base64.js';//Base64,hmac,sha1,crypto相关算法
 import './hmac.js';
 import './sha1.js';
 import Crypto from './crypto.js';
-
+import request from '@/utils/request.js'
 /*
  *上传文件到阿里云oss
  *@param - filePath :图片的本地资源路径
@@ -39,7 +39,7 @@ const uploadFile = function (filePath, dir, successc, failc) {
     'success_action_status': '200',
   })*/
 
-  tt.uploadFile({
+  request({
     url: aliyunServerURL,//开发者服务器 url
     filePath: filePath,//要上传文件资源的路径
     name: 'file',//必须填file
@@ -49,18 +49,16 @@ const uploadFile = function (filePath, dir, successc, failc) {
       'OSSAccessKeyId': accessid,
       'signature': signature,
       'success_action_status': '200',
-    },
-    success: function (res) {
-      if (res.statusCode != 200) {
-        failc(new Error('上传错误:' + JSON.stringify(res)))
-        return;
-      }
-      successc(aliyunServerURL + aliyunFileKey);
-    },
-    fail: function (err) {
-      err.wxaddinfo = aliyunServerURL;
-      failc(err);
-    },
+    }
+  }).then((res) => {
+    if (res.statusCode != 200) {
+      failc(new Error('上传错误:' + JSON.stringify(res)))
+      return;
+    }
+    successc(aliyunServerURL + aliyunFileKey);
+  }).catch(err => {
+    err.wxaddinfo = aliyunServerURL;
+    failc(err);
   })
 }
 

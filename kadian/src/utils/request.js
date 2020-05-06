@@ -13,6 +13,7 @@ const service = axios.create({
 // axios拦截器，发起请求之前header里面加入token字段
 service.interceptors.request.use(
   config => {
+    config[content-type] = 'application/json';
     if (token) {
       config.headers['X-Token'] = token
     }
@@ -28,7 +29,7 @@ service.interceptors.response.use(
     const res = response.data
 
     // 如果返回字段不是20000，就让其返回false
-    if (res.code !== 20000) {
+    if (res.code !== 1) {
       Message({
         message: res.message || 'Error',
         type: 'error',
