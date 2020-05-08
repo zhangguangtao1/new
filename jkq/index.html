@@ -1,0 +1,2662 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <title>企业服务网</title>
+    <!-- Set render engine for 360 browser -->
+    <meta name="renderer" content="webkit" />
+    <!-- No Baidu Siteapp-->
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/swiper.min.css" />
+    <link rel="stylesheet" href="./css/css.css">
+   <style>
+        .hao{width: 1400px;display: block;margin: 0 auto;}
+        .index{position: relative;}
+        .suspension_left{position: fixed;bottom: 0px;left: 0px;width: 13%;z-index: 999;}
+        .suspension_left img{}
+        .suspension_right{position: fixed;bottom: 0px;right: 0px;width: 13%;z-index: 999;}
+        .suspension_right img{}
+        .index_banner{position: relative;}
+        #index_banner{height: 350px;}
+        #index_banner img{height: 350px;width: 100%;}
+        #index_banner .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+        .index_nav{position: absolute;top: 0px;left: 13%;z-index: 999;}
+        .index_nav_ct{width: 100%;}
+        .index_nav_logo{margin-top: 40px;}
+        .index_nav_ct_title{height: 44px;display: flex;align-items: center;}
+        .index_nav_ct_title_p{font-size: 12px;color: #293044;width: 135px;text-align: center;border-right: 1px solid #293044;}
+        .index_nav_ct_title_p:last-child{border: 0px;}
+        .index_nav_ct_title_pp{font-size: 12px;color:#293044;width: 90px;text-align: center;border-right: 1px solid #293044;}
+        .index_nav_ct_title_pp:last-child{border: 0px;}
+
+        .index_nav_search{position: absolute;bottom: -160px;right: 0px;width: 238px;height: 32px;background:rgba(255,255,255,1);border-radius:16px;padding-left: 10px;display: flex;align-items: center;}
+        .index_nav_search_input{outline: none;border: 0;padding-left: 10px;align-items: center;}
+        .index_nav_search img{width:17px;height: 17px;align-items: center;}
+
+
+
+
+        /* 内容切换 */
+        .index_ct{width: 100%;background-color: #fff;}
+        .index_ct_tabber{width: 100%;height: 60px;}
+        .index_ct_tabber_old{width: 11.1%;height: 100%;background-color: #5984FF;color: #ffffff;font-family:PingFang SC;font-size: 18px;text-align: center;line-height: 60px;cursor: pointer;transition: all 0.5s;}
+        .index_ct_tabber_new{background-color: #1954FF;color: #fff;font-weight: bold;font-family:PingFang SC;}
+
+        .index_tabber_ct{width: 100%;padding: 0px 15px;margin-top: 10px;margin-bottom: 20px;}
+        .tabber_none{display: none;}
+        .tabber_block{display: block;}
+
+
+
+
+        #index_home .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+    }
+
+    .index_home_banner{width: 628px;height:450px;}
+    .index_home_banner img{width: 100%;height: 450px;}
+    #index_home .swiper-pagination{width: 30%;bottom:60px;left: 75%;}
+
+    #index_home .swiper-pagination-bullet-active{background-color: #fff;}
+
+    .index_tabber_bottom{width: 100%;height: 50px;background-color: rgba(0,0,0,0.5);position: absolute;bottom: 0;left: 0px;}
+    .index_tabber_bottom p{font-size: 14px;color: #fff;line-height: 50px;padding-left: 20px;text-align: left;}
+
+    /* 右tabber切换 */
+    .index_home_tabber{width: 712px;margin-left: 20px;}
+    .index_home_top{width:100%;height: 48px;border-bottom: 1px solid rgba(77,120,245,1);}
+    .index_home_title{}
+    .index_home_top_p{font-size: 18px;color: #333333;line-height: 48px;font-family:Microsoft YaHei;width: 112px;height: 48px;
+    border-radius: 12px 12px 0px 0px;text-align: center;margin-right: 20px;cursor: pointer;transition: all 1s;}
+    .index_home_top_pp{background-color: #4D78F5;color: #fff;}
+    .index_home_more{line-height: 48px;cursor: pointer;}
+    .index_home_more a{color: #999999;}
+    .index_home_tabber_ct{padding: 0 15px;}
+    .index_home_tabber_ct_text{width: 100%;height: 57px;display: flex;align-items: center;border-bottom: 1px dashed #dddddd;cursor: pointer;}
+    .index_home_tabber_ct_text:hover .index_home_circular{background-color: #FF5E1E;}
+    .index_home_tabber_ct_text:hover .index_home_circular{color: #FF5E1E;}
+    .index_home_tabber_ct_text:hover .index_home_text_p{color: #FF5E1E;}
+    .index_home_circular{width: 5px;height: 5px;background-color: #999999;border-radius: 50%;}
+    .index_home_text_p{width: 100%;font-size: 16px;color: #333333;margin-left: 10px;}
+    .index_home_text_pp{width: 28%;text-align: right;font-size: 14px;color:#999999;}
+
+    .index_home_none{display: none;}
+    .index_home_block{display: block;}
+
+    .mt5{margin-top: 5px;}
+
+
+    /* 内容底部 */
+    .index_home_bottom{width: 100%;margin-top: 11px;}
+    .index_home_bottom_dt{width: 22%;margin-right: 4%;height: 112px;margin-top: 10px;position: relative;cursor: pointer;}
+    .index_position{width: 100%;height: 112px;position: absolute;left: 0px;top: 0px;padding: 0 15px;display: flex;align-items: center;opacity: 0;transition: all 1s;}
+    .index_position_ct{width: 100%;}
+    .index_position_ct img{display: block;margin: 0 auto;}
+    .index_position_ct p{font-size: 18px;color: #FF5E1E;text-align: center;margin-top: 17px;font-weight: bold;position: relative;}
+    .index_position_ct_xiao{position: absolute;bottom: -6px;left: 47%;}
+
+
+    .index_home_bottom_dts .index_position{opacity: 1;}
+    .index_home_bottom_dts .index_bg_img{opacity: 0;}
+    /* .index_home_bottom_dts:hover .index_position{opacity: 1;}
+    .index_home_bottom_dts:hover .index_bg_img{opacity: 0;} */
+    .index_bg_img{width: 100%;height: 112px;}
+    .index_home_bottom_dt:nth-child(4n){margin-right: 0px;}
+    .index_bg{border:1px solid rgba(166,189,255,1);box-shadow:0px 3px 10px 0px rgba(77,120,245,0.36);}
+    .index_home_bottom_dt_text{width: 75%;}
+    .index_home_bottom_dt_list{width: 50%;display: flex;align-items: center;}
+    .index_home_bottom_dt_list_p{margin-left: 10px;font-size: 16px;color: #333333;}
+    .indx_color_tabber{color: #FF5E1E;}
+    .indx_color_tabber .index_home_circular{background-color: #FF5E1E;}
+    .indx_color_tabber p{color: #FF5E1E;}
+    .index_home_block_img{width: 100%;}
+    .clear_padding{padding: 0px;}
+    .index_home_show{width: 100%;margin-top: 10px;}
+    .index_home_show img{width: 100%;}
+
+
+    /* 页脚 */
+    .index_footer{width: 100%;background-color: #4D78F5;padding: 25px 0px;line-height: 28px;}
+    .index_footer p{font-size: 14px;color: #fff;margin: 0 auto;display: block;text-align: center;}
+
+    /* 企业之窗 */
+    .enterprise{width: 100%;}
+    .enterprise_ct{width: 100%;padding-bottom: 20px;}
+    .enterprise_ct_top{width:100%;}
+    .enterprise_ct_top_left{width: 826px;}
+    .enterprise_ct_top_left_title{width: 826px;height: 50px;background-image: url("./img/enterprise_1.png");background-size: 100% 100%;background-repeat: no-repeat;padding: 0 15px;}
+    .enterprise_ct_top_left_title_p{font-size: 18px;color: #fefefe;font-weight: bold;line-height: 50px;}
+    .enterprise_ct_top_left_title_pp{font-size: 14px;color: #666666;line-height: 50px;cursor: pointer;}
+    .enterprise_ct_top_left_ct{width: 551px;height: 344px;border: 1px solid #A6BDFF;margin-top: 6px;padding: 0 15px;}
+    .enterprise_ct_top_left_ct_left{width: 100%;height: 56px;border-bottom: 1px dashed #dddddd;display: flex;align-items: center;text-align: right;cursor: pointer;}
+    .enterprise_ct_top_left_ct_left img{width:15px;height: 15px;display: inline-block;}
+    .enterprise_ct_top_left_ct_left p{margin-right: 15px;}
+    .enterprise_ct_top_left_ct_left_text{width: 90%;text-align: left;}
+    .enterprise_ct_top_left_ct_left:hover .index_home_circular{background-color: #FF5E1E;}
+    .enterprise_ct_top_left_ct_left:hover .enterprise_ct_top_left_ct_left_text{color: #FF5E1E;}
+    .enterprise_ct_top_left_ct_img{width: 261px;height: 344px;margin-top: 6px;margin-left: 14px;}
+    .enterprise_ct_top_left_ct_img img{width: 100%;height: 100%;}
+    .enterprise_ct_top_right{width: 514px;margin-left: 30px;}
+    .enterprise_ct_top_right_title{width: 514px;height: 50px;background-image: url("./img/enterprise_2.png");background-size: 100% 100%;background-repeat: no-repeat;padding: 0 15px;}
+    .enterprise_ct_top_right_title_p{font-size: 18px;color: #fefefe;font-weight: bold;line-height: 50px;}
+    .enterprise_ct_top_right_title_pp{font-size: 14px;color: #666666;line-height: 50px;}
+
+    .enterprise_ct_top_right_dt{width: 514px;height: 344px;border: 1px solid #4D78F5;margin-top: 6px;padding: 0 15px;}
+    .enterprise_ct_top_right_dt_list{display: flex;align-items: center;width: 100%;height: 56px;border-bottom: 1px dotted #dddddd;cursor: pointer;}
+    .enterprise_ct_top_right_dt_list p{margin-right: 15px;}
+    .enterprise_ct_top_right_dt_list img{width: 15px;height: 15px;}
+    .enterprise_ct_top_right_dt_list_p{width: 90%;text-align: left;}
+    .enterprise_ct_top_right_dt_list:hover .enterprise_ct_top_right_dt_list_p{color: #FF5E1E;}
+    .enterprise_ct_top_right_dt_list:hover .index_home_circular{background-color: #FF5E1E;}
+
+
+    .enterprise_ct_bottom{width:100%;margin-top: 20px;}
+    .enterprise_ct_bottom_title{width: 100%;height: 50px;background-image: url("./img/enterprise_3.png");background-size: 100% 100%;background-repeat: no-repeat;padding: 0 15px;}
+    .enterprise_ct_bottom_title_p{font-size: 18px;color: #ffffff;font-weight: bold;line-height: 50px;}
+    .enterprise_ct_bottom_title_pp{font-size: 14px;color:#666666;line-height: 50px;cursor: pointer;}
+    .enterprise_ct_bottom_dt_list{width: 100%;height: 160px;margin-right: 1.3%;margin-top: 10px;position: relative;cursor: pointer;}
+    .enterprise_ct_bottom_dt_list:nth-child(4n){margin-right: 0px;}
+    /* .enterprise_ct_bottom_dt_list:hover .enterprise_ct_bottom_yinying{opacity: 1;} */
+    .enterprise_ct_bottom_dt_list:hover .enterprise_ct_bottom_yinying2{opacity: 0;}
+    .enterprise_ct_bottom_dt_list img{width: 100%;height: 160px;}
+    .enterprise_ct_bottom_yinying{position: absolute;top: 0;left: 0px;width: 100%;height: 160px;background-color: rgba(0,0,0,0.6);display: flex;align-items: center;padding: 0 20px;opacity: 0;transition: all 0.5s;}
+    .enterprise_ct_bottom_yinying p{font-size: 14px;color: #fefefe;text-align: center;}
+    .enterprise_ct_top_right_title_pp{cursor: pointer;}
+
+    .enterprise_ct_bottom_yinying2{position: absolute;top: 0;left: 0px;width: 100%;opacity: 1;
+        background-color: rgba(0,0,0,0.4);display: flex;align-items: center;padding: 0 20px;transition: all 0.5s;}
+    .enterprise_ct_bottom_yinying2 p{font-size: 18px;color: #ffffff;margin:0 auto;line-height: 160px;}
+    .enterprise_ct_bottom_yinying2 a{display: block;margin: 0 auto;}
+    /* 招商引资 */
+    .investment{width: 100%;padding-bottom: 25px;}
+    .investment_ct{width: 100%;}
+    .investment_ct_list{width: 24%;margin-right: 1.3%;}
+    .investment_ct_list:last-child{margin-right: 0px;}
+    .investment_ct_list_title{width: 100%;height: 50px;background-image: url("./img/investment_1.png");background-size: 100% 100%;background-repeat: no-repeat;padding: 0 14px;}
+    .investment_ct_list_title_p{font-size: 18px;color: #fefefe;font-weight: bold;line-height: 50px;}
+    .investment_ct_list_title_pp{font-size: 14px;color: #666666;line-height: 50px;cursor: pointer;}
+    .investment_ct_list_text{width: 100%;height: 590px;border: 1px solid #A6BDFF;}
+    .investment_ct_list_text_dt{display: flex;align-items: center;width: 100%;height: 53.5px;border-bottom: 1px dashed #dddddd;padding: 0 10px;}
+    .investment_ct_list_text_dt img{width:15px;height: 15px;}
+    .investment_ct_list_text_dt p{margin-right: 14px;}
+    .investment_ct_list_text_dt_p{width: 90%;}
+    .investment_ct_list_text_dt:hover .index_home_circular{background-color: #FF5E1E;}
+    .investment_ct_list_text_dt:hover .investment_ct_list_text_dt_p{color: #FF5E1E;}
+
+
+    .investment_bottom{width: 100%;margin-top: 20px;}
+    .investment_bottom img{width: 100%;}
+
+
+
+
+    /* 人才需求 */
+    .personnel{width: 100%;margin-bottom: 20px;}
+    .personnel_ct{width: 100%;}
+    .personnel_ct_list{width: 18%;margin-right: 2.5%;height: 70px;}
+    .bgs_1{background-image: url("./img/personnel_2.png");background-size: 100% 100%;}
+    .bgs_2{background-image: url("./img/personnel_3.png");background-size: 100% 100%;}
+    .bgs_3{background-image: url("./img/personnel_4.png");background-size: 100% 100%;}
+    .bgs_4{background-image: url("./img/personnel_5.png");background-size: 100% 100%;}
+    .bgs_5{background-image: url("./img/personnel_6.png");background-size: 100% 100%;}
+    .personnel_ct_list:last-child{margin-right: 0px;}
+    .personnel_ct_list_p{font-size: 16px;text-align: center;color: #ffffff;}
+    .personnel_ct_list_pp{font-size: 12px;color: #ffffff;text-align: center;}
+    .personnel_yinying{padding-top: 15px;}
+
+    /* 在线办事 */
+    .online{width: 100%;}
+    .online_ct{width: 100%;padding-bottom: 21px;}
+    .online_ct_left{width:665px;margin-right: 25px;}
+    .online_ct_left_title{width:665px;height: 50px;background-image: url("./img/online.png");background-size: 100% 100%;background-repeat: no-repeat;padding: 0 15px;}
+    .online_ct_left_title_p{font-size: 18px;color: #fefefe;font-weight: bold;line-height: 50px;}
+    .online_ct_left_title_pp{font-size: 14px;color: #666666;line-height: 50px;cursor: pointer;}
+    .online_ct_left_ct{width: 100%;height: 233px;border: 1px solid #A6BDFF;padding-top: 15px;}
+    .online_ct_icon{width: 20%;margin-top: 25px;}
+    .online_ct_icon img{width: 40px;height: 40px;margin: 0 auto;display: block;}
+    .online_ct_icon p{text-align: center;font-size: 16px;color: #666666;}
+
+
+
+    /* 右 */
+    .online_ct_right{width: 665px;}
+    .online_ct_right_title{width: 100%;height: 50px;background-image: url("./img/online.png");background-size: 100% 100%;background-repeat: no-repeat;padding: 0 15px;}
+    .online_ct_right_title_p{font-size: 18px;color:#fefefe;line-height: 50px;font-weight: bold;}
+    .online_ct_right_title_pp{font-size: 14px;color: #666666;line-height: 50px;cursor: pointer;}
+    .online_ct_right_ct{width: 665px;height: 590px;border: 1px solid #A6BDFF;padding:14px;}
+    .online_ct_right_ct_list{width: 585px;height: 70px;margin-top: 20px;cursor: pointer;margin: 10px auto;}
+    .online_ct_right_ct_list:first-child{margin-top: 0px;}
+    .online_bgs1{background-image: url("./img/online_right_1.png");background-size: 100% 100%;background-repeat: no-repeat;padding-top: 10px;}
+    .online_bgs2{background-image: url("./img/online_right_2.png");background-size: 100% 100%;background-repeat: no-repeat;height: 100px;line-height: 20px;}
+    .online_bgs3{background-image: url("./img/online_right_3.png");background-size: 100% 100%;background-repeat: no-repeat;height: 100px;}
+    .online_bgs4{background-image: url("./img/online_right_4.png");background-size: 100% 100%;background-repeat: no-repeat;height: 70px;}
+    .online_ct_right_ct_list p{font-size: 16px;color: #fff;text-align: center;line-height: 27px;}
+    .online_ct_right_ct_bot{margin-top: 20px;}
+    .online_ct_right_ct_bot img{width: 100%;height: 134px;}
+    .online_ct_left_ct_bot_title{width: 665px;height: 50px;background-image: url("./img/online.png");background-size: 100% 100%;background-repeat: no-repeat;margin-top: 24px;padding: 0 15px;}
+    .online_ct_left_ct_bot_title_p{font-size: 18px;color: #fefefe;font-weight: bold;line-height: 50px;}
+    .online_ct_left_ct_bot_title_pp{font-size: 14px;color: #666666;line-height: 50px;cursor: pointer;}
+    .online_ct_left_ct_bot_title_icon{width: 665px;height: 283px;border: 1px solid #A6BDFF;}
+    .inline_icon{width: 20%;margin-top: 27px;cursor: pointer;}
+    .inline_icon:hover p{color: #FF5E1E;}
+    /* 
+    .inline_icon:hover .inline_icon_tabber_positon{opacity: 1;}
+    .inline_icon:hover .inline_icon_tabber_s{opacity: 0;} */
+    .inline_icon_tabber{width: 40px;height: 40px;margin: 0 auto;display: block;position: relative;}
+    .inline_icon img{width: 33px;height: 33px;margin: 0 auto;}
+    .inline_icon p{text-align: center;font-size: 16px;color: #666666;}
+    .inline_icon_tabber_positon{position: absolute;top: 0;left: 0px;opacity: 0;transition: all 0.5s;}
+
+
+
+    /* 首页法律法规 */
+    .home_law{width: 100%;}
+    .home_law_ct{width: 100%;margin-top: 30px;}
+    .home_law_ct_list{width: 23.5%;margin-right: 2%;border: 1px solid #A6BDFF;height: 469px;padding: 0 20px;}
+    .home_law_ct_list:last-child{margin-right: 0px;}
+    .home_law_ct_list_title{width: 100%;height: 50px;border-bottom: 1px solid #eeeeee;}
+    .home_law_ct_list_titles .home_law_ct_list_title_p{color: #4D78F5;}
+    .home_law_ct_list_title_p{font-size: 18px;color: #333333;line-height: 50px;border-bottom: 2px solid #4D78F5;}
+    .home_law_ct_list_title_pp{font-size: 14px;color: #666666;line-height: 50px;}
+
+    .home_law_ct_list_dt_list{width: 100%;height: 59px;display: flex;align-items: center;}
+    .home_law_ct_list_dt_list_p{margin:0 15px;width:75%;cursor: pointer;}
+    .home_law_ct_list_dt_list:hover .index_home_circular{background-color: #FF5E1E;}
+    .home_law_ct_list_dt_list:hover .home_law_ct_list_dt_list_p{color: #FF5E1E;}
+    .home_tabber_none{display: none;}
+    .home_tabber_block{display: block;}
+
+
+    .home_boss{width: 100%;}
+    .home_boss_list{width: 100%;margin-top: 20px;}
+    .home_boss_list_left{width: 65px;height:30px;background-image: url("./img/boss.png");background-size: 100% 100%;background-repeat: no-repeat;}
+    .home_boss_list_left p{font-size: 16px;text-align: center;line-height: 30px;color: #fff;}
+    .home_boss_list_right{padding-left: 10px;}
+    .home_boss_list_right p{font-size: 16px;color: #333333;line-height: 30px;}
+    .home_conver{width: 100%;margin-top: 30px;}
+    .home_conver_title{width: 100%;}
+    .home_conver_title p{font-size: 18px;color: #FF5E1E;font-weight: bold;}
+    .home_conver_ct{width: 100%;height: 44px;display: flex;align-items: center;margin-top: 20px;}
+    .home_conver_ct .index_home_circular{margin-right: 15px;}
+    .home_conver_ct:hover .index_home_circular{background-color: #FF5E1E;}
+    .home_conver_ct:hover .home_conver_ct_p{color: #FF5E1E;cursor: pointer;}
+    .home_conver_ct_p{cursor: pointer;}
+
+
+    /* 政企互动 */
+    .home_interact_ct{margin-top: 23px;}
+    .home_interact_left{width: 706px;}
+    .home_interact_title{width: 100%;height: 56px;;}
+    .home_interact_title_p{font-size: 18px;color: #333333;border-bottom: 2px solid #4D78F5;line-height: 56px;}
+    .home_interact_title_pp{font-size: 14px;color: #999999;line-height: 56px;cursor: pointer;}
+    .home_interact_dt{width: 100%;height: 55.5px;padding: 0 20px;border-bottom: 1px solid #999999;}
+    .home_interact_dt_left1{width: 10%;line-height: 50px;font-size: 16px;color: #333333;}
+    .home_interact_dt_left2{width: 59%;line-height: 50px;font-size: 16px;color: #999999;}
+    .home_interact_dt_left3{width: 15%;line-height: 50px;font-size: 16px;color: #FF2B2B;}
+    .home_interact_dt_left4{width: 15%;line-height: 50px;font-size: 16px;color: #999999;}
+    .home_interact_bg{background-color: #eeeeee;margin-top: 14px;}
+    .home_interact_bg div{color: #333333;}
+
+    .home_interact_left_tabber{width: 100%;height: 121px;border: 1px solid #4D78F5;}
+    .home_interact_left_tabber_left{width: 50%;height: 100%;padding-top: 35px;color: #333333;}
+    .home_interact_left_tabber_left p{text-align: center;margin-top: 15px;color: #333333;}
+    .home_interact_left_tabber_left_w{background-color: #4D78F5;transition: all 1s;}
+    /* .home_interact_left_tabber_left p{font-size: 16px;color: #ffffff;text-align: center;margin-top: 5px;}
+    
+    .home_interact_left_tabber_left_p p{color: #333333;} */
+    .home_interact_left_ct{width: 100%;height: 349px;border: 1px solid #A6BDFF;padding: 0 20px;}
+
+
+    .home_interact_right{width: 634px;margin-left: 20px;}
+    .home_interact_right_top{width: 100%;height: 230px;border: 1px solid #4D78F5;padding: 0 20px;}
+
+
+    .home_interact_right_top_title{width: 100%;height: 56px;}
+    .home_interact_right_top_title_p{font-size: 18px;color: #333333;line-height: 56px;border-bottom: 2px solid #4D78F5;}
+    .home_interact_right_top_title_pp{font-size: 14px;color:#999999;line-height: 56px;}
+
+    .home_interact_right_top_ct{width: 100%;height: 40px;display: flex;align-items: center;}
+    .home_interact_right_top_ct_p{font-size: 16px;color: #333333;margin-left: 15px;width: 98%;cursor: pointer;}
+
+    .home_interact_right_top_ct:hover .index_home_circular{background-color: #FF5E1E;}
+    .home_interact_right_top_ct:hover .home_interact_right_top_ct_p{color: #FF5E1E;}
+
+
+
+    .home_interact_right_bottom{width: 634px;height: 230px;margin-top: 10px;padding: 0 20px;border: 1px solid #4D78F5;}
+    .home_interact_right_bottom_title{width: 100%;height: 56px;}
+    .home_interact_right_bottom_title_p{font-size: 18px;color: #333333;line-height: 56px;font-weight: bold;border-bottom: 2px solid #4D78F5;}
+    .home_interact_right_bottom_title_pp{font-size: 14px;color:#999999;line-height: 56px;}
+
+    .home_interact_right_bottom_ct{width: 100%;height: 43px;display: flex;align-items: center;}
+    .home_interact_right_bottom_ct_p{font-size: 16px;color: #333333;margin-left: 15px;cursor: pointer;}
+
+    .home_interact_right_bottom_ct:hover .index_home_circular{background-color: #FF5E1E;}
+    .home_interact_right_bottom_ct:hover .home_interact_right_bottom_ct_p{color: #FF5E1E;}
+
+
+    /* 幸福经开 */
+    /* .home_happy{width: 100%;margin-top: 30px;padding-bottom: 20px;}
+    .home_happy_left{width: 535px;height: 470px;box-shadow:0px -1px 18px 0px rgba(192,201,218,0.49);}
+    .home_happy_left_img{width: 535px;height: 280px;background-image: url("./img/happy_1.png");background-size: 100% 100%;background-repeat: no-repeat;}
+    .home_happy_left_p{text-align: center;line-height: 280px;font-size: 26px;color: #ffffff;}
+
+    .home_happy_left_text{width: 100%;height:47px;display: flex;align-items: center;padding: 0 20px;}
+    .home_happy_left_text_p{font-size: 16px;color: #333333;margin-left: 15px;}
+
+    .home_happy_left_text:hover .index_home_circular{background-color: #FF5E1E;}
+    .home_happy_left_text:hover .home_happy_left_text_p{color: #FF5E1E;}
+
+    .home_happy_right{margin-left: 20px;width: 805px;}
+    .home_happy_right_block{width: 392px;height: 225px;border: 1px solid #dddddd;margin-right: 20px;margin-top: 20px;}
+    .home_happy_right_block:first-child{margin-top: 0px;}
+    .home_happy_right_block:nth-child(2){margin-top: 0px;}
+    .home_happy_right_block:nth-child(2n){margin-right: 0px;}
+    .home_happy_right_block_img1{width: 100%;height: 135px;background-image: url("./img/happy_2.png");background-size: 100% 100%;background-repeat: no-repeat;}
+    .home_happy_right_block_img2{width: 100%;height: 135px;background-image: url("./img/happy_3.png");background-size: 100% 100%;background-repeat: no-repeat;}
+    .home_happy_right_block_img3{width: 100%;height: 135px;background-image: url("./img/happy_4.png");background-size: 100% 100%;background-repeat: no-repeat;}
+    .home_happy_right_block_img4{width: 100%;height: 135px;background-image: url("./img/happy_5.png");background-size: 100% 100%;background-repeat: no-repeat;}
+    .home_happy_right_block_img_p{font-size: 26px;color: #fff;text-align: center;line-height: 135px;}
+
+    .home_happy_right_block_text{padding: 0 20px;height: 40px;display: flex;align-items: center;}
+    .home_happy_right_block_text_p{margin-left: 15px;font-size: 16px;color: #333333;line-height: 40px;}
+
+    .home_happy_right_block_text:hover .index_home_circular{background-color: #FF5E1E;}
+    .home_happy_right_block_text:hover .home_happy_right_block_text_p{color: #FF5E1E;}
+
+
+    .home_interact_left_tabber_left_w .white{display: block;}
+    .home_interact_left_tabber_left_w .block{display: none;}
+    .home_interact_left_tabber_left_w p{color: #ffffff;}
+    .home_interact_left_tabber_lefts{width: 38px;height: 30px;margin: 0 auto;display: block;}
+    .white{display: none;}
+    .block{display: block;} */
+
+
+
+
+    	/* 本例子css */
+	/* .picMarquee-left{ width:100%;  overflow:hidden; position:relative;margin-bottom: 20px;;}
+	.picMarquee-left .hd{ overflow:hidden;  height:30px; background:#f4f4f4; padding:0 10px;  }
+	.picMarquee-left .hd .prev,.picMarquee-left .hd .next{ display:block;  width:5px; height:9px; float:right; margin-right:5px; margin-top:10px;  overflow:hidden;
+			 cursor:pointer; background:url("../images/arrow.png") no-repeat;}
+    .picMarquee-left .hd .next{ background-position:0 -50px;  }
+    .picMarquee-left .hd .prevStop{ background-position:-60px 0; }
+    .picMarquee-left .hd .nextStop{ background-position:-60px -50px; }
+    .picMarquee-left .bd{}
+    .picMarquee-left .bd ul{ overflow:hidden; zoom:1; }
+    .picMarquee-left .bd ul li{ margin:0 8px; float:left; _display:inline; overflow:hidden; text-align:center;  }
+    .picMarquee-left .bd ul li .pic{ text-align:center; }
+    .picMarquee-left .bd ul li .pic img{ width:328px; height:160px; display:block; padding:2px; border:1px solid #ccc; }
+    .picMarquee-left .bd ul li .pic a:hover img{ border-color:#999;  }
+    .picMarquee-left .bd ul li .title{ line-height:24px;   } */
+    
+
+    #image .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+
+
+    .enter{width:100%;padding-bottom: 20px;}
+    .enter_ct{width:100%;}
+    .enter_ct_block{width: 325px;height: 195px;background-color: #C0CFFB;margin-right: 20px;padding-top: 46px;padding-bottom: 47px;position: relative;}
+    .enter_ct_block:last-child{margin-right: 0px;}
+    .enter_ct_block p{font-size: 18px;color: #1334FF;text-align: center;margin-top: 22px;}
+    .enter_ct_block_img{width: 62px;height: 62px;display: block;margin: 0 auto;}
+    .b_block{display: block;}
+    .b_none{display: none;}
+    .enter_ct_none{background-color: #4D78F5;}
+    .enter_ct_none .b_block{display: none;}
+    .enter_ct_none .b_none{display: block;}
+    .enter_ct_none p{color:#ffffff}
+    .enter_ct_none .lingxing{display: block;}
+
+
+
+
+    .enter_dt{width: 100%;margin-top: 30px;}
+    .enter_dt_b{width: 100%;height: 114px;background-color: #4D78F5;display: flex;align-items: center;padding: 0 40px;}
+    .lingxing{position: absolute;left: 45%;top:103%;display: none;}
+    .enter_dt_b_p{width: 290px;height: 34px;background-color: #ffffff;margin-right: 40px;font-size: 16px;color: #1334FF;line-height: 34px;text-align: center;}
+    .enter_dt_b_p:last-child{margin-right: 0px;}
+    .enter_none{display: none;}
+    .enter_block{display: block;}
+
+
+
+    .online_ct_right_ct_list_s{width: 100%;padding: 0 20px;margin-top: 12px;}
+    .online_ct_right_ct_list_ss{width: 264px;margin-right: 16px;padding-top: 10px;}
+    .online_ct_right_ct_list_ss:last-child{margin-right: 0px;}
+    .online_ct_right_ct_list_ss img{margin: 0 auto;display: block;}
+
+/* .online_ct_right_ct_list_ss:hover  .online_ct_right_ct_list_sst{display: none;}
+    .online_ct_right_ct_list_ss:hover  .online_ct_right_ct_list_ssr{display: block;} */
+
+    .online_ct_right_ct_list_sst{display: block;padding-bottom: 6px;}
+
+    .p_text:hover{color: #FF2B2B;}
+    
+    .online_ct_right_ct_list_ssr{display: none;padding-left: 15px;}
+    .online_ct_right_ct_list_ssr p{font-size: 12px;color: #ffffff;text-align:left;line-height: 20px;}
+
+
+    .p_qipao{position: relative;}
+    .p_qipao:hover .qipao{display: block;}
+    .p_qipao:hover .qipao2{display: block;}
+    .qipao{background-image: url("./img/qipao.png");background-size: 100% 100%;background-repeat: no-repeat;width: 245px;height: 55px;
+    position: absolute;top: 0px;top: -7px;right: -150px;padding:0 17px;display: none;text-align: left;z-index: 99;padding-top: 10px;}
+    .qipao p{text-align: left;line-height: 20px!important;}
+
+
+    .qipao2{background-image: url("./img/qipao2.png");background-size: 100% 100%;background-repeat: no-repeat;width: 245px;height: 55px;
+    position: absolute;top: 0px;top: -7px;right: 170px;padding:0 17px;display: none;text-align: left;z-index: 99;padding-top: 10px;}
+    .qipao2 p{text-align: left;line-height: 20px!important;}
+
+
+    .online_bg_all{height: 70px;}
+    .online_bg_all p{font-size: 16px;color: #ffffff;line-height: 70px;}
+    .online_bg_ass p{line-height: 42px;}
+
+    /* 幸福经开 */
+    .white{display: none;}
+    .block{display: block;}
+    .home_interact_left_tabber_lefts img{margin: 0 auto;}
+    .home_interact_left_tabber_left_w p{color: #ffffff;}
+    .home_interact_left_tabber_left_w .white{display: block;}
+    .home_interact_left_tabber_left_w .block{display: none;}
+    .happy{width: 100%;margin-top: 20px;}
+    .happy_ct{width: 100%;padding: 0 15px;}
+    .happy_ct_left{width: 660px;margin-right: 20px;}
+    .happy_ct_left:last-child{margin-right: 0px;}
+    .happy_ct_left_list{width: 100%;margin-top: 20px;}
+    .happy_ct_left_list:first-child{margin-top: 0px;}
+    .happy_ct_left_list_title{width: 100%;height: 50px;background-image: url("./img/enterprise_2.png");background-size: 100% 100%;background-repeat: no-repeat;padding: 0 15px;}
+    .happy_ct_left_list_title_p{font-size: 18px;color: #FEFEFE;line-height: 50px;}
+    .happy_ct_left_list_title_pp{font-size: 14px;color: #666666;line-height: 50px;}
+    .happy_ct_left_list_dt{width: 100%;height: 205px;border: 1px solid #A6BDFF;padding: 15px;}
+    .happy_ct_left_list_dt_img{width: 32%;margin-right: 2%;}
+    .happy_ct_left_list_dt_img:last-child{margin-right: 0px;}
+    .happy_ct_left_list_dt_img p{font-size: 16px;color: #333333;}
+    .happy_114{height: 114px!important;}
+    .happy_p_80{padding:0 80px!important;}
+
+    .happy_ct_left_list_text{width: 60px;height: 60px;margin-right: 86px;margin-top: 20px;}
+    .happy_ct_left_list_text:last-child{margin-right: 0px;}
+    .happy_ct_left_list_text p{font-size: 14px;color: #333333;text-align: center;}
+
+
+    .happy_ct_right{width: 100%;}
+    .happy_ct_right_ct{width: 100%;height: 480px;padding: 0 15px 15px 15px;border: 1px solid #A6BDFF;}
+    .happy_ct_right_ct_top{width:100%;}
+    .happy_ct_right_ct_top_p{width: 149px;height: 60px;margin-right: 10px;background-color: #dddddd;text-align: center;line-height: 60px;color: #333333;margin-top: 15px;}
+    .happy_ct_right_ct_top_pp{background-color: #FF2D1D;color: #ffffff;}
+    .happy_ct_right_ct_top_p:nth-child(4n){margin-right: 0px;}
+    .happy_ct_right_ct_top_img{width: 100%;padding: 15px 0;}
+
+    .happy_ct_right_dt_img{width: 100%;padding: 15px;border: 1px solid #A6BDFF;height: 114px;}
+    .happy_ct_right_dt_img_a{width: 202px;height: 94px;margin-right: 10px;}
+    .happy_ct_right_dt_img_a:last-child{margin-right: 0px;}
+    .happy_ct_right_dt:last-child{margin-top: 20px;}
+
+   </style>
+  </head>
+  <body style="background-color: #eeeeee;">
+        <div class="index">
+            <!-- 导航栏 -->
+            <div class="index_banner" >
+                <div id="index_banner" class="">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./img/banner2.png">
+                            </div>
+                            <!-- <div class="swiper-slide">
+                                <img src="./img/banner1.png">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/banner3.png">
+                            </div> -->
+                        </div>
+                      </div>
+                </div>
+                <div class="index_nav">
+                    <div class="hao">
+                        <div class="index_nav_ct am-cf">
+                            <div class="index_nav_ct_title am-cf am-fl">
+                                <a href="https://www.gov.cn/"target="_blank">
+                                    <p class="index_nav_ct_title_p am-fl">中央人民政府</p>
+                                </a>
+                                <a href="http://www.henan.gov.cn/" target="_blank">
+                                    <p class="index_nav_ct_title_p am-fl">河南省人民政府</p>
+                                </a>
+                                <a href="http://www.zhengzhou.gov.cn/" target="_blank">
+                                    <p class="index_nav_ct_title_p am-fl">郑州市人民政府</p>
+                                </a>
+                                
+                               
+                                
+                            </div>
+                            <div class="index_nav_ct_title am-cf am-fr">
+                                <a href="">
+                                    <p class="index_nav_ct_title_pp am-fl">无障碍阅读</p>
+                                </a>
+                                <a href="">
+                                    <p class="index_nav_ct_title_pp am-fl">繁体</p>
+                                </a>
+                               
+                                
+                            </div>
+                        </div>
+                        <div class="index_nav_logo">
+                            <img src="./img/logo.png">
+                        </div>
+                        <div class="index_nav_search am-cf">
+                            <img class="am-fl" src="./img/search.png">
+                            <input class="index_nav_search_input am-fl" placeholder="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 内容切换 -->
+            <div class="hao">
+                <div class="index_ct">
+                    <div class="index_ct_tabber am-cf">
+                        <div class="index_ct_tabber_old am-fl index_ct_tabber_new">
+                            <p class="">首页</p>
+                        </div>
+                        <div class="index_ct_tabber_old am-fl" value="111">
+                            <p class="">企业之窗</p>
+                        </div>
+                        <div class="index_ct_tabber_old am-fl">
+                            <p class="">政企互动</p>
+                        </div>
+                        <div class="index_ct_tabber_old am-fl ">
+                            <p class="">企业联谊</p>
+                        </div>
+                        <div class="index_ct_tabber_old am-fl">
+                            <p class="">在线办事</p>
+                        </div>
+                        <div class="index_ct_tabber_old am-fl">
+                            <p class="">招商引资</p>
+                        </div>
+                        <div class="index_ct_tabber_old am-fl">
+                            <p class="">人才供需</p>
+                        </div>
+                        <div class="index_ct_tabber_old am-fl">
+                            <p class="">政策法规</p>
+                        </div> 
+                        <div class="index_ct_tabber_old am-fl">
+                            <p class="">幸福经开</p>
+                        </div>
+                    </div>
+                    <div class="index_tabber_ct">
+                        <div class="tabber_none tabber_block">
+                            <div class="index_home am-cf">
+                                <div class="index_home_banner am-fl" id="index_home">
+                                    <div class="swiper-container">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="./img/home_banner.png">
+                                                <div class="index_tabber_bottom">
+                                                    <p class="">经开区“三送一强”落实落地 8家企业获89.83亿授信支持 全区</p>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./img/home_banner.png">
+                                                <div class="index_tabber_bottom">
+                                                    <p class="">经开区“三送一强”落实落地 8家企业获89.83亿授信支持 全区</p>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./img/home_banner.png">
+                                                <div class="index_tabber_bottom">
+                                                    <p class="">经开区“三送一强”落实落地 8家企业获89.83亿授信支持 全区</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Add Pagination -->
+                                        <div class="swiper-pagination"></div>
+                                      </div>
+                                </div>
+                                <div class="index_home_tabber am-fl am-cf" id="index_home_tabber">
+                                    <div class="index_home_top am-cf ">
+                                        <div class="am-fl index_home_title">
+                                            <!-- <p class="index_home_top_p  am-fl">区内要闻</p> -->
+                                            <p class="index_home_top_p index_home_top_pp am-fl">企业动态</p>
+                                            <p class="index_home_top_p am-fl">通知公告</p>
+                                        </div>  
+                                        <div class="index_home_more am-fr">
+                                            <a href="">
+                                                <p class="">更多 ></p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="index_home_tabber_ct">
+                                        <div class="index_home_none index_home_block">
+                                            <div class="index_home_tabber_ct_text">
+                                                <p class="index_home_circular"></p>
+                                                <p class="index_home_text_p overflow1">经开区新型冠状病毒感染的肺炎疫情防控工作卫生健经开区新型冠状病毒感染的肺炎疫情防控工作卫生健</p>
+                                                <p class="index_home_text_pp">2020-3-26</p>
+                                            </div>
+                                            <div class="index_home_tabber_ct_text ">
+                                                <p class="index_home_circular"></p>
+                                                <p class="index_home_text_p overflow1">经开区新型冠状病毒感染的肺炎疫情防控工作卫生健经开区新型冠状病毒感染的肺炎疫情防控工作卫生健</p>
+                                                <p class="index_home_text_pp">2020-3-26</p>
+                                            </div>
+                                            <div class="index_home_tabber_ct_text ">
+                                                <p class="index_home_circular"></p>
+                                                <p class="index_home_text_p overflow1">经开区新型冠状病毒感染的肺炎疫情防控工作卫生健经开区新型冠状病毒感染的肺炎疫情防控工作卫生健</p>
+                                                <p class="index_home_text_pp">2020-3-26</p>
+                                            </div>
+                                            <div class="index_home_tabber_ct_text ">
+                                                <p class="index_home_circular"></p>
+                                                <p class="index_home_text_p overflow1">经开区新型冠状病毒感染的肺炎疫情防控工作卫生健经开区新型冠状病毒感染的肺炎疫情防控工作卫生健</p>
+                                                <p class="index_home_text_pp">2020-3-26</p>
+                                            </div>
+                                            <div class="index_home_tabber_ct_text ">
+                                                <p class="index_home_circular"></p>
+                                                <p class="index_home_text_p overflow1">经开区新型冠状病毒感染的肺炎疫情防控工作卫生健经开区新型冠状病毒感染的肺炎疫情防控工作卫生健</p>
+                                                <p class="index_home_text_pp">2020-3-26</p>
+                                            </div>
+                                            <div class="index_home_tabber_ct_text ">
+                                                <p class="index_home_circular"></p>
+                                                <p class="index_home_text_p overflow1">经开区新型冠状病毒感染的肺炎疫情防控工作卫生健经开区新型冠状病毒感染的肺炎疫情防控工作卫生健</p>
+                                                <p class="index_home_text_pp">2020-3-26</p>
+                                            </div>
+                                            <div class="index_home_tabber_ct_text ">
+                                                <p class="index_home_circular"></p>
+                                                <p class="index_home_text_p overflow1">经开区新型冠状病毒感染的肺炎疫情防控工作卫生健经开区新型冠状病毒感染的肺炎疫情防控工作卫生健</p>
+                                                <p class="index_home_text_pp">2020-3-26</p>
+                                            </div>
+                                        </div>
+                                        <div class="index_home_none ">
+                                            <div class="index_home_tabber_ct_text index_home_tabber_ct_text_p">
+                                                <p class="index_home_circular"></p>
+                                                <p class="index_home_text_p overflow1">经开区新型冠状病毒感染的肺炎疫情防控工作卫生健经开区新型冠状病毒感染的肺炎疫情防控工作卫生健</p>
+                                                <p class="index_home_text_pp">2020-3-26</p>
+                                            </div>
+                                            <div class="index_home_tabber_ct_text ">
+                                                <p class="index_home_circular"></p>
+                                                <p class="index_home_text_p overflow1">经开区新型冠状病毒感染的肺炎疫情防控工作卫生健经开区新型冠状病毒感染的肺炎疫情防控工作卫生健</p>
+                                                <p class="index_home_text_pp">2020-3-26</p>
+                                            </div>
+                                            <div class="index_home_tabber_ct_text ">
+                                                <p class="index_home_circular"></p>
+                                                <p class="index_home_text_p overflow1">经开区新型冠状病毒感染的肺炎疫情防控工作卫生健经开区新型冠状病毒感染的肺炎疫情防控工作卫生健</p>
+                                                <p class="index_home_text_pp">2020-3-26</p>
+                                            </div>
+                                            <div class="index_home_tabber_ct_text ">
+                                                <p class="index_home_circular"></p>
+                                                <p class="index_home_text_p overflow1">经开区新型冠状病毒感染的肺炎疫情防控工作卫生健经开区新型冠状病毒感染的肺炎疫情防控工作卫生健</p>
+                                                <p class="index_home_text_pp">2020-3-26</p>
+                                            </div>
+                                        </div>
+                                        <div class="index_home_none ">
+                                            <div class="index_home_tabber_ct_text index_home_tabber_ct_text_p">
+                                                <p class="index_home_circular"></p>
+                                                <p class="index_home_text_p overflow1">经开区新型冠状病毒感染的肺炎疫情防控工作卫生健经开区新型冠状病毒感染的肺炎疫情防控工作卫生健</p>
+                                                <p class="index_home_text_pp">2020-3-26</p>
+                                            </div>
+                                            <div class="index_home_tabber_ct_text ">
+                                                <p class="index_home_circular"></p>
+                                                <p class="index_home_text_p overflow1">经开区新型冠状病毒感染的肺炎疫情防控工作卫生健经开区新型冠状病毒感染的肺炎疫情防控工作卫生健</p>
+                                                <p class="index_home_text_pp">2020-3-26</p>
+                                            </div>
+                                            <div class="index_home_tabber_ct_text ">
+                                                <p class="index_home_circular"></p>
+                                                <p class="index_home_text_p overflow1">经开区新型冠状病毒感染的肺炎疫情防控工作卫生健经开区新型冠状病毒感染的肺炎疫情防控工作卫生健</p>
+                                                <p class="index_home_text_pp">2020-3-26</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="index_home_show">
+                                <img src="./img/home_8.png">
+                            </div>
+                        
+                        </div>
+                        <div class="tabber_none ">
+                            <div class="enterprise">
+                                <div class="enterprise_ct">
+                                    <div class="enterprise_ct_top am-cf">
+                                        <div class="enterprise_ct_top_left am-fl am-cf">
+                                            <div class="enterprise_ct_top_left_title am-cf">
+                                                <p class="enterprise_ct_top_left_title_p am-fl">企业名录</p>
+                                                <p class="enterprise_ct_top_left_title_pp am-fr">更多>></p>
+                                            </div>  
+                                            <div class="enterprise_ct_top_left_ct am-fl">
+                                                <div class="enterprise_ct_top_left_ct_left am-fl">
+                                                    <p class="index_home_circular"></p>
+                                                    <p class="enterprise_ct_top_left_ct_left_text">郑州知信机电科技开发有限公司</p>
+                                                    <img class="" src="./img/return.png">
+                                                </div>
+                                                <div class="enterprise_ct_top_left_ct_left am-fl">
+                                                    <p class="index_home_circular"></p>
+                                                    <p class="enterprise_ct_top_left_ct_left_text">郑州知信机电科技开发有限公司</p>
+                                                    <img class="" src="./img/return.png">
+                                                </div>
+                                                <div class="enterprise_ct_top_left_ct_left am-fl">
+                                                    <p class="index_home_circular"></p>
+                                                    <p class="enterprise_ct_top_left_ct_left_text">郑州知信机电科技开发有限公司</p>
+                                                    <img class="" src="./img/return.png">
+                                                </div>
+                                                <div class="enterprise_ct_top_left_ct_left am-fl">
+                                                    <p class="index_home_circular"></p>
+                                                    <p class="enterprise_ct_top_left_ct_left_text">郑州知信机电科技开发有限公司</p>
+                                                    <img class="" src="./img/return.png">
+                                                </div>
+                                                <div class="enterprise_ct_top_left_ct_left am-fl">
+                                                    <p class="index_home_circular"></p>
+                                                    <p class="enterprise_ct_top_left_ct_left_text">郑州知信机电科技开发有限公司</p>
+                                                    <img class="" src="./img/return.png">
+                                                </div>
+                                                <div class="enterprise_ct_top_left_ct_left am-fl">
+                                                    <p class="index_home_circular"></p>
+                                                    <p class="enterprise_ct_top_left_ct_left_text">郑州知信机电科技开发有限公司</p>
+                                                    <img class="" src="./img/return.png">
+                                                </div>
+                                            </div>
+                                            <div class="enterprise_ct_top_left_ct_img am-fl">
+                                                <img src="./img/enterprise_4.png">
+                                            </div>
+
+                                        </div>
+                                        <div class="enterprise_ct_top_right am-fl">
+                                            <div class="enterprise_ct_top_right_title am-cf">
+                                                <p class="am-fl enterprise_ct_top_right_title_p">明星企业</p>
+                                                <p class="am-fr enterprise_ct_top_right_title_pp">更多>></p>
+                                            </div>
+                                            <div class="enterprise_ct_top_right_dt">
+                                                <div class="enterprise_ct_top_right_dt_list">
+                                                    <p class="index_home_circular"></p>
+                                                    <p class="enterprise_ct_top_right_dt_list_p">郑州知信机电科技开发有限公司</p>
+                                                    <img  src="./img/return.png">
+                                                </div>
+                                                <div class="enterprise_ct_top_right_dt_list">
+                                                    <p class="index_home_circular"></p>
+                                                    <p class="enterprise_ct_top_right_dt_list_p">郑州知信机电科技开发有限公司</p>
+                                                    <img  src="./img/return.png">
+                                                </div>
+                                                <div class="enterprise_ct_top_right_dt_list">
+                                                    <p class="index_home_circular"></p>
+                                                    <p class="enterprise_ct_top_right_dt_list_p">郑州知信机电科技开发有限公司</p>
+                                                    <img  src="./img/return.png">
+                                                </div>
+                                                <div class="enterprise_ct_top_right_dt_list">
+                                                    <p class="index_home_circular"></p>
+                                                    <p class="enterprise_ct_top_right_dt_list_p">郑州知信机电科技开发有限公司</p>
+                                                    <img  src="./img/return.png">
+                                                </div>
+                                                <div class="enterprise_ct_top_right_dt_list">
+                                                    <p class="index_home_circular"></p>
+                                                    <p class="enterprise_ct_top_right_dt_list_p">郑州知信机电科技开发有限公司</p>
+                                                    <img  src="./img/return.png">
+                                                </div>
+                                                <div class="enterprise_ct_top_right_dt_list">
+                                                    <p class="index_home_circular"></p>
+                                                    <p class="enterprise_ct_top_right_dt_list_p">郑州知信机电科技开发有限公司</p>
+                                                    <img  src="./img/return.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="enterprise_ct_bottom" >
+                                        <div class="enterprise_ct_bottom_title am-cf">
+                                            <p class="enterprise_ct_bottom_title_p am-fl">企业风采</p>
+                                            <p class="enterprise_ct_bottom_title_pp am-fr">更多>></p>
+                                        </div>
+                                        <div class="enterprise_ct_bottom_dt am-cf" id="image">
+                                            <div class="swiper-container">
+                                                <div class="swiper-wrapper">
+                                                  <div class="swiper-slide">
+                                                    <div class="enterprise_ct_bottom_dt_list am-fl">
+                                                        <img src="./img/enterprise_5.png">
+                                                        <div class="enterprise_ct_bottom_yinying">
+                                                            <p class="">河南金泰生物技术股份有限公司已成功开发出纳米芯片技术</p>
+                                                        </div>
+                                                        <div class="enterprise_ct_bottom_yinying2">
+                                                            <a href="http://www.zzmj.com/" target="_blank">
+                                                                <p class="">郑州煤矿机械集团股份有限公司</p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                  </div>
+                                                  <div class="swiper-slide">
+                                                    <div class="enterprise_ct_bottom_dt_list am-fl">
+                                                        <img src="./img/enterprise_6.png">
+                                                        <div class="enterprise_ct_bottom_yinying">
+                                                            <p class="">河南金泰生物技术股份有限公司已成功开发出纳米芯片技术</p>
+                                                        </div>
+                                                        <div class="enterprise_ct_bottom_yinying2">
+                                                            <a href="https://www.crectbm.com/" target="_blank">
+                                                                <p class="">中铁工程装备集团有限公司</p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                  </div>
+                                                  <div class="swiper-slide">
+                                                    <div class="enterprise_ct_bottom_dt_list am-fl">
+                                                        <img src="./img/enterprise_7.png">
+                                                        <div class="enterprise_ct_bottom_yinying">
+                                                            <p class="">河南金泰生物技术股份有限公司已成功开发出纳米芯片技术</p>
+                                                        </div>
+                                                        <div class="enterprise_ct_bottom_yinying2">
+                                                            <a href="" target="_blank">
+                                                                <p class="">上汽集团乘用车郑州分公司</p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                  </div>
+                                                  <div class="swiper-slide">
+                                                    <div class="enterprise_ct_bottom_dt_list am-fl">
+                                                        <img src="./img/enterprise_8.png">
+                                                        <div class="enterprise_ct_bottom_yinying">
+                                                            <p class="">河南金泰生物技术股份有限公司已成功开发出纳米芯片技术</p>
+                                                        </div>
+                                                        <div class="enterprise_ct_bottom_yinying2">
+                                                            <a href="http://www.zhongdamen.com/" target="_blank">
+                                                                <p class="">中大门</p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+
+
+
+                                            <!-- <div class="enterprise_ct_bottom_dt_list am-fl">
+                                                <img src="./img/enterprise_5.png">
+                                                <div class="enterprise_ct_bottom_yinying">
+                                                    <p class="">河南金泰生物技术股份有限公司已成功开发出纳米芯片技术</p>
+                                                </div>
+                                            </div>
+                                            <div class="enterprise_ct_bottom_dt_list am-fl">
+                                                <img src="./img/enterprise_6.png">
+                                                <div class="enterprise_ct_bottom_yinying">
+                                                    <p class="">河南金泰生物技术股份有限公司已成功开发出纳米芯片技术</p>
+                                                </div>
+                                            </div>
+                                            <div class="enterprise_ct_bottom_dt_list am-fl">
+                                                <img src="./img/enterprise_7.png">
+                                                <div class="enterprise_ct_bottom_yinying">
+                                                    <p class="">河南金泰生物技术股份有限公司已成功开发出纳米芯片技术</p>
+                                                </div>
+                                            </div>
+                                            <div class="enterprise_ct_bottom_dt_list am-fl">
+                                                <img src="./img/enterprise_8.png">
+                                                <div class="enterprise_ct_bottom_yinying">
+                                                    <p class="">河南金泰生物技术股份有限公司已成功开发出纳米芯片技术</p>
+                                                </div>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabber_none ">
+                            <div class="home_interact">
+                                <div class="home_interact_ct am-cf">
+                                     <div class="home_interact_left am-fl">
+                                        <div class="home_interact_left_ct">
+                                             <div class="home_interact_title am-cf">
+                                                 <p class="home_interact_title_p am-fl">来信答复</p>
+                                                 <p class="home_interact_title_pp am-fr">更多>></p>
+                                             </div>
+                                             <div class="home_interact_dt home_interact_bg am-cf">
+                                                 <div class="home_interact_dt_left1 am-fl">类型</div>.
+                                                 <div class="home_interact_dt_left2 am-fl">主题</div>
+                                                 <div class="home_interact_dt_left3 am-fl">办理状态</div>
+                                                 <div class="home_interact_dt_left4 am-fl">时间</div>
+                                             </div>
+                                             <div class="home_interact_dt am-cf">
+                                                 <div class="home_interact_dt_left1 am-fl">咨询</div>.
+                                                 <div class="home_interact_dt_left2 am-fl">经开区老南岗安置房开工</div>
+                                                 <div class="home_interact_dt_left3 am-fl">办结</div>
+                                                 <div class="home_interact_dt_left4 am-fl">2020-4-1</div>
+                                             </div>
+                                             <div class="home_interact_dt am-cf">
+                                                 <div class="home_interact_dt_left1 am-fl">咨询</div>.
+                                                 <div class="home_interact_dt_left2 am-fl">经开区老南岗安置房开工</div>
+                                                 <div class="home_interact_dt_left3 am-fl">办结</div>
+                                                 <div class="home_interact_dt_left4 am-fl">2020-4-1</div>
+                                             </div>
+                                             <div class="home_interact_dt am-cf">
+                                                 <div class="home_interact_dt_left1 am-fl">咨询</div>.
+                                                 <div class="home_interact_dt_left2 am-fl">经开区老南岗安置房开工</div>
+                                                 <div class="home_interact_dt_left3 am-fl">办结</div>
+                                                 <div class="home_interact_dt_left4 am-fl">2020-4-1</div>
+                                             </div>
+                                             <div class="home_interact_dt am-cf">
+                                                 <div class="home_interact_dt_left1 am-fl">咨询</div>.
+                                                 <div class="home_interact_dt_left2 am-fl">经开区老南岗安置房开工</div>
+                                                 <div class="home_interact_dt_left3 am-fl">办结</div>
+                                                 <div class="home_interact_dt_left4 am-fl">2020-4-1</div>
+                                             </div>
+                                        </div>
+                                         <div class="home_interact_left_tabber am-cf">
+                                             <div class="home_interact_left_tabber_left home_interact_left_tabber_left_w am-fl">
+                                                <a href="http://response.zhengzhou.gov.cn/mailbox/write.jspx?id=80" target="_blank">
+                                                    <div class="home_interact_left_tabber_lefts">
+                                                        <img class="white" src="./img/mails.png">
+                                                        <img class="block" src="./img/mail.png">
+                                                    </div>
+                                                
+                                                    <p class="">市长信箱</p>
+                                                </a>
+                                                 
+                                             </div>
+                                             <div class="home_interact_left_tabber_left am-fl">
+                                                 <a href="http://response.zhengzhou.gov.cn/mailbox/write.jspx?id=133" target="_blank">
+                                                    <div class="home_interact_left_tabber_lefts">
+                                                        <img class="block" src="./img/mail.png">
+                                                        <img class="white" src="./img/mails.png">
+                                                    </div>
+                                                    <p class="">主任信箱</p>
+                                                 </a>
+                                             </div>
+                                         </div>
+                                     </div>
+                                     <div class="home_interact_right am-fl">
+                                         <div class="home_interact_right_top">
+                                             <div class="home_interact_right_top_title am-cf">
+                                                 <p class="home_interact_right_top_title_p am-fl">企业座谈</p>
+                                                 <p class="home_interact_right_top_title_pp am-fr">更多>></p>
+                                             </div>
+                                             <div class="home_interact_right_top_ct am-cf">
+                                                 <p class="index_home_circular"></p>
+                                                 <p class="home_interact_right_top_ct_p am-fr overflow1">经济开发区区推出“六字”工作法助力疫情防控工助力疫情防控助力疫助力...</p>
+                                             </div>
+                                             <div class="home_interact_right_top_ct am-cf">
+                                                 <p class="index_home_circular"></p>
+                                                 <p class="home_interact_right_top_ct_p am-fr overflow1">经济开发区区推出“六字”工作法助力疫情防控工助力疫情防控助力疫助力...</p>
+                                             </div>
+                                             <div class="home_interact_right_top_ct am-cf">
+                                                 <p class="index_home_circular"></p>
+                                                 <p class="home_interact_right_top_ct_p am-fr overflow1">经济开发区区推出“六字”工作法助力疫情防控工助力疫情防控助力疫助力...</p>
+                                             </div>
+                                             <div class="home_interact_right_top_ct am-cf">
+                                                 <p class="index_home_circular"></p>
+                                                 <p class="home_interact_right_top_ct_p am-fr overflow1">经济开发区区推出“六字”工作法助力疫情防控工助力疫情防控助力疫助力...</p>
+                                             </div>
+
+                                         </div>
+                                         <div class="home_interact_right_bottom">
+                                             <div class="home_interact_right_bottom_title am-cf">
+                                                 <p class="home_interact_right_bottom_title_p am-fl">意见征集</p>
+                                                 <p class="home_interact_right_bottom_title_pp am-fr">更多>></p>
+                                             </div>
+                                             <div class="home_interact_right_bottom_ct">
+                                                 <p class="index_home_circular"></p>
+                                                 <p class="home_interact_right_bottom_ct_p">对我区各个办事处服务有什么意见建议</p>
+                                             </div>
+                                             <div class="home_interact_right_bottom_ct">
+                                                 <p class="index_home_circular"></p>
+                                                 <p class="home_interact_right_bottom_ct_p">对我区各个办事处服务有什么意见建议</p>
+                                             </div>
+                                             <div class="home_interact_right_bottom_ct">
+                                                 <p class="index_home_circular"></p>
+                                                 <p class="home_interact_right_bottom_ct_p">对我区各个办事处服务有什么意见建议</p>
+                                             </div>
+                                             <div class="home_interact_right_bottom_ct">
+                                                 <p class="index_home_circular"></p>
+                                                 <p class="home_interact_right_bottom_ct_p">对我区各个办事处服务有什么意见建议</p>
+                                             </div>
+                                         </div>
+                                     </div>
+                                </div>
+                            </div>
+                           
+                        </div>
+                        <div class="tabber_none ">
+                            <div class="home_law">
+                                <div class="home_law_ct am-cf">
+                                    <div class="home_law_ct_list am-fl" style="width: 32%;">
+                                        <div class="home_law_ct_list_title home_law_ct_list_titles am-cf">
+                                            <p class="home_law_ct_list_title_p am-fl">BOSS论坛</p>
+                                            <p class="home_law_ct_list_title_pp am-fr">更多>></p>
+                                        </div>
+                                       <div class="home_boss">
+                                           <div class="home_boss_list am-cf">
+                                               <div class="home_boss_list_left am-fl">
+                                                    <p class="">话题</p>
+                                               </div>
+                                               <div class="home_boss_list_right am-fl">
+                                                    <p class="">经开九龙部分被征用土地使用性质改变</p>
+                                               </div>
+                                           </div>
+                                           <div class="home_boss_list am-cf">
+                                            <div class="home_boss_list_left am-fl">
+                                                 <p class="">时间</p>
+                                            </div>
+                                            <div class="home_boss_list_right am-fl">
+                                                 <p class="">2020年3月27日  13:20</p>
+                                            </div>
+                                        </div>
+                                        <div class="home_boss_list am-cf">
+                                            <div class="home_boss_list_left am-fl">
+                                                 <p class="">发布者</p>
+                                            </div>
+                                            <div class="home_boss_list_right am-fl">
+                                                 <p class="">第五建筑公司</p>
+                                            </div>
+                                        </div>
+                                       </div>
+                                       <div class="home_conver">
+                                           <div class="home_conver_title">
+                                               <p class="">往期话题</p>
+                                           </div>
+                                           <div class="home_conver_ct">
+                                               <p class="index_home_circular"></p>
+                                               <p class="home_conver_ct_p">经开九龙部分被征用土地使用性质改变</p>
+                                           </div>
+                                           <div class="home_conver_ct">
+                                                <p class="index_home_circular"></p>
+                                                <p class="home_conver_ct_p">经开九龙部分被征用土地使用性质改变</p>
+                                            </div>
+                                            <div class="home_conver_ct">
+                                                <p class="index_home_circular"></p>
+                                                <p class="home_conver_ct_p">经开九龙部分被征用土地使用性质改变</p>
+                                            </div>
+                                       </div>
+                                       
+                                       
+                                    </div>
+                                    <div class="home_law_ct_list am-fl" style="width: 32%;">
+                                        <div class="home_law_ct_list_title am-cf">
+                                            <p class="home_law_ct_list_title_p am-fl">政策扶持</p>
+                                            <p class="home_law_ct_list_title_pp am-fr">更多>></p>
+                                        </div>
+                                        <div class="home_law_ct_list_dt">
+                                            <div class="home_law_ct_list_dt_list">
+                                                <p class="index_home_circular"></p>
+                                                <p class="home_law_ct_list_dt_list_p overflow1">全力防控疫情，支持企业平稳健康发...</p>
+                                            </div>
+                                        </div>
+                                        <div class="home_law_ct_list_dt">
+                                            <div class="home_law_ct_list_dt_list">
+                                                <p class="index_home_circular"></p>
+                                                <p class="home_law_ct_list_dt_list_p overflow1">全力防控疫情，支持企业平稳健康发...</p>
+                                            </div>
+                                        </div>
+                                        <div class="home_law_ct_list_dt">
+                                            <div class="home_law_ct_list_dt_list">
+                                                <p class="index_home_circular"></p>
+                                                <p class="home_law_ct_list_dt_list_p overflow1">全力防控疫情，支持企业平稳健康发...</p>
+                                            </div>
+                                        </div>
+                                        <div class="home_law_ct_list_dt">
+                                            <div class="home_law_ct_list_dt_list">
+                                                <p class="index_home_circular"></p>
+                                                <p class="home_law_ct_list_dt_list_p overflow1">全力防控疫情，支持企业平稳健康发...</p>
+                                            </div>
+                                        </div>
+                                        <div class="home_law_ct_list_dt">
+                                            <div class="home_law_ct_list_dt_list">
+                                                <p class="index_home_circular"></p>
+                                                <p class="home_law_ct_list_dt_list_p overflow1">全力防控疫情，支持企业平稳健康发...</p>
+                                            </div>
+                                        </div>
+                                        <div class="home_law_ct_list_dt">
+                                            <div class="home_law_ct_list_dt_list">
+                                                <p class="index_home_circular"></p>
+                                                <p class="home_law_ct_list_dt_list_p overflow1">全力防控疫情，支持企业平稳健康发...</p>
+                                                <!-- <p class="">2020-3-20</p> -->
+                                            </div>
+                                        </div>
+                                       
+                                    </div>
+                                    <div class="home_law_ct_list am-fl" style="width: 32%;">
+                                        <div class="home_law_ct_list_title home_law_ct_list_titles am-cf">
+                                            <p class="home_law_ct_list_title_p am-fl">相约经开</p>
+                                            <p class="home_law_ct_list_title_pp am-fr">更多>></p>
+                                        </div>
+                                       <div class="home_boss">
+                                           <div class="home_boss_list am-cf">
+                                               <div class="home_boss_list_left am-fl">
+                                                    <p class="">活动</p>
+                                               </div>
+                                               <div class="home_boss_list_right am-fl">
+                                                    <p class="">企业青年联谊活动</p>
+                                               </div>
+                                           </div>
+                                           <div class="home_boss_list am-cf">
+                                                <div class="home_boss_list_left am-fl">
+                                                    <p class="">时间</p>
+                                                </div>
+                                                <div class="home_boss_list_right am-fl">
+                                                    <p class="">2020年3月27日  13:20</p>
+                                                </div>
+                                            </div>
+                                       </div>
+                                       <div class="home_conver">
+                                           <div class="home_conver_title">
+                                               <p class="">往期话题</p>
+                                           </div>
+                                           <div class="home_conver_ct">
+                                               <p class="index_home_circular"></p>
+                                               <p class="home_conver_ct_p">经开九龙部分被征用土地使用性质改变</p>
+                                           </div>
+                                           <div class="home_conver_ct">
+                                                <p class="index_home_circular"></p>
+                                                <p class="home_conver_ct_p">经开九龙部分被征用土地使用性质改变</p>
+                                            </div>
+                                            <div class="home_conver_ct">
+                                                <p class="index_home_circular"></p>
+                                                <p class="home_conver_ct_p">经开九龙部分被征用土地使用性质改变</p>
+                                            </div>
+                                            <div class="home_conver_ct">
+                                                <p class="index_home_circular"></p>
+                                                <p class="home_conver_ct_p">经开九龙部分被征用土地使用性质改变</p>
+                                            </div>
+                                       </div>
+                                       
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                    
+                        </div>
+                        <div class="tabber_none ">
+                            <div class="online">
+                                <div class="online_ct am-cf">
+                                    <div class="online_ct_left am-fl">
+                                        <div class="online_ct_left_title am-cf">
+                                            <p class="online_ct_left_title_p am-fl">法人窗口</p>
+                                            <p class="online_ct_left_title_pp am-fr">更多>></p>
+                                        </div>
+                                        <div class="online_ct_left_ct am-cf">
+                                            <div class="inline_icon am-fl">
+                                                <a href="http://public.zhengzhou.gov.cn/" target="_blank">
+                                                    <div class="inline_icon_tabber">
+                                                        <img class="inline_icon_tabber_s" src="./img/999.png">
+                                                        <!-- <img class="inline_icon_tabber_positon" src="./img/online_1.png"> -->
+                                                    </div>
+                                                    <p class="">设立变更</p>
+                                                </a>
+                                            </div>
+                                            <div class="inline_icon am-fl">
+                                                <a href="http://public.zhengzhou.gov.cn/" target="_blank">
+                                                    <div class="inline_icon_tabber">
+                                                        <img class="inline_icon_tabber_s" src="./img/114.png">
+                                                        <!-- <img class="inline_icon_tabber_positon" src="./img/online_3.png"> -->
+                                                    </div>
+                                                    <p class="">准营准办</p>
+                                                </a>
+                                            </div>
+                                            <div class="inline_icon am-fl">
+                                                <a href="http://public.zhengzhou.gov.cn/" target="_blank">
+                                                    <div class="inline_icon_tabber">
+                                                        <img class="inline_icon_tabber_s" src="./img/113.png">
+                                                        <!-- <img class="inline_icon_tabber_positon" src="./img/online_2.png"> -->
+                                                    </div>
+                                                    <p class="">资质认证</p>
+                                                </a>
+                                            </div>
+                                            <div class="inline_icon am-fl">
+                                                <a href="http://public.zhengzhou.gov.cn/" target="_blank">
+                                                    <div class="inline_icon_tabber">
+                                                        <img class="inline_icon_tabber_s" src="./img/121.png">
+                                                        <!-- <img class="inline_icon_tabber_positon" src="./img/online_10.png"> -->
+                                                    </div>
+                                                    <p class="">税收财务</p>
+                                                </a>
+                                            </div>
+                                            <div class="inline_icon am-fl">
+                                                <a href="http://public.zhengzhou.gov.cn/" target="_blank">
+                                                    <div class="inline_icon_tabber">
+                                                        <img class="inline_icon_tabber_s" src="./img/124.png">
+                                                        <!-- <img class="inline_icon_tabber_positon" src="./img/online_14.png"> -->
+                                                    </div>
+                                                    <p class="">人力资源</p>
+                                                </a>
+                                            </div>
+                                            <div class="inline_icon am-fl">
+                                                <a href="http://public.zhengzhou.gov.cn/" target="_blank">
+                                                    <div class="inline_icon_tabber">
+                                                        <img class="inline_icon_tabber_s" src="./img/102.png">
+                                                        <!-- <img class="inline_icon_tabber_positon" src="./img/online_17.png"> -->
+                                                    </div>
+                                                    <p class="">国土规划</p>
+                                                </a>
+                                            </div>
+                                            <div class="inline_icon am-fl">
+                                                <a href="http://public.zhengzhou.gov.cn/" target="_blank">
+                                                    <div class="inline_icon_tabber">
+                                                        <img class="inline_icon_tabber_s" src="./img/103.png">
+                                                        <!-- <img class="inline_icon_tabber_positon" src="./img/online_18.png"> -->
+                                                    </div>
+                                                    <p class="">环保绿化</p>
+                                                </a>
+                                            </div>
+                                            <div class="inline_icon am-fl">
+                                                <a href="http://public.zhengzhou.gov.cn/" target="_blank">
+                                                    <div class="inline_icon_tabber">
+                                                        <img class="inline_icon_tabber_s" src="./img/118.png">
+                                                        <!-- <img class="inline_icon_tabber_positon" src="./img/online_7.png"> -->
+                                                    </div>
+                                                    <p class="">医疗卫生</p>
+                                                </a>
+                                            </div>
+                                            <div class="inline_icon am-fl">
+                                                <a href="http://public.zhengzhou.gov.cn/" target="_blank">
+                                                    <div class="inline_icon_tabber">
+                                                        <img class="inline_icon_tabber_s" src="./img/108.png">
+                                                        <!-- <img class="inline_icon_tabber_positon" src="./img/23.png"> -->
+                                                    </div>
+                                                    <p class="">投资审批</p>
+                                                </a>
+                                            </div>
+                                            <div class="inline_icon am-fl">
+                                                <a href="http://public.zhengzhou.gov.cn/" target="_blank">
+                                                    <div class="inline_icon_tabber">
+                                                        <img class="inline_icon_tabber_s" src="./img/100.png">
+                                                        <!-- <img class="inline_icon_tabber_positon" src="./img/online_15.png"> -->
+                                                    </div>
+                                                    <p class="">社会保障</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="online_ct_left_ct_bot">
+                                            <div class="online_ct_left_ct_bot_title am-cf">
+                                                <p class="online_ct_left_ct_bot_title_p am-fl">个人窗口</p>
+                                                <p class="online_ct_left_ct_bot_title_pp am-fr">更多>></p>
+                                            </div>
+                                            <div class="online_ct_left_ct_bot_title_icon am-cf">
+                                                <div class="inline_icon am-fl">
+                                                    <a href="http://public.zhengzhou.gov.cn/" target="_blank">
+                                                        <div class="inline_icon_tabber">
+                                                            <img class="inline_icon_tabber_s" src="./img/110.png">
+                                                            <!-- <img class="inline_icon_tabber_positon" src="./img/online_11.png"> -->
+                                                        </div>
+                                                        <p class="">生育收养</p>
+                                                    </a>
+                                                </div>
+                                                <div class="inline_icon am-fl">
+                                                    <a href="http://public.zhengzhou.gov.cn/" target="_blank">
+                                                        <div class="inline_icon_tabber">
+                                                            <img class="inline_icon_tabber_s" src="./img/105.png">
+                                                            <!-- <img class="inline_icon_tabber_positon" src="./img/online_19.png"> -->
+                                                        </div>
+                                                        <p class="">户籍办理</p>
+                                                    </a>
+                                                </div>
+                                                <div class="inline_icon am-fl">
+                                                    <a href="http://public.zhengzhou.gov.cn/" target="_blank">
+                                                        <div class="inline_icon_tabber">
+                                                            <img class="inline_icon_tabber_s" src="./img/101.png">
+                                                            <!-- <img class="inline_icon_tabber_positon" src="./img/online_16.png"> -->
+                                                        </div>
+                                                        <p class="">民族宗教</p>
+                                                    </a>
+                                                </div>
+                                                <div class="inline_icon am-fl">
+                                                    <a href="http://public.zhengzhou.gov.cn/" target="_blank">
+                                                        <div class="inline_icon_tabber">
+                                                            <img class="inline_icon_tabber_s" src="./img/117.png">
+                                                            <!-- <img class="inline_icon_tabber_positon" src="./img/online_6.png"> -->
+                                                        </div>
+                                                        <p class="">教育科研</p>
+                                                    </a>
+                                                </div>
+                                                <div class="inline_icon am-fl">
+                                                    <a href="http://public.zhengzhou.gov.cn/" target="_blank">
+                                                        <div class="inline_icon_tabber">
+                                                            <img class="inline_icon_tabber_s" src="./img/109.png">
+                                                            <!-- <img class="inline_icon_tabber_positon" src="./img/24.png"> -->
+                                                        </div>
+                                                        <p class="">入伍服役</p>
+                                                    </a>
+                                                </div>
+                                                <div class="inline_icon am-fl">
+                                                    <a href="http://public.zhengzhou.gov.cn/" target="_blank">
+                                                        <div class="inline_icon_tabber">
+                                                            <img class="inline_icon_tabber_s" src="./img/116.png">
+                                                            <!-- <img class="inline_icon_tabber_positon" src="./img/online_5.png"> -->
+                                                        </div>
+                                                        <p class="">就业创业</p>
+                                                    </a>
+                                                </div>
+                                                <div class="inline_icon am-fl">
+                                                    <a href="http://public.zhengzhou.gov.cn/" target="_blank">
+                                                        <div class="inline_icon_tabber">
+                                                            <img class="inline_icon_tabber_s" src="./img/114.png">
+                                                            <!-- <img class="inline_icon_tabber_positon" src="./img/online_3.png"> -->
+                                                        </div>
+                                                        <p class="">准营准办</p>
+                                                    </a>
+                                                </div>
+                                                <div class="inline_icon am-fl">
+                                                    <a href="http://public.zhengzhou.gov.cn/" target="_blank">
+                                                        <div class="inline_icon_tabber">
+                                                            <img class="inline_icon_tabber_s" src="./img/112.png">
+                                                            <!-- <img class="inline_icon_tabber_positon" src="./img/online_1.png"> -->
+                                                        </div>
+                                                        <p class="">设立变更</p>
+                                                    </a>
+                                                </div>
+                                                <div class="inline_icon am-fl">
+                                                    <a href="http://public.zhengzhou.gov.cn/" target="_blank">
+                                                        <div class="inline_icon_tabber">
+                                                            <img class="inline_icon_tabber_s" src="./img/122.png">
+                                                            <!-- <img class="inline_icon_tabber_positon" src="./img/online_109.png"> -->
+                                                        </div>
+                                                        <p class="">职业资格</p>
+                                                    </a>
+                                                </div>
+                                                <div class="inline_icon am-fl">
+                                                    <a href="http://public.zhengzhou.gov.cn/" target="_blank">
+                                                        <div class="inline_icon_tabber">
+                                                            <img class="inline_icon_tabber_s" src="./img/104.png">
+                                                            <!-- <img class="inline_icon_tabber_positon" src="./img/online_13.png"> -->
+                                                        </div>
+                                                        <p class="">抵押质押</p>
+                                                    </a>
+                                                </div>
+                                                <div class="inline_icon am-fl">
+                                                    <a href="http://public.zhengzhou.gov.cn/" target="_blank">
+                                                        <div class="inline_icon_tabber">
+                                                            <img class="inline_icon_tabber_s" src="./img/120.png">
+                                                            <!-- <img class="inline_icon_tabber_positon" src="./img/online_9.png"> -->
+                                                        </div>
+                                                        <p class="">行政缴费</p>
+                                                    </a>
+                                                </div>
+                                                <div class="inline_icon am-fl">
+                                                    <a href="http://public.zhengzhou.gov.cn/" target="_blank">
+                                                        <div class="inline_icon_tabber">
+                                                            <img class="inline_icon_tabber_s" src="./img/123.png">
+                                                            <!-- <img class="inline_icon_tabber_positon" src="./img/online_12.png"> -->
+                                                        </div>
+                                                        <p class="">婚姻登记</p>
+                                                    </a>
+                                                </div>
+                                                <div class="inline_icon am-fl">
+                                                    <a href="http://public.zhengzhou.gov.cn/" target="_blank">
+                                                        <div class="inline_icon_tabber">
+                                                            <img class="inline_icon_tabber_s" src="./img/119.png">
+                                                            <!-- <img class="inline_icon_tabber_positon" src="./img/online_8.png"> -->
+                                                        </div>
+                                                        <p class="">优待抚恤</p>
+                                                    </a>
+                                                </div>
+                                                <div class="inline_icon am-fl">
+                                                    <a href="http://public.zhengzhou.gov.cn/" target="_blank">
+                                                        <div class="inline_icon_tabber">
+                                                            <img class="inline_icon_tabber_s" src="./img/116.png">
+                                                            <!-- <img class="inline_icon_tabber_positon" src="./img/online_5.png"> -->
+                                                        </div>
+                                                        <p class="">住房保障</p>
+                                                    </a>
+                                                </div>
+                                                <div class="inline_icon am-fl">
+                                                    <a href="http://public.zhengzhou.gov.cn/" target="_blank">
+                                                        <div class="inline_icon_tabber">
+                                                            <img class="inline_icon_tabber_s" src="./img/521.png">
+                                                            <!-- <img class="inline_icon_tabber_positon" src="./img/online_6.png"> -->
+                                                        </div>
+                                                        <p class="">规划建设</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="online_ct_right am-fl">
+                                        <div class="online_ct_right_title am-cf">
+                                            <p class="online_ct_right_title_p am-fl">服务热线</p>
+                                            <p class="online_ct_right_title_pp am-fr">更多>></p>
+                                        </div>
+                                        <div class="online_ct_right_ct ">
+                                            <div class="online_ct_right_ct_list online_bgs1">
+                                                <p class="">郑州经济技术开发区政务服务大厅</p>
+                                                <p class="">电话：0371-123456</p>
+                                            </div>
+                                            <div class="online_ct_right_ct_list online_bgs3 online_bg_all">
+                                                <p class="">行业主管部门</p>
+                                            </div>
+                                            <!-- <div class="online_ct_right_ct_list online_bgs1">
+                                                <p class="">公示管委值班室</p>
+                                            </div> -->
+                                            <div class="online_ct_right_ct_list online_bgs2">
+                                                <!-- <p class="">行业主管部门</p> -->
+                                                <div class="online_ct_right_ct_list_s am-cf">
+                                                    <div class="online_ct_right_ct_list_ss am-fl">
+                                                        <div class="online_ct_right_ct_list_sst">
+                                                            <!-- <img src="./img/201.png"> -->
+                                                            <div class="p_qipao">
+                                                                <p class="p_text">科技局</p>
+                                                                <div class="qipao">
+                                                                    <p class="">电话： 0371-67174666</p>
+                                                                    <p class="">地址：郑州工人路与陇海西路</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="p_qipao">
+                                                                <p class="p_text">工信局</p>
+                                                                <div class="qipao">
+                                                                    <p class="">电话： 0371-67185456</p>
+                                                                    <p class="">地址：河南省互助路73</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="p_qipao">
+                                                                <p class="p_text">商务局</p>
+                                                                <div class="qipao">
+                                                                    <p class="">电话： 0371-67185491</p>
+                                                                    <p class="">地址：河南省嵩山北路4号</p>
+                                                                </div>
+                                                            </div>
+                                                            <!-- <p class="">工信局</p>
+                                                            <p class="">商务局</p> -->
+                                                        </div>
+                                                        <!-- <div class="online_ct_right_ct_list_ssr">
+                                                            <p class="">电话： 0371-67174666</p>
+                                                            <p class="">地址：工人路与陇海西路</p>
+                                                            <p class="">郑州 中原区</p>
+                                                        </div> -->
+                                                    </div>
+                                                    <div class="online_ct_right_ct_list_ss am-fl">
+                                                        <div class="online_ct_right_ct_list_sst">
+                                                            <!-- <img src="./img/202.png"> -->
+                                                            <!-- <p class="">城管局</p>
+                                                            <p class="">规划局</p>
+                                                            <p class="">经发局</p> -->
+                                                            <div class="p_qipao">
+                                                                <p class="p_text">城管局</p>
+                                                                <div class="qipao2">
+                                                                    <p class="">电话： 0371-67174666</p>
+                                                                    <p class="">地址：郑州工人路与陇海西路</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="p_qipao">
+                                                                <p class="p_text">规划局</p>
+                                                                <div class="qipao2">
+                                                                    <p class="">电话： 0371-67174666</p>
+                                                                    <p class="">地址：郑州工人路与陇海西路</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="p_qipao">
+                                                                <p class="p_text">经发局</p>
+                                                                <div class="qipao2">
+                                                                    <p class="">电话： 0371-67174666</p>
+                                                                    <p class="">地址：郑州工人路与陇海西路</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- <div class="online_ct_right_ct_list_ssr">
+                                                            <p class="">电话：0371-68273616</p>
+                                                            <p class="">地址：管城回族区</p>
+                                                            <p class="">经开第三大街111号</p>
+                                                        </div> -->
+                                                    </div>
+                                                    <!-- <div class="online_ct_right_ct_list_ss am-fl">
+                                                        <div class="online_ct_right_ct_list_sst">
+                                                            <img src="./img/203.png">
+                                                            <p class="">商务局</p>
+                                                        </div>
+                                                        <div class="online_ct_right_ct_list_ssr">
+                                                            <p class="">电话： 0371-66350286</p>
+                                                            <p class="">地址：管城回族区</p>
+                                                            <p class="">河南省机关办公区</p>
+                                                        </div>
+                                                    </div> -->
+                                                </div>
+                                            </div>
+                                            <div class="online_ct_right_ct_list online_bgs3 online_bg_all">
+                                                <p class="">公共服务部门</p>
+                                            </div>
+                                            <div class="online_ct_right_ct_list online_bgs4 online_bg_ass" style="height: 100px;">
+                                                <div class="online_ct_right_ct_list_s am-cf">
+                                                    <div class="online_ct_right_ct_list_ss am-fl">
+                                                        <div class="online_ct_right_ct_list_sst">
+                                                            <!-- <img src="./img/204.png"> -->
+                                                            <!-- <p class="">燃气公司</p>
+                                                            <p class="">供水公司</p> -->
+                                                            <div class="p_qipao">
+                                                                <p class="p_text">燃气公司</p>
+                                                                <div class="qipao">
+                                                                    <p class="">电话： 0371-68855777</p>
+                                                                    <p class="">地址：郑州陇海西路352号</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="p_qipao">
+                                                                <p class="p_text">供水公司</p>
+                                                                <div class="qipao">
+                                                                    <p class="">电话： 13783477789</p>
+                                                                    <p class="">地址：郑州华山路203</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- <div class="online_ct_right_ct_list_ssr">
+                                                            <p class="">电话：400=878=6287</p>
+                                                            <p class="">地址：经开区</p>
+                                                            <p class="">经五路32号</p>
+                                                        </div> -->
+                                                    </div>
+                                                    <div class="online_ct_right_ct_list_ss am-fl">
+                                                        <div class="online_ct_right_ct_list_sst">
+                                                            <!-- <img src="./img/205.png"> -->
+                                                            <!-- <p class="">电力公司</p>
+                                                            <p class="">暖气公司</p> -->
+                                                            <div class="p_qipao">
+                                                                <p class="p_text">电力公司</p>
+                                                                <div class="qipao2">
+                                                                    <p class="">电话： 0371-65814129</p>
+                                                                    <p class="">地址：郑州淮河西路19</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="p_qipao">
+                                                                <p class="p_text">暖气公司</p>
+                                                                <div class="qipao2">
+                                                                    <p class="">电话：0371-68890222</p>
+                                                                    <p class="">地址：郑州嵩山路与淮河路</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- <div class="online_ct_right_ct_list_ssr">
+                                                            <p class="">电话：86-0371-66781369</p>
+                                                            <p class="">地址：经济技术开发区</p>
+                                                            <p class="">航海东路1269号</p>
+                                                        </div> -->
+                                                    </div>
+                                                    <!-- <div class="online_ct_right_ct_list_ss am-fl">
+                                                        <div class="online_ct_right_ct_list_sst">
+                                                            <img src="./img/206.png">
+                                                            <p class="">水利局</p>
+                                                        </div>
+                                                        <div class="online_ct_right_ct_list_ssr">
+                                                            <p class="">电话：0371-66777775</p>
+                                                            <p class="">地址：河南省第八大街86</p>
+                                                            <p class="">航海路于朝凤路交叉口西北角</p>
+                                                        </div>
+                                                    </div> -->
+                                                </div>
+                                            </div>
+                                            <div class="online_ct_right_ct_list online_bg_all">
+                                                <a href="http://public.zhengzhou.gov.cn/" target="_blank">
+                                                    <img src="./img/online_bg_5.png">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <!-- <div class="online_ct_right_ct_bot">
+                                            <a href="">
+                                                <img src="./img/177.png">
+                                            </a>
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabber_none">
+                            <div class="home_law">
+                                <div class="home_law_ct am-cf">
+                                    <div class="home_law_ct_list am-fl">
+                                        <div class="home_law_ct_list_title home_law_ct_list_titles am-cf">
+                                            <p class="home_law_ct_list_title_p am-fl">投资指南</p>
+                                            <p class="home_law_ct_list_title_pp am-fr">更多>></p>
+                                        </div>
+                                        <div class="home_law_ct_list_dt">
+                                            <div class="home_law_ct_list_dt_list">
+                                                <p class="index_home_circular"></p>
+                                                <p class="home_law_ct_list_dt_list_p overflow1">全力防控疫情，支持企业平稳健康发...</p>
+                                                <!-- <p class="">2020-3-20</p> -->
+                                            </div>
+                                        </div>
+                                        <div class="home_law_ct_list_dt">
+                                            <div class="home_law_ct_list_dt_list">
+                                                <p class="index_home_circular"></p>
+                                                <p class="home_law_ct_list_dt_list_p overflow1">全力防控疫情，支持企业平稳健康发...</p>
+                                                <!-- <p class="">2020-3-20</p> -->
+                                            </div>
+                                        </div>
+                                        <div class="home_law_ct_list_dt">
+                                            <div class="home_law_ct_list_dt_list">
+                                                <p class="index_home_circular"></p>
+                                                <p class="home_law_ct_list_dt_list_p overflow1">全力防控疫情，支持企业平稳健康发...</p>
+                                                <!-- <p class="">2020-3-20</p> -->
+                                            </div>
+                                        </div>
+                                        <div class="home_law_ct_list_dt">
+                                            <div class="home_law_ct_list_dt_list">
+                                                <p class="index_home_circular"></p>
+                                                <p class="home_law_ct_list_dt_list_p overflow1">全力防控疫情，支持企业平稳健康发...</p>
+                                                <!-- <p class="">2020-3-20</p> -->
+                                            </div>
+                                        </div>
+                                        <div class="home_law_ct_list_dt">
+                                            <div class="home_law_ct_list_dt_list">
+                                                <p class="index_home_circular"></p>
+                                                <p class="home_law_ct_list_dt_list_p overflow1">全力防控疫情，支持企业平稳健康发...</p>
+                                                <!-- <p class="">2020-3-20</p> -->
+                                            </div>
+                                        </div>
+                                       
+                                    </div>
+                                    <div class="home_law_ct_list am-fl">
+                                        <div class="home_law_ct_list_title am-cf">
+                                            <p class="home_law_ct_list_title_p am-fl">主导产业</p>
+                                            <p class="home_law_ct_list_title_pp am-fr">更多>></p>
+                                        </div>
+                                        <div class="home_law_ct_list_dt">
+                                            <div class="home_law_ct_list_dt_list">
+                                                <p class="index_home_circular"></p>
+                                                <p class="home_law_ct_list_dt_list_p overflow1">全力防控疫情，支持企业平稳健康发...</p>
+                                                <!-- <p class="">2020-3-20</p> -->
+                                            </div>
+                                        </div>
+                                        <div class="home_law_ct_list_dt">
+                                            <div class="home_law_ct_list_dt_list">
+                                                <p class="index_home_circular"></p>
+                                                <p class="home_law_ct_list_dt_list_p overflow1">全力防控疫情，支持企业平稳健康发...</p>
+                                                <!-- <p class="">2020-3-20</p> -->
+                                            </div>
+                                        </div>
+                                        <div class="home_law_ct_list_dt">
+                                            <div class="home_law_ct_list_dt_list">
+                                                <p class="index_home_circular"></p>
+                                                <p class="home_law_ct_list_dt_list_p overflow1">全力防控疫情，支持企业平稳健康发...</p>
+                                                <!-- <p class="">2020-3-20</p> -->
+                                            </div>
+                                        </div>
+                                        <div class="home_law_ct_list_dt">
+                                            <div class="home_law_ct_list_dt_list">
+                                                <p class="index_home_circular"></p>
+                                                <p class="home_law_ct_list_dt_list_p overflow1">全力防控疫情，支持企业平稳健康发...</p>
+                                                <!-- <p class="">2020-3-20</p> -->
+                                            </div>
+                                        </div>
+                                        <div class="home_law_ct_list_dt">
+                                            <div class="home_law_ct_list_dt_list">
+                                                <p class="index_home_circular"></p>
+                                                <p class="home_law_ct_list_dt_list_p overflow1">全力防控疫情，支持企业平稳健康发...</p>
+                                                <!-- <p class="">2020-3-20</p> -->
+                                            </div>
+                                        </div>
+                                        <div class="home_law_ct_list_dt">
+                                            <div class="home_law_ct_list_dt_list">
+                                                <p class="index_home_circular"></p>
+                                                <p class="home_law_ct_list_dt_list_p overflow1">全力防控疫情，支持企业平稳健康发...</p>
+                                                <!-- <p class="">2020-3-20</p> -->
+                                            </div>
+                                        </div>
+                                        <div class="home_law_ct_list_dt">
+                                            <div class="home_law_ct_list_dt_list">
+                                                <p class="index_home_circular"></p>
+                                                <p class="home_law_ct_list_dt_list_p overflow1">全力防控疫情，支持企业平稳健康发...</p>
+                                                <!-- <p class="">2020-3-20</p> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="home_law_ct_list am-fl">
+                                        <div class="home_law_ct_list_title am-cf">
+                                            <p class="home_law_ct_list_title_p am-fl">优惠政策</p>
+                                            <p class="home_law_ct_list_title_pp am-fr">更多>></p>
+                                        </div>
+                                        <div class="home_law_ct_list_dt">
+                                            <div class="home_law_ct_list_dt_list">
+                                                <p class="index_home_circular"></p>
+                                                <p class="home_law_ct_list_dt_list_p overflow1">全力防控疫情，支持企业平稳健康发...</p>
+                                                <!-- <p class="">2020-3-20</p> -->
+                                            </div>
+                                        </div>
+                                        <div class="home_law_ct_list_dt">
+                                            <div class="home_law_ct_list_dt_list">
+                                                <p class="index_home_circular"></p>
+                                                <p class="home_law_ct_list_dt_list_p overflow1">全力防控疫情，支持企业平稳健康发...</p>
+                                                <!-- <p class="">2020-3-20</p> -->
+                                            </div>
+                                        </div>
+                                        <div class="home_law_ct_list_dt">
+                                            <div class="home_law_ct_list_dt_list">
+                                                <p class="index_home_circular"></p>
+                                                <p class="home_law_ct_list_dt_list_p overflow1">全力防控疫情，支持企业平稳健康发...</p>
+                                                <!-- <p class="">2020-3-20</p> -->
+                                            </div>
+                                        </div>
+                                        <div class="home_law_ct_list_dt">
+                                            <div class="home_law_ct_list_dt_list">
+                                                <p class="index_home_circular"></p>
+                                                <p class="home_law_ct_list_dt_list_p overflow1">全力防控疫情，支持企业平稳健康发...</p>
+                                                <!-- <p class="">2020-3-20</p> -->
+                                            </div>
+                                        </div>
+                                        <div class="home_law_ct_list_dt">
+                                            <div class="home_law_ct_list_dt_list">
+                                                <p class="index_home_circular"></p>
+                                                <p class="home_law_ct_list_dt_list_p overflow1">全力防控疫情，支持企业平稳健康发...</p>
+                                                <!-- <p class="">2020-3-20</p> -->
+                                            </div>
+                                        </div>
+                                        <div class="home_law_ct_list_dt">
+                                            <div class="home_law_ct_list_dt_list">
+                                                <p class="index_home_circular"></p>
+                                                <p class="home_law_ct_list_dt_list_p overflow1">全力防控疫情，支持企业平稳健康发...</p>
+                                                <!-- <p class="">2020-3-20</p> -->
+                                            </div>
+                                        </div>
+                                        <div class="home_law_ct_list_dt">
+                                            <div class="home_law_ct_list_dt_list">
+                                                <p class="index_home_circular"></p>
+                                                <p class="home_law_ct_list_dt_list_p overflow1">全力防控疫情，支持企业平稳健康发...</p>
+                                                <!-- <p class="">2020-3-20</p> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="home_law_ct_list am-fl">
+                                        <div class="home_law_ct_list_title am-cf">
+                                            <p class="home_law_ct_list_title_p am-fl">配套设施</p>
+                                            <p class="home_law_ct_list_title_pp am-fr">更多>></p>
+                                        </div>
+                                        <div class="home_law_ct_list_dt">
+                                            <div class="home_law_ct_list_dt_list">
+                                                <p class="index_home_circular"></p>
+                                                <p class="home_law_ct_list_dt_list_p overflow1">全力防控疫情，支持企业平稳健康发...</p>
+                                                <!-- <p class="">2020-3-20</p> -->
+                                            </div>
+                                        </div>
+                                        <div class="home_law_ct_list_dt">
+                                            <div class="home_law_ct_list_dt_list">
+                                                <p class="index_home_circular"></p>
+                                                <p class="home_law_ct_list_dt_list_p overflow1">全力防控疫情，支持企业平稳健康发...</p>
+                                                <!-- <p class="">2020-3-20</p> -->
+                                            </div>
+                                        </div>
+                                        <div class="home_law_ct_list_dt">
+                                            <div class="home_law_ct_list_dt_list">
+                                                <p class="index_home_circular"></p>
+                                                <p class="home_law_ct_list_dt_list_p overflow1">全力防控疫情，支持企业平稳健康发...</p>
+                                                <!-- <p class="">2020-3-20</p> -->
+                                            </div>
+                                        </div>
+                                        <div class="home_law_ct_list_dt">
+                                            <div class="home_law_ct_list_dt_list">
+                                                <p class="index_home_circular"></p>
+                                                <p class="home_law_ct_list_dt_list_p overflow1">全力防控疫情，支持企业平稳健康发...</p>
+                                                <!-- <p class="">2020-3-20</p> -->
+                                            </div>
+                                        </div>
+                                        <div class="home_law_ct_list_dt">
+                                            <div class="home_law_ct_list_dt_list">
+                                                <p class="index_home_circular"></p>
+                                                <p class="home_law_ct_list_dt_list_p overflow1">全力防控疫情，支持企业平稳健康发...</p>
+                                                <!-- <p class="">2020-3-20</p> -->
+                                            </div>
+                                        </div>
+                                        <div class="home_law_ct_list_dt">
+                                            <div class="home_law_ct_list_dt_list">
+                                                <p class="index_home_circular"></p>
+                                                <p class="home_law_ct_list_dt_list_p overflow1">全力防控疫情，支持企业平稳健康发...</p>
+                                                <!-- <p class="">2020-3-20</p> -->
+                                            </div>
+                                        </div>
+                                        <div class="home_law_ct_list_dt">
+                                            <div class="home_law_ct_list_dt_list">
+                                                <p class="index_home_circular"></p>
+                                                <p class="home_law_ct_list_dt_list_p overflow1">全力防控疫情，支持企业平稳健康发...</p>
+                                                <!-- <p class="">2020-3-20</p> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabber_none">
+                            <div class="enterprise">
+                                <div class="enterprise_ct">
+                                    <div class="enterprise_ct_top am-cf">
+                                        <div class="enterprise_ct_top_left am-fl am-cf">
+                                            <div class="enterprise_ct_top_left_title am-cf">
+                                                <p class="enterprise_ct_top_left_title_p am-fl">人才求职</p>
+                                                <p class="enterprise_ct_top_left_title_pp am-fr">更多>></p>
+                                            </div>  
+                                            <div class="enterprise_ct_top_left_ct am-fl">
+                                                <div class="enterprise_ct_top_left_ct_left enterprise_ct_top_left_ct_lefts am-fl">
+                                                    <p class="index_home_circular"></p>
+                                                    <p class="enterprise_ct_top_left_ct_left_text overflow1">郑州大学2020年春招于4月20日开始，地址郑州大学2020年春招于4月20日开始，地址</p>
+                                                    <img class="" src="./img/return.png">
+                                                </div>
+                                                <div class="enterprise_ct_top_left_ct_left am-fl">
+                                                    <p class="index_home_circular"></p>
+                                                    <p class="enterprise_ct_top_left_ct_left_text overflow1">郑州大学2020年春招于4月20日开始，地址郑州大学2020年春招于4月20日开始，地址</p>
+                                                    <img class="" src="./img/return.png">
+                                                </div>
+                                                <div class="enterprise_ct_top_left_ct_left am-fl">
+                                                    <p class="index_home_circular"></p>
+                                                    <p class="enterprise_ct_top_left_ct_left_text overflow1">郑州大学2020年春招于4月20日开始，地郑州大学2020年春招于4月20日开始，地址</p>
+                                                    <img class="" src="./img/return.png">
+                                                </div>
+                                                <div class="enterprise_ct_top_left_ct_left am-fl">
+                                                    <p class="index_home_circular"></p>
+                                                    <p class="enterprise_ct_top_left_ct_left_text overflow1">郑州大学2020年春招于4月20日开始，地郑州大学2020年春招于4月20日开始，地址.</p>
+                                                    <img class="" src="./img/return.png">
+                                                </div>
+                                                <div class="enterprise_ct_top_left_ct_left am-fl">
+                                                    <p class="index_home_circular"></p>
+                                                    <p class="enterprise_ct_top_left_ct_left_text overflow1">郑州大学2020年春招于4月20日开始，地郑州大学2020年春招于4月20日开始，地址</p>
+                                                    <img class="" src="./img/return.png">
+                                                </div>
+                                            </div>
+                                            <div class="enterprise_ct_top_left_ct_img am-fl">
+                                                <img src="./img/personnel_1.png">
+                                            </div>
+
+                                        </div>
+                                        <div class="enterprise_ct_top_right am-fl">
+                                            <div class="enterprise_ct_top_right_title am-cf">
+                                                <p class="am-fl enterprise_ct_top_right_title_p">人才招聘</p>
+                                                <p class="am-fr enterprise_ct_top_right_title_pp">更多>></p>
+                                            </div>
+                                            <div class="enterprise_ct_top_right_dt">
+                                                <div class="enterprise_ct_top_right_dt_list">
+                                                    <p class="index_home_circular"></p>
+                                                    <p class="enterprise_ct_top_right_dt_list_p overflow1">中建五句郑州分公司招聘项目经理5名，中建五句郑州分公司招聘项目经理5名，要求</p>
+                                                    <img  src="./img/return.png">
+                                                </div>
+                                                <div class="enterprise_ct_top_right_dt_list">
+                                                    <p class="index_home_circular"></p>
+                                                    <p class="enterprise_ct_top_right_dt_list_p overflow1">中建五句郑州分公司招聘项目经理5名，中建五句郑州分公司招聘项目经理5名，要求</p>
+                                                    <img  src="./img/return.png">
+                                                </div>
+                                                <div class="enterprise_ct_top_right_dt_list">
+                                                    <p class="index_home_circular"></p>
+                                                    <p class="enterprise_ct_top_right_dt_list_p overflow1">中建五句郑州分公司招聘项目经理5名，中建五句郑州分公司招聘项目经理5名，要求</p>
+                                                    <img  src="./img/return.png">
+                                                </div>
+                                                <div class="enterprise_ct_top_right_dt_list">
+                                                    <p class="index_home_circular"></p>
+                                                    <p class="enterprise_ct_top_right_dt_list_p overflow1">中建五句郑州分公司招聘项目经理5名，中建五句郑州分公司招聘项目经理5名，要求</p>
+                                                    <img  src="./img/return.png">
+                                                </div>
+                                                <div class="enterprise_ct_top_right_dt_list">
+                                                    <p class="index_home_circular"></p>
+                                                    <p class="enterprise_ct_top_right_dt_list_p overflow1">中建五句郑州分公司招聘项目经理5名，中建五句郑州分公司招聘项目经理5名，要求</p>
+                                                    <img  src="./img/return.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        
+                                    </div>
+                                    <div class="enterprise_ct_bottom">
+                                        <div class="personnel">
+                                            <div class="personnel_ct am-cf">
+                                                <div class="personnel_ct_list bgs_1 am-fl">
+                                                    <a href="https://www.zyrc.com.cn/index.html" target="_blank">
+                                                        <div class="personnel_yinying">
+                                                            <p class="personnel_ct_list_p">中国中原人才网</p>
+                                                            <p class="personnel_ct_list_pp">www.zyrc.com.cn</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="personnel_ct_list bgs_2 am-fl">
+                                                    <a href="https://www.hnrcjl.com/" target="_blank">
+                                                        <div class="personnel_yinying">
+                                                            <p class="personnel_ct_list_p">河南人才交流公共服务网</p>
+                                                            <p class="personnel_ct_list_pp">www.hnrcjl.com</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="personnel_ct_list bgs_3 am-fl">
+                                                    <a href="" target="_blank">
+                                                        <div class="personnel_yinying">
+                                                            <p class="personnel_ct_list_p">郑州市公共就业人才服务中心</p>
+                                                            <p class="personnel_ct_list_pp">www.zzggrc.com</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="personnel_ct_list bgs_4 am-fl">
+                                                    <a href="http://www.zzrc.cn/" target="_blank">
+                                                        <div class="personnel_yinying">
+                                                            <p class="personnel_ct_list_p">郑州市人才网</p>
+                                                            <p class="personnel_ct_list_pp">www.zzrc.cn</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="personnel_ct_list bgs_5 am-fl">
+                                                    <a href="http://1125.zhengzhou.gov.cn/" target="_blank">
+                                                        <div class="personnel_yinying">
+                                                            <p class="personnel_ct_list_p">智汇郑州人才网</p>
+                                                            <p class="personnel_ct_list_pp">http://1125.zhengzhou.gov.cn/</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>          
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabber_none">
+                            <div class="home_law">
+                                <div class="home_law_ct am-cf">
+                                    <div class="home_law_ct_list am-fl" style="width: 32%;">
+                                        <div class="home_law_ct_list_title home_law_ct_list_titles am-cf">
+                                            <p class="home_law_ct_list_title_p am-fl">政策法规</p>
+                                            <p class="home_law_ct_list_title_pp am-fr">更多>></p>
+                                        </div>
+                                        <div class="home_law_ct_list_dt">
+                                            <div class="home_law_ct_list_dt_list">
+                                                <p class="index_home_circular"></p>
+                                                <p class="home_law_ct_list_dt_list_p overflow1" style="width: 70%;">全力防控疫情，支持企业平稳健康发...</p>
+                                                <p class="">2020-3-20</p>
+                                            </div>
+                                        </div>
+                                        <div class="home_law_ct_list_dt">
+                                            <div class="home_law_ct_list_dt_list">
+                                                <p class="index_home_circular"></p>
+                                                <p class="home_law_ct_list_dt_list_p overflow1" style="width: 70%;">全力防控疫情，支持企业平稳健康发...</p>
+                                                <p class="">2020-3-20</p>
+                                            </div>
+                                        </div>
+                                        <div class="home_law_ct_list_dt">
+                                            <div class="home_law_ct_list_dt_list">
+                                                <p class="index_home_circular"></p>
+                                                <p class="home_law_ct_list_dt_list_p overflow1" style="width: 70%;">全力防控疫情，支持企业平稳健康发...</p>
+                                                <p class="">2020-3-20</p>
+                                            </div>
+                                        </div>
+                                        <div class="home_law_ct_list_dt">
+                                            <div class="home_law_ct_list_dt_list">
+                                                <p class="index_home_circular"></p>
+                                                <p class="home_law_ct_list_dt_list_p overflow1" style="width: 70%;">全力防控疫情，支持企业平稳健康发...</p>
+                                                <p class="">2020-3-20</p>
+                                            </div>
+                                        </div>
+                                        <div class="home_law_ct_list_dt">
+                                            <div class="home_law_ct_list_dt_list">
+                                                <p class="index_home_circular"></p>
+                                                <p class="home_law_ct_list_dt_list_p overflow1" style="width: 70%;">全力防控疫情，支持企业平稳健康发...</p>
+                                                <p class="">2020-3-20</p>
+                                            </div>
+                                        </div>
+                                       
+                                    </div>
+                                    <div class="home_law_ct_list am-fl" style="width: 32%;">
+                                        <div class="home_law_ct_list_title am-cf">
+                                            <p class="home_law_ct_list_title_p am-fl">政策扶持</p>
+                                            <p class="home_law_ct_list_title_pp am-fr">更多>></p>
+                                        </div>
+                                        <div class="home_law_ct_list_dt">
+                                            <div class="home_law_ct_list_dt_list">
+                                                <p class="index_home_circular"></p>
+                                                <p class="home_law_ct_list_dt_list_p overflow1" style="width: 70%;">全力防控疫情，支持企业平稳健康发...</p>
+                                                <p class="">2020-3-20</p>
+                                            </div>
+                                        </div>
+                                        <div class="home_law_ct_list_dt">
+                                            <div class="home_law_ct_list_dt_list">
+                                                <p class="index_home_circular"></p>
+                                                <p class="home_law_ct_list_dt_list_p overflow1" style="width: 70%;">全力防控疫情，支持企业平稳健康发...</p>
+                                                <p class="">2020-3-20</p>
+                                            </div>
+                                        </div>
+                                        <div class="home_law_ct_list_dt">
+                                            <div class="home_law_ct_list_dt_list">
+                                                <p class="index_home_circular"></p>
+                                                <p class="home_law_ct_list_dt_list_p overflow1" style="width: 70%;">全力防控疫情，支持企业平稳健康发...</p>
+                                                <p class="">2020-3-20</p>
+                                            </div>
+                                        </div>
+                                        <div class="home_law_ct_list_dt">
+                                            <div class="home_law_ct_list_dt_list">
+                                                <p class="index_home_circular"></p>
+                                                <p class="home_law_ct_list_dt_list_p overflow1" style="width: 70%;">全力防控疫情，支持企业平稳健康发...</p>
+                                                <p class="">2020-3-20</p>
+                                            </div>
+                                        </div>
+                                        <div class="home_law_ct_list_dt">
+                                            <div class="home_law_ct_list_dt_list">
+                                                <p class="index_home_circular"></p>
+                                                <p class="home_law_ct_list_dt_list_p overflow1" style="width: 70%;">全力防控疫情，支持企业平稳健康发...</p>
+                                                <p class="">2020-3-20</p>
+                                            </div>
+                                        </div>
+                                        <div class="home_law_ct_list_dt">
+                                            <div class="home_law_ct_list_dt_list">
+                                                <p class="index_home_circular"></p>
+                                                <p class="home_law_ct_list_dt_list_p overflow1" style="width: 70%;">全力防控疫情，支持企业平稳健康发...</p>
+                                                <p class="">2020-3-20</p>
+                                            </div>
+                                        </div>
+                                        <div class="home_law_ct_list_dt">
+                                            <div class="home_law_ct_list_dt_list">
+                                                <p class="index_home_circular"></p>
+                                                <p class="home_law_ct_list_dt_list_p overflow1" style="width: 70%;">全力防控疫情，支持企业平稳健康发...</p>
+                                                <p class="">2020-3-20</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="home_law_ct_list am-fl" style="width: 32%;">
+                                        <div class="home_law_ct_list_title am-cf">
+                                            <p class="home_law_ct_list_title_p am-fl">政策解读</p>
+                                            <p class="home_law_ct_list_title_pp am-fr">更多>></p>
+                                        </div>
+                                        <div class="home_law_ct_list_dt">
+                                            <div class="home_law_ct_list_dt_list">
+                                                <p class="index_home_circular"></p>
+                                                <p class="home_law_ct_list_dt_list_p overflow1" style="width: 70%;">全力防控疫情，支持企业平稳健康发...</p>
+                                                <p class="">2020-3-20</p>
+                                            </div>
+                                        </div>
+                                        <div class="home_law_ct_list_dt">
+                                            <div class="home_law_ct_list_dt_list">
+                                                <p class="index_home_circular"></p>
+                                                <p class="home_law_ct_list_dt_list_p overflow1" style="width: 70%;">全力防控疫情，支持企业平稳健康发...</p>
+                                                <p class="">2020-3-20</p>
+                                            </div>
+                                        </div>
+                                        <div class="home_law_ct_list_dt">
+                                            <div class="home_law_ct_list_dt_list">
+                                                <p class="index_home_circular"></p>
+                                                <p class="home_law_ct_list_dt_list_p overflow1" style="width: 70%;">全力防控疫情，支持企业平稳健康发...</p>
+                                                <p class="">2020-3-20</p>
+                                            </div>
+                                        </div>
+                                        <div class="home_law_ct_list_dt">
+                                            <div class="home_law_ct_list_dt_list">
+                                                <p class="index_home_circular"></p>
+                                                <p class="home_law_ct_list_dt_list_p overflow1" style="width: 70%;">全力防控疫情，支持企业平稳健康发...</p>
+                                                <p class="">2020-3-20</p>
+                                            </div>
+                                        </div>
+                                        <div class="home_law_ct_list_dt">
+                                            <div class="home_law_ct_list_dt_list">
+                                                <p class="index_home_circular"></p>
+                                                <p class="home_law_ct_list_dt_list_p overflow1" style="width: 70%;">全力防控疫情，支持企业平稳健康发...</p>
+                                                <p class="">2020-3-20</p>
+                                            </div>
+                                        </div>
+                                        <div class="home_law_ct_list_dt">
+                                            <div class="home_law_ct_list_dt_list">
+                                                <p class="index_home_circular"></p>
+                                                <p class="home_law_ct_list_dt_list_p overflow1" style="width: 70%;">全力防控疫情，支持企业平稳健康发...</p>
+                                                <p class="">2020-3-20</p>
+                                            </div>
+                                        </div>
+                                        <div class="home_law_ct_list_dt">
+                                            <div class="home_law_ct_list_dt_list">
+                                                <p class="index_home_circular"></p>
+                                                <p class="home_law_ct_list_dt_list_p overflow1" style="width: 70%;">全力防控疫情，支持企业平稳健康发...</p>
+                                                <p class="">2020-3-20</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabber_none">
+                            <div class="happy">
+                                <div class="happy_ct am-cf">
+                                    <div class="happy_ct_left am-fl">
+                                        <div class="happy_ct_left_list">
+                                            <div class="happy_ct_left_list_title am-cf">
+                                                <p class="happy_ct_left_list_title_p am-fl">教育医疗</p>
+                                                <p class="happy_ct_left_list_title_pp am-fr">更多>></p>
+                                            </div>
+                                            <div class="happy_ct_left_list_dt am-cf">
+                                                <div class="happy_ct_left_list_dt_img am-fl">
+                                                    <img src="./img/happy_a.png">
+                                                    <p class="overflow1">经开区阳光幼儿园幼儿经开区阳光幼儿园幼儿</p>
+                                                </div>
+                                                <div class="happy_ct_left_list_dt_img am-fl">
+                                                    <img src="./img/happy_b.png">
+                                                    <p class="overflow1">经开区阳光幼儿园幼儿经开区阳光幼儿园幼儿</p>
+                                                </div>
+                                                <div class="happy_ct_left_list_dt_img am-fl">
+                                                    <img src="./img/happy_c.png">
+                                                    <p class="overflow1">经开区阳光幼儿园幼儿经开区阳光幼儿园幼儿</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="happy_ct_left_list">
+                                            <div class="happy_ct_left_list_title am-cf">
+                                                <p class="happy_ct_left_list_title_p am-fl">住宿住房</p>
+                                                <p class="happy_ct_left_list_title_pp am-fr">更多>></p>
+                                            </div>
+                                            <div class="happy_ct_left_list_dt am-cf">
+                                                <div class="happy_ct_left_list_dt_img am-fl">
+                                                    <img src="./img/happy_d.png">
+                                                    <p class="overflow1">经开区阳光幼儿园幼儿经开区阳光幼儿园幼儿</p>
+                                                </div>
+                                                <div class="happy_ct_left_list_dt_img am-fl">
+                                                    <img src="./img/happy_e.png">
+                                                    <p class="overflow1">经开区阳光幼儿园幼儿经开区阳光幼儿园幼儿</p>
+                                                </div>
+                                                <div class="happy_ct_left_list_dt_img am-fl">
+                                                    <img src="./img/happy_f.png">
+                                                    <p class="overflow1">经开区阳光幼儿园幼儿经开区阳光幼儿园幼儿</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="happy_ct_left_list">
+                                            <div class="happy_ct_left_list_title am-cf">
+                                                <p class="happy_ct_left_list_title_p am-fl">水电气暖 </p>
+                                                <p class="happy_ct_left_list_title_pp am-fr">更多>></p>
+                                            </div>
+                                            <div class="happy_ct_left_list_dt am-cf happy_p_80 happy_114">
+                                                <div class="happy_ct_left_list_text am-fl">
+                                                    <img src="./img/happy_dd.png">
+                                                    <p class="">供水</p>
+                                                </div>
+                                                <div class="happy_ct_left_list_text am-fl">
+                                                    <img src="./img/happy_ee.png">
+                                                    <p class="">用电</p>
+                                                </div>
+                                                <div class="happy_ct_left_list_text am-fl">
+                                                    <img src="./img/happy_ff.png">
+                                                    <p class="">燃气</p>
+                                                </div>
+                                                <div class="happy_ct_left_list_text am-fl">
+                                                    <img src="./img/happy_gg.png">
+                                                    <p class="">供暖</p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="happy_ct_left am-fl">
+                                        <div class="happy_ct_right">
+                                            <div class="happy_ct_left_list_title am-cf">
+                                                <p class="happy_ct_left_list_title_p am-fl">游购食娱</p>
+                                                <p class="happy_ct_left_list_title_pp am-fr">更多>></p>
+                                            </div>
+                                            <div class="happy_ct_right_ct">
+                                                <div class="happy_ct_right_ct_top am-cf">
+                                                    <p class="happy_ct_right_ct_top_p am-fl">旅游景点</p>
+                                                    <p class="happy_ct_right_ct_top_p am-fl">旅游景点</p>
+                                                    <p class="happy_ct_right_ct_top_p am-fl">旅游景点</p>
+                                                    <p class="happy_ct_right_ct_top_p am-fl">旅游景点</p>
+                                                    <p class="happy_ct_right_ct_top_p am-fl">旅游景点</p>
+                                                    <p class="happy_ct_right_ct_top_p am-fl">旅游景点</p>
+                                                    <p class="happy_ct_right_ct_top_p am-fl">旅游景点</p>
+                                                    <p class="happy_ct_right_ct_top_p am-fl">旅游景点</p>
+                                                </div>
+                                                <div class="happy_ct_right_ct_top_img">
+                                                    <img src="./img/happy_g.png">
+                                                </div>
+                                            </div>
+                                            <div class="happy_ct_right_dt">
+                                                <div class="happy_ct_left_list_title am-cf">
+                                                    <p class="happy_ct_left_list_title_p am-fl">公交通讯</p>
+                                                    <p class="happy_ct_left_list_title_pp am-fr">更多>></p>
+                                                </div>
+                                                <div class="happy_ct_right_dt_img am-cf">
+                                                    <div class="happy_ct_right_dt_img_a am-fl">
+                                                        <img src="./img/happy_h.png">
+                                                    </div>
+                                                    <div class="happy_ct_right_dt_img_a am-fl">
+                                                        <img src="./img/happy_i.png">
+                                                    </div>
+                                                    <div class="happy_ct_right_dt_img_a am-fl">
+                                                        <img src="./img/happy_j.png">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tile-region no-mt">
+                        <div class="tile-group full">
+                            <div class="tile full auto-height color-gray">
+                                <div class="wrap">
+                                    <div class="select-links">
+                                        <span>快速链接:</span>
+                                        <select class="like_href"> 
+                                                <option value="">河南省企业服务网站</option>
+                                                <option value="http://www.fmprc.gov.cn/web/" target="_blank">外交部</option>
+                                                <option value="http://www.mod.gov.cn/" target="_blank">国防部</option>
+                                                <option value="http://www.ndrc.gov.cn/" target="_blank">国家发展和改革委员会</option>
+                                                <option value="http://www.moe.gov.cn/" target="_blank">教育部</option>
+                                                <option value="http://www.most.gov.cn/" target="_blank">科学技术部</option>
+                                                <option value="http://www.miit.gov.cn/" >工业和信息化部</option>
+                                                <option value="http://www.seac.gov.cn/">国家民族事务委员会</option>
+                                                <option value="http://www.mps.gov.cn/">公安部</option>
+                                                <option value="http://www.mca.gov.cn/">民政部</option>
+                                                <option value="http://www.moj.gov.cn/">司法部</option>
+                                                <option value="http://www.mof.gov.cn/index.htm">财政部</option>
+                                                <option value="http://www.mohrss.gov.cn/">人力资源和社会保障部</option>
+                                                <option value="http://www.mnr.gov.cn/">自然资源部</option>
+                                                <option value="http://www.mee.gov.cn/">生态环境部</option>
+                                                <option value="http://www.mohurd.gov.cn/">住房和城乡建设部</option>
+                                                <option value="http://www.mot.gov.cn/">交通运输部</option>
+                                                <option value="http://www.mwr.gov.cn/">水利部</option>
+                                                <option value="http://www.moa.gov.cn/">农业农村部</option>
+                                                <option value="http://www.mofcom.gov.cn/">商务部</option>
+                                                <option value="http://www.mct.gov.cn/">文化和旅游部</option>
+                                                <option value="http://www.nhc.gov.cn/">国家卫生健康委员会</option>
+                                                <option value="http://www.mva.gov.cn/">退役军人事务部</option>
+                                                <option value="http://www.chinasafety.gov.cn/index.shtml">应急管理部</option>
+                                                <option value="http://www.pbc.gov.cn/">人民银行</option>
+                                                <option value="http://www.audit.gov.cn/">审计署</option>
+                                                <option value="http://www.moe.gov.cn/jyb_sy/China_Language/">国家语言文字工作委员会</option>
+                                                <option value="http://www.safea.gov.cn/">国家外国专家局</option>
+                                                <option value="http://www.cnsa.gov.cn/">国家航天局</option>
+                                                <option value="http://www.caea.gov.cn/">国家原子能机构</option>
+                                                <option value="http://nnsa.mep.gov.cn/">国家核安全局</option>
+                                                <option value="http://www.sasac.gov.cn/">国务院国有资产监督管理委员会</option>
+                                                <option value="http://www.customs.gov.cn/">海关总署</option>
+                                                <option value="http://www.chinatax.gov.cn/">国家税务总局</option>
+                                                <option value="http://www.samr.gov.cn/">国家市场监督管理总局</option>
+                                                <option value="http://www.nrta.gov.cn/">国家广播电视总局</option>
+                                                <option value="http://www.sport.gov.cn/">国家体育总局</option>
+                                                <option value="http://www.stats.gov.cn/">国家统计局</option>
+                                                <option value="http://www.cidca.gov.cn/">国家国际发展合作署</option>
+                                                <option value="http://www.nhsa.gov.cn/">国家医疗保障局</option>
+                                                <option value="http://www.counsellor.gov.cn/">国务院参事室</option>
+                                                <option value="http://www.ggj.gov.cn/">国家机关事务管理局</option>
+                                                <option value="http://www.cnca.gov.cn/">国家认证认可监督管理委员会</option>
+                                                <option value="http://www.sac.gov.cn/">国家标准化管理委员会</option>
+                                                <option value="http://www.ncac.gov.cn/">国家新闻出版署（国家版权局）</option>
+                                                <option value="http://www.sara.gov.cn/">国家宗教事务局</option>
+                                                <option value="http://www.hmo.gov.cn/">国务院港澳事务办公室</option>
+                                                <option value="http://www.gov.cn/guoqing/2018-06/22/content_5300522.htm">国务院研究室</option>
+                                                <option value="http://www.gqb.gov.cn/">国务院侨务办公室</option>
+                                                <option value="http://www.gwytb.gov.cn/">国务院台湾事务办公室</option>
+                                                <option value="http://www.cac.gov.cn/">国家互联网信息办公室</option>
+                                                <option value="http://www.scio.gov.cn/index.htm">国务院新闻办公室</option>
+                                                <option value="http://203.192.6.89/xhs/">新华通讯社</option>
+                                                <option value="http://www.cas.ac.cn/">中国科学院</option>
+                                                <option value="http://www.cssn.cn/">中国社会科学院</option>
+                                                <option value="http://www.cae.cn/">中国工程院</option>
+                                                <option value="http://www.drc.gov.cn/">国务院发展研究中心</option>
+                                                <option value="http://www.cma.gov.cn/">中国气象局</option>
+                                                <option value="http://www.cbirc.gov.cn">中国银行保险监督管理委员会</option>
+                                                <option value="http://www.csrc.gov.cn/pub/newsite/">中国证券监督管理委员会</option>
+                                                <option value="http://www.nsa.gov.cn/">国家行政学院</option>
+                                                <option value="http://www.gjxfj.gov.cn/">国家信访局</option>
+                                                <option value="http://www.chinagrain.gov.cn/index.html">国家粮食和物资储备局</option>
+                                                <option value="http://www.nea.gov.cn/">国家能源局</option>
+                                                <option value="http://www.sastind.gov.cn/">国家国防科技工业局</option>
+                                                <option value="http://www.tobacco.gov.cn/html/">国家烟草专卖局</option>
+                                                <option value="http://www.mps.gov.cn/n2254996/">国家移民管理局</option>
+                                                <option value="http://www.forestry.gov.cn/">国家林业和草原局</option>
+                                                <option value="http://www.nra.gov.cn/">国家铁路局</option>
+                                                <option value="http://www.caac.gov.cn/index.html">中国民用航空局</option>
+                                                <option value="http://www.spb.gov.cn/">国家邮政局</option>
+                                                <option value="http://www.sach.gov.cn/">国家文物局</option>
+                                                <option value="http://www.satcm.gov.cn/">国家中医药管理局</option>
+                                                <option value="http://www.chinacoal-safety.gov.cn/">国家煤矿安全监察局</option>
+                                                <option value="http://www.safe.gov.cn/">国家外汇管理局</option>
+                                                <option value="http://www.nmpa.gov.cn">国家药品监督管理局</option>
+                                                <option value="http://www.cnipa.gov.cn">国家知识产权局</option>
+                                                <option value="http://www.forestry.gov.cn/">国家公园管理局</option>
+                                                <option value="http://www.scs.gov.cn/">国家公务员局</option>
+                                                <option value="http://www.saac.gov.cn/">国家档案局</option>
+                                                <option value="http://www.gjbmj.gov.cn">国家保密局</option>
+                                                <option value="http://www.oscca.gov.cn/">国家密码管理局</option>					
+                                            </select>
+                                        <select class="like_href">
+                                                <option value="">郑州企业服务网站</option>
+                                                <option value="http://www.zhengzhou.gov.cn">郑州</option>
+                                                <option value="http://www.zhumadian.gov.cn">驻马店</option>
+                                                <option value="http://www.smx.gov.cn">三门峡</option>
+                                                <option value="http://www.pds.gov.cn">平顶山</option>
+                                                <option value="http://www.jiyuan.gov.cn">济源</option>
+                                                <option value="http://www.xinyang.gov.cn/">信阳</option>
+                                                <option value="http://www.nanyang.gov.cn">南阳</option>
+                                                <option value="http://www.hazhoukou.gov.cn/">周口</option>
+                                                <option value="http://www.luohe.gov.cn/">漯河</option>
+                                                <option value="http://www.xuchang.gov.cn">许昌</option>
+                                                <option value="http://www.shangqiu.gov.cn/">商丘</option>
+                                                <option value="http://www.hebi.gov.cn/">鹤壁</option>
+                                                <option value="http://www.jiaozuo.gov.cn">焦作</option>
+                                                <option value="http://www.puyang.gov.cn/">濮阳</option>
+                                                <option value="http://www.xinxiang.gov.cn/">新乡</option>
+                                                <option value="http://www.anyang.gov.cn">安阳</option>
+                                                <option value="http://www.kaifeng.gov.cn">开封</option>
+                                                <option value="http://www.ly.gov.cn">洛阳</option>
+                                        </select>
+                                        <select  class="like_href">
+                                                <option value="">法律服务网站</option>
+                                                <option value="http://da.zhengzhou.gov.cn/">郑州市档案局</option>
+                                                <!--<option value="http://www.zzgwy.gov.cn/">郑州市公务员局</option>-->
+                                                <!--<option value="http://www.zzfxj.com/">郑州反邪教协会</option>-->
+                                                <option value="http://www.zzast.org/">市科协</option>
+                                                <option value="http://www.zzwomen.org/">郑州妇联</option>
+                                                <option value="http://www.zzgh.org/web/index.asp">市总工会</option>
+                                                <option value="http://www.zhengzhou.jcy.gov.cn/">市检察院</option>
+                                                <option value="http://www.zzyouth.org/">市团委</option>
+                                                <option value="http://www.zzzxy.gov.cn/">市政协</option>
+                                                <option value="http://www.zzrd.gov.cn/">郑州人大</option>
+                                        </select>
+                                        <select  class="like_href">
+                                                <option selected="" value="">投融资服务</option>
+                                                <option value="http://www.beijing.gov.cn">北京</option>
+                                                <option value="http://www.tj.gov.cn">天津</option>
+                                                <option value="http://www.hebei.gov.cn">河北</option>
+                                                <option value="http://www.shanxi.gov.cn">山西</option>
+                                                <option value="http://www.nmg.gov.cn">内蒙古</option>
+                                                <option value="http://www.ln.gov.cn">辽宁</option>
+                                                <option value="http://www.jl.gov.cn">吉林</option>
+                                                <option value="http://www.hlj.gov.cn">黑龙江</option>
+                                                <option value="http://www.shanghai.gov.cn">上海</option>
+                                                <option value="http://www.jiangsu.gov.cn">江苏</option>
+                                                <option value="http://www.zhejiang.gov.cn">浙江</option>
+                                                <option value="http://www.ah.gov.cn">安徽</option>
+                                                <option value="http://www.fujian.gov.cn">福建</option>
+                                                <option value="http://www.jiangxi.gov.cn">江西</option>
+                                                <option value="http://www.shandong.gov.cn">山东</option>
+                                                <option value="http://www.henan.gov.cn">河南</option>
+                                                <option value="http://www.hubei.gov.cn/">湖北</option>
+                                                <option value="http://www.hunan.gov.cn">湖南</option>
+                                                <option value="http://www.gd.gov.cn">广东</option>
+                                                <option value="http://www.gxzf.gov.cn">广西</option>
+                                                <option value="http://www.hainan.gov.cn">海南</option>
+                                                <option value="http://www.cq.gov.cn">重庆</option>
+                                                <option value="http://www.sc.gov.cn">四川</option>
+                                                <option value="http://www.gzgov.gov.cn">贵州</option>
+                                                <option value="http://www.yn.gov.cn">云南</option>
+                                                <option value="http://www.xizang.gov.cn">西藏</option>
+                                                <option value="http://www.shaanxi.gov.cn">陕西</option>
+                                                <option value="http://www.gansu.gov.cn">甘肃</option>
+                                                <option value="http://www.qh.gov.cn">青海</option>
+                                                <option value="http://www.nx.gov.cn">宁夏</option>
+                                                <option value="http://www.xinjiang.gov.cn">新疆</option>
+                                                <option value="http://www.gov.hk/">香港</option>
+                                                <option value="http://www.gov.mo/">澳门</option>
+                                                <option value="">台湾</option>
+                                                <option value="http://www.xjbt.gov.cn/">新疆生产建设兵团</option>					
+                                        </select>
+                                        <!-- <select>
+                                                <option value="">新闻媒体</option>
+                                                <option value="http://www.people.com.cn/">人民网</option>
+                                                <option value="http://www.xinhuanet.com/">新华网</option>
+                                                <option value="http://www.dahe.cn/">大河网</option>
+                                        </select>
+                                        <select>
+                                                <option value="">友好城市</option>
+                                                <option value="http://www.hegang.gov.cn/">黑龙江-鹤岗市</option>
+                                                <option value="http://www.nanning.gov.cn/">广西-南宁</option>
+                                                <option value="http://www.nanjing.gov.cn/">江苏-南京市</option>
+                                                <option value="http://www.wuxi.gov.cn/">江苏-无锡市</option>
+                                                <option value="http://www.ningbo.gov.cn/">浙江-宁波市</option>
+                                                <option value="http://www.lyg.gov.cn/">江苏-连云港市</option>
+                                                <option value="http://www.qingdao.gov.cn/">山东-青岛市</option>
+                                                <option value="http://www.changchun.gov.cn/">吉林-长春市</option>
+                                                <option value="http://www.jinan.gov.cn/">山东-济南市（姊妹城市）</option>
+                                                <option value="http://www.haikou.gov.cn/">海南-海口市</option>
+                                                <option value="http://www.yc.gov.cn/">黑龙江-伊春市</option>
+                                                <option value="http://www.wenzhou.gov.cn/">浙江-温州市</option>
+                                                <option value="http://www.gz.gov.cn/">广东-广州市</option>
+                                                <option value="http://www.xa.gov.cn/">陕西-西安市</option>
+                                                <option value="http://www.fuzhou.gov.cn/">福建-福州市</option>
+                                                <option value="http://www.irbid.gov.jo/">约旦伊尔比德市</option>
+                                                <option value="http://www.clujnapoca.ro/">罗马尼亚克鲁日－纳波卡市</option>-->
+                                                <!-- <option value="http://www.jinju.go.kr/">韩国晋州市</option>
+                                                <option value="http://www.co.richmond.va.us/">美国里士满市</option>
+                                        </select> --> 
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="index_footer">
+                        <p class=""> 网站首页 - 网站地图 - wap网操作指南页</p>
+                        <p class=""> 国家郑州经济技术开发区管委会 主办    访问量：57,136,758</p>
+                        <p class=""> 豫ICP备11018640号     豫公网安备 41019602002122号</p>
+                        <p class=""> 网站标识码：4101910001</p>
+                        <p class=""> 版权所有：国家郑州经济技术开发区管委会    联系电话：0371-66781251</p>                          
+                    </div>
+                </div>
+            </div>
+            <div class="suspension_left">
+                <img src="./img/suspension_left.png">
+            </div>
+            <div class="suspension_right">
+                <img src="./img/suspension_right.png">
+        </div>
+   
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/swiper.min.js"></script>
+   
+    <script src="./js/jquery1.42.min.js"></script>
+    <script src="./js/jquery.SuperSlide.2.1.1.js"></script>
+    <script type="text/javascript">
+            // 幸福经开
+             // 首页底部新添   tabber
+             $(function(){
+                $(".happy_ct_right_ct_top .happy_ct_right_ct_top_p").hover(function(){
+                    $(".happy_ct_right_ct_top_pp").removeClass("happy_ct_right_ct_top_pp")
+                    $(this).addClass("happy_ct_right_ct_top_pp")
+
+                })
+
+
+                //获取value值   通过链接调往新的页面
+                $('.like_href').change(function(){
+                	var href=$(this).val();
+                	if(href!=''){
+                		window.open(href);
+                	}
+                })
+            })
+
+
+            var swiper = new Swiper('#image .swiper-container', {
+                slidesPerView: 4,
+                spaceBetween: 30,
+                loop:true,
+                observer:true,	     //修改swiper自己或子元素时，自动初始化swiper
+                observeParents:true,//修改swiper的父元素时，自动初始化swiper
+                // 自动轮播
+                autoplay: {
+                delay: 2000,
+                disableOnInteraction: true,
+            },
+            // 轮播点
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+            });
+
+
+
+            // 首页底部新添   tabber
+            $(function(){
+                $(".enter .enter_ct_block").hover(function(){
+                    $(".enter_ct_none").removeClass("enter_ct_none")
+                    $(this).addClass("enter_ct_none")
+                    // 内容切换
+                    $(".enter_dt .enter_none").removeClass("enter_block")
+                    $(".enter_dt .enter_none").eq($(".enter .enter_ct_block").index($(this))).addClass("enter_block")
+
+                })
+            })
+        // 滚动
+        // $(function(){
+        //     jQuery(".enterprise_ct .picMarquee-left").slide({mainCell:".bd ul",autoPlay:true,effect:"leftMarquee",vis:5,interTime:50});
+        // })
+   
+        // 首页顶部banner
+        // var swiper = new Swiper('#index_banner .swiper-container', {
+        //     spaceBetween: 0,
+        //     loop:true,
+        //     centeredSlides: true,
+        //     autoplay: {
+        //         delay: 2500,
+        //         disableOnInteraction: false,
+        //     },
+        //     });
+
+        // 滚动显示隐藏
+      
+
+        // 内容切换
+        $(function(){
+            $(".index_ct_tabber .index_ct_tabber_old").hover(function(){
+
+                
+
+
+                $(".index_ct_tabber_new").removeClass("index_ct_tabber_new")
+                $(this).addClass("index_ct_tabber_new")
+                // 内容切换
+                $(".index_tabber_ct .tabber_none").removeClass("tabber_block")
+                $(".index_tabber_ct .tabber_none").eq($(".index_ct_tabber .index_ct_tabber_old").index($(this))).addClass("tabber_block")
+
+                // var a = $(this).attr("value")
+                // if(a=="111"){
+                //   $(".picMarquee-left").show()
+                // }else{
+                //     console.log(a)
+                // }
+               
+            })
+        })
+        
+
+        // 首页内页banner
+        var swiper = new Swiper('#index_home .swiper-container', {
+            spaceBetween: 0,
+            loop:true,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '#index_home .swiper-pagination',
+                clickable: true,
+            },
+        });
+            // 首页政企互动内容切换
+            $(function(){
+                $(".home_interact_left_tabber .home_interact_left_tabber_left").hover(function(){
+                    $(".home_interact_left_tabber_left_w").removeClass("home_interact_left_tabber_left_w")
+                    $(this).addClass("home_interact_left_tabber_left_w")
+                    // 内容切换
+                    // $(".home_law_tabber .home_tabber_none").removeClass("home_tabber_block")
+                    // $(".home_law_tabber .home_tabber_none").eq($(".index_tabber_ct .index_home_bottom_dt").index($(this))).addClass("home_tabber_block")
+                })
+            })
+
+
+
+         // 首页政策法规内容切换
+         $(function(){
+            $(".index_tabber_ct .index_home_bottom_dt").hover(function(){
+                $(".index_home_bottom_dts").removeClass("index_home_bottom_dts")
+                $(this).addClass("index_home_bottom_dts")
+                // 内容切换
+                $(".home_law_tabber .home_tabber_none").removeClass("home_tabber_block")
+                $(".home_law_tabber .home_tabber_none").eq($(".index_tabber_ct .index_home_bottom_dt").index($(this))).addClass("home_tabber_block")
+            })
+        })
+
+
+       
+
+        // 首页banner右侧切换
+         // 内容切换
+         $(function(){
+            $("#index_home_tabber .index_home_top_p").click(function(){
+                $(".index_home_top_pp").removeClass("index_home_top_pp")
+                $(this).addClass("index_home_top_pp")
+                // 内容切换
+                $(".index_home_tabber_ct .index_home_none").removeClass("index_home_block")
+                $(".index_home_tabber_ct .index_home_none").eq($("#index_home_tabber .index_home_top_p").index($(this))).addClass("index_home_block")
+            })
+        })
+
+        // 企业之窗
+      
+        // 内容切换
+        $(function(){
+            $(".enterprise_ct_top_left_ct .enterprise_ct_top_left_ct_left").hover(function(){
+                $(".enterprise_ct_top_left_ct_lefts").removeClass("enterprise_ct_top_left_ct_lefts")
+                $(this).addClass("enterprise_ct_top_left_ct_lefts")
+            })
+        })
+
+// 内容自动切换
+    $(function(){
+                var i=0;
+                setInterval(function () {  
+                    if(i==0){
+                        $(".index_home_top_p ").removeClass("index_home_top_pp ")
+                        $(".index_home_top_p ").eq(0).addClass("index_home_top_pp ")
+                        $(".index_home_none").removeClass("index_home_block")
+                        $(".index_home_none").eq(0).addClass("index_home_block")
+                        i++;
+                    }else{
+                        $(".index_home_top_p ").removeClass("index_home_top_pp ")
+                        $(".index_home_top_p ").eq(1).addClass("index_home_top_pp ")
+                        $(".index_home_none").removeClass("index_home_block")
+                        $(".index_home_none").eq(1).addClass("index_home_block")
+                        i--;
+                    }
+                }, 5000);
+     })
+        
+
+    </script>
+  </body>
+</html>
